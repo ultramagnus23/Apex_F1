@@ -394,7 +394,8 @@ def main() -> None:
     }
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
-    args.out.write_text(json.dumps(report, indent=2, default=str), encoding="utf-8")
+    text = json.dumps(report, indent=2, default=str) + "\n"
+    args.out.write_text(text, encoding="utf-8", newline="\n")
     print(f"wrote {args.out}")
 
 
