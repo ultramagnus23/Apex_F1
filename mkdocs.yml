@@ -1,0 +1,14 @@
+site_name: Apex
+repo_url: ""
+theme:
+  name: material
+  palette:
+    scheme: slate
+nav:
+  - Home: index.md
+  - Data contract: DATA_CONTRACT.md
+  - Decisions:
+      - Distance alignment: decisions/0001-data-alignment.md
+      - Delta sign convention: decisions/0002-time-delta-convention.md
+      - Cache policy: decisions/0003-cache-policy.md
+  - Risk register: risk_register.md

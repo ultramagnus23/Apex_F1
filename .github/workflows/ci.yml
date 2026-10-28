@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: "0.11.21"
+          enable-cache: true
+
+      - name: Install Python and dependencies (locked)
+        run: |
+          uv python install 3.12
+          uv sync --locked
+
+      - name: Lint
+        run: |
+          uv run ruff check .
+          uv run ruff format --check .
+
+      - name: Type-check (strict on apex/core)
+        run: uv run mypy apex/core
+
+      - name: Tests
+        run: uv run pytest -m "not network" --cov=apex --cov-report=term-missing
+
+      - name: Restore data cache
+        uses: actions/cache@v4
+        with:
+          path: cache
+          key: apex-data-${{ hashFiles('scripts/inspect_openf1_session.py') }}-11392
+          restore-keys: apex-data-
+
+      - name: Reproducible example (data contract evidence is regenerated identically)
+        run: |
+          uv run python scripts/inspect_openf1_session.py --session-key 11392 \
+            --season 2026 --round 18 --out /tmp/inspection_11392.json
+          diff /tmp/inspection_11392.json docs/data/inspection_11392.json
