@@ -1,0 +1,1129 @@
+{
+  "session_key": 11392,
+  "source": "OpenF1 /v1",
+  "season": 2026,
+  "session": {
+    "session_name": "Qualifying",
+    "date_start": "2026-10-24T21:00:00+00:00",
+    "date_end": "2026-10-24T22:00:00+00:00",
+    "circuit_short_name": "Austin",
+    "location": "Austin"
+  },
+  "n_drivers": 22,
+  "phase_windows": [
+    {
+      "phase": 1,
+      "start": "2026-10-24 21:00:00.095000+00:00",
+      "end": "2026-10-24 21:18:00.103000+00:00"
+    },
+    {
+      "phase": 2,
+      "start": "2026-10-24 21:25:00.107000+00:00",
+      "end": "2026-10-24 21:40:00.085000+00:00"
+    },
+    {
+      "phase": 3,
+      "start": "2026-10-24 21:47:00.092000+00:00",
+      "end": "2026-10-24 22:00:00.097000+00:00"
+    }
+  ],
+  "car_data": {
+    "columns": {
+      "date": {
+        "dtype": "object",
+        "null_fraction": 0.0
+      },
+      "session_key": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 11392.0,
+        "max": 11392.0,
+        "n_unique": 1
+      },
+      "speed": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 0.0,
+        "max": 346.0,
+        "n_unique": 347
+      },
+      "driver_number": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 1.0,
+        "max": 87.0,
+        "n_unique": 22
+      },
+      "drs": {
+        "dtype": "object",
+        "null_fraction": 1.0
+      },
+      "meeting_key": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 1297.0,
+        "max": 1297.0,
+        "n_unique": 1
+      },
+      "n_gear": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 0.0,
+        "max": 8.0,
+        "n_unique": 9
+      },
+      "rpm": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 0.0,
+        "max": 13314.0,
+        "n_unique": 9627
+      },
+      "throttle": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 0.0,
+        "max": 104.0,
+        "n_unique": 100
+      },
+      "brake": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 0.0,
+        "max": 104.0,
+        "n_unique": 3
+      }
+    },
+    "missingness": {
+      "date": 0.0,
+      "session_key": 0.0,
+      "speed": 0.0,
+      "driver_number": 0.0,
+      "drs": 1.0,
+      "meeting_key": 0.0,
+      "n_gear": 0.0,
+      "rpm": 0.0,
+      "throttle": 0.0,
+      "brake": 0.0,
+      "t": 0.0
+    },
+    "intervals_full_stream": {
+      "per_driver_median_s": {
+        "min": 0.24,
+        "max": 0.24
+      },
+      "pooled_median_of_medians_s": 0.24,
+      "p05_s_range": [
+        0.16,
+        0.16
+      ],
+      "p95_s_range": [
+        0.44,
+        0.44
+      ],
+      "p99_s_range": [
+        0.48,
+        0.48
+      ],
+      "max_s_range": [
+        1.0,
+        1.0
+      ],
+      "std_s_range": [
+        0.09321048447600563,
+        0.09321048447600563
+      ],
+      "effective_hz_range": [
+        4.166666666666667,
+        4.166666666666667
+      ],
+      "quantum_s_values": [
+        0.04
+      ],
+      "n_duplicates_total": 0,
+      "n_backwards_total": 0,
+      "n_gaps_over_1s_range": [
+        36,
+        36
+      ],
+      "n_samples_range": [
+        16924,
+        16924
+      ]
+    },
+    "intervals_on_track_in_session": {
+      "per_driver_median_s": {
+        "min": 0.24,
+        "max": 0.24
+      },
+      "pooled_median_of_medians_s": 0.24,
+      "p05_s_range": [
+        0.16,
+        0.16
+      ],
+      "p95_s_range": [
+        0.44,
+        0.44
+      ],
+      "p99_s_range": [
+        0.48,
+        0.481
+      ],
+      "max_s_range": [
+        0.96,
+        1.0
+      ],
+      "std_s_range": [
+        0.09009242328539054,
+        0.09869667239809063
+      ],
+      "effective_hz_range": [
+        4.166666666666667,
+        4.166666666666667
+      ],
+      "quantum_s_values": [
+        0.04
+      ],
+      "n_duplicates_total": 0,
+      "n_backwards_total": 0,
+      "n_gaps_over_1s_range": [
+        8,
+        39
+      ],
+      "n_samples_range": [
+        4006,
+        9547
+      ]
+    },
+    "interval_histogram_on_track_top12": {
+      "0.2": 0.18857882623705408,
+      "0.24": 0.16143113215898025,
+      "0.16": 0.15958882889262635,
+      "0.28": 0.1367841019739754,
+      "0.32": 0.09673475258918297,
+      "0.36": 0.07340997609984952,
+      "0.4": 0.055949588386297246,
+      "0.44": 0.031723023811631404,
+      "0.48": 0.009831149862795433,
+      "0.279": 0.007186642471452598,
+      "0.241": 0.00654487917146145,
+      "0.281": 0.005975037620607241
+    },
+    "stream_span_utc": [
+      "2026-10-24 18:37:04.754000+00:00",
+      "2026-10-24 22:03:58.952000+00:00"
+    ],
+    "all_drivers_share_identical_timestamps": true,
+    "brake_values": [
+      0,
+      100,
+      104
+    ],
+    "n_gear_values": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "throttle_values_above_100": [
+      104
+    ],
+    "drs_non_null_count": 0,
+    "sentinel_104": [
+      {
+        "driver": 1,
+        "frac_rows": 0.35021271567005435,
+        "throttle_and_brake_both": 5927,
+        "throttle_only": 0,
+        "brake_only": 1,
+        "frac_with_speed_zero": 0.9976379281255272,
+        "max_speed_during": 232.0
+      },
+      {
+        "driver": 3,
+        "frac_rows": 0.3913377452138974,
+        "throttle_and_brake_both": 6623,
+        "throttle_only": 0,
+        "brake_only": 3,
+        "frac_with_speed_zero": 1.0,
+        "max_speed_during": 0.0
+      },
+      {
+        "driver": 5,
+        "frac_rows": 0.41284566296383834,
+        "throttle_and_brake_both": 6986,
+        "throttle_only": 1,
+        "brake_only": 3,
+        "frac_with_speed_zero": 0.9906970087304995,
+        "max_speed_during": 263.0
+      },
+      {
+        "driver": 6,
+        "frac_rows": 0.37302056251477195,
+        "throttle_and_brake_both": 6313,
+        "throttle_only": 0,
+        "brake_only": 21,
+        "frac_with_speed_zero": 0.9927134484397275,
+        "max_speed_during": 261.0
+      },
+      {
+        "driver": 10,
+        "frac_rows": 0.5501654455211534,
+        "throttle_and_brake_both": 9309,
+        "throttle_only": 2,
+        "brake_only": 22,
+        "frac_with_speed_zero": 1.0,
+        "max_speed_during": 0.0
+      },
+      {
+        "driver": 11,
+        "frac_rows": 0.5680690144173954,
+        "throttle_and_brake_both": 9614,
+        "throttle_only": 0,
+        "brake_only": 1,
+        "frac_with_speed_zero": 1.0,
+        "max_speed_during": 0.0
+      },
+      {
+        "driver": 12,
+        "frac_rows": 0.42696761994800286,
+        "throttle_and_brake_both": 7226,
+        "throttle_only": 0,
+        "brake_only": 5,
+        "frac_with_speed_zero": 1.0,
+        "max_speed_during": 0.0
+      },
+      {
+        "driver": 14,
+        "frac_rows": 0.325514062869298,
+        "throttle_and_brake_both": 5508,
+        "throttle_only": 1,
+        "brake_only": 4,
+        "frac_with_speed_zero": 0.9738609548012344,
+        "max_speed_during": 3.0
+      },
+      {
+        "driver": 16,
+        "frac_rows": 0.3246868352635311,
+        "throttle_and_brake_both": 5494,
+        "throttle_only": 1,
+        "brake_only": 3,
+        "frac_with_speed_zero": 0.9970882620564149,
+        "max_speed_during": 188.0
+      },
+      {
+        "driver": 18,
+        "frac_rows": 0.5649964547388324,
+        "throttle_and_brake_both": 9562,
+        "throttle_only": 0,
+        "brake_only": 2,
+        "frac_with_speed_zero": 1.0,
+        "max_speed_during": 0.0
+      },
+      {
+        "driver": 23,
+        "frac_rows": 0.6751949893642165,
+        "throttle_and_brake_both": 11427,
+        "throttle_only": 0,
+        "brake_only": 2,
+        "frac_with_speed_zero": 1.0,
+        "max_speed_during": 0.0
+      },
+      {
+        "driver": 27,
+        "frac_rows": 0.6002718033561806,
+        "throttle_and_brake_both": 10157,
+        "throttle_only": 2,
+        "brake_only": 2,
+        "frac_with_speed_zero": 1.0,
+        "max_speed_during": 0.0
+      },
+      {
+        "driver": 30,
+        "frac_rows": 0.4447530134719924,
+        "throttle_and_brake_both": 7527,
+        "throttle_only": 0,
+        "brake_only": 3,
+        "frac_with_speed_zero": 0.9997342898897303,
+        "max_speed_during": 194.0
+      },
+      {
+        "driver": 31,
+        "frac_rows": 0.5694871188844245,
+        "throttle_and_brake_both": 9638,
+        "throttle_only": 0,
+        "brake_only": 1,
+        "frac_with_speed_zero": 1.0,
+        "max_speed_during": 0.0
+      },
+      {
+        "driver": 41,
+        "frac_rows": 0.23965965492791302,
+        "throttle_and_brake_both": 4055,
+        "throttle_only": 1,
+        "brake_only": 6,
+        "frac_with_speed_zero": 0.9977810650887574,
+        "max_speed_during": 204.0
+      },
+      {
+        "driver": 43,
+        "frac_rows": 0.36563460174899554,
+        "throttle_and_brake_both": 6186,
+        "throttle_only": 2,
+        "brake_only": 2,
+        "frac_with_speed_zero": 0.9983839689722043,
+        "max_speed_during": 168.0
+      },
+      {
+        "driver": 44,
+        "frac_rows": 0.3238005199716379,
+        "throttle_and_brake_both": 5480,
+        "throttle_only": 0,
+        "brake_only": 1,
+        "frac_with_speed_zero": 0.9998175182481752,
+        "max_speed_during": 235.0
+      },
+      {
+        "driver": 55,
+        "frac_rows": 0.6437012526589458,
+        "throttle_and_brake_both": 10893,
+        "throttle_only": 1,
+        "brake_only": 1,
+        "frac_with_speed_zero": 1.0,
+        "max_speed_during": 0.0
+      },
+      {
+        "driver": 63,
+        "frac_rows": 0.3785748050106358,
+        "throttle_and_brake_both": 6406,
+        "throttle_only": 1,
+        "brake_only": 5,
+        "frac_with_speed_zero": 0.9995317621351647,
+        "max_speed_during": 183.0
+      },
+      {
+        "driver": 77,
+        "frac_rows": 0.5836681635547152,
+        "throttle_and_brake_both": 9878,
+        "throttle_only": 0,
+        "brake_only": 0,
+        "frac_with_speed_zero": 1.0,
+        "max_speed_during": 0.0
+      },
+      {
+        "driver": 81,
+        "frac_rows": 0.19888915150082723,
+        "throttle_and_brake_both": 3366,
+        "throttle_only": 0,
+        "brake_only": 3,
+        "frac_with_speed_zero": 1.0,
+        "max_speed_during": 0.0
+      },
+      {
+        "driver": 87,
+        "frac_rows": 0.3948830063814701,
+        "throttle_and_brake_both": 6683,
+        "throttle_only": 0,
+        "brake_only": 3,
+        "frac_with_speed_zero": 0.999700733203651,
+        "max_speed_during": 207.0
+      }
+    ]
+  },
+  "location": {
+    "columns": {
+      "date": {
+        "dtype": "object",
+        "null_fraction": 0.0
+      },
+      "session_key": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 11392.0,
+        "max": 11392.0,
+        "n_unique": 1
+      },
+      "x": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": -2554.0,
+        "max": 15583.0,
+        "n_unique": 17921
+      },
+      "z": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 0.0,
+        "max": 1569.0,
+        "n_unique": 304
+      },
+      "y": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": -4097.0,
+        "max": 6438.0,
+        "n_unique": 10514
+      },
+      "driver_number": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 1.0,
+        "max": 87.0,
+        "n_unique": 22
+      },
+      "meeting_key": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 1297.0,
+        "max": 1297.0,
+        "n_unique": 1
+      }
+    },
+    "intervals_full_stream": {
+      "per_driver_median_s": {
+        "min": 0.259,
+        "max": 0.259
+      },
+      "pooled_median_of_medians_s": 0.259,
+      "p05_s_range": [
+        0.121,
+        0.121
+      ],
+      "p95_s_range": [
+        0.44,
+        0.44
+      ],
+      "p99_s_range": [
+        0.5,
+        0.5
+      ],
+      "max_s_range": [
+        1.0,
+        1.0
+      ],
+      "std_s_range": [
+        0.09911406397343493,
+        0.09911406397343493
+      ],
+      "effective_hz_range": [
+        3.861003861003861,
+        3.861003861003861
+      ],
+      "quantum_s_values": [
+        0.02
+      ],
+      "n_duplicates_total": 0,
+      "n_backwards_total": 0,
+      "n_gaps_over_1s_range": [
+        36,
+        36
+      ],
+      "n_samples_range": [
+        17297,
+        17297
+      ]
+    },
+    "intervals_in_session": {
+      "per_driver_median_s": {
+        "min": 0.259,
+        "max": 0.259
+      },
+      "pooled_median_of_medians_s": 0.259,
+      "p05_s_range": [
+        0.14,
+        0.14
+      ],
+      "p95_s_range": [
+        0.44,
+        0.44
+      ],
+      "p99_s_range": [
+        0.5,
+        0.5
+      ],
+      "max_s_range": [
+        1.0,
+        1.0
+      ],
+      "std_s_range": [
+        0.0994050044913249,
+        0.0994050044913249
+      ],
+      "effective_hz_range": [
+        3.861003861003861,
+        3.861003861003861
+      ],
+      "quantum_s_values": [
+        0.02
+      ],
+      "n_duplicates_total": 0,
+      "n_backwards_total": 0,
+      "n_gaps_over_1s_range": [
+        28,
+        28
+      ],
+      "n_samples_range": [
+        15517,
+        15517
+      ]
+    },
+    "rows_all_zero_xyz": 74516,
+    "fraction_car_timestamps_also_in_location": {
+      "min": 0.004017962656582368,
+      "max": 0.004017962656582368
+    }
+  },
+  "laps": {
+    "n_laps": 280,
+    "columns": {
+      "meeting_key": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 1297.0,
+        "max": 1297.0,
+        "n_unique": 1
+      },
+      "session_key": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 11392.0,
+        "max": 11392.0,
+        "n_unique": 1
+      },
+      "driver_number": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 1.0,
+        "max": 87.0,
+        "n_unique": 22
+      },
+      "lap_number": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 1.0,
+        "max": 20.0,
+        "n_unique": 20
+      },
+      "date_start": {
+        "dtype": "object",
+        "null_fraction": 0.007142857142857143
+      },
+      "duration_sector_1": {
+        "dtype": "float64",
+        "null_fraction": 0.3,
+        "min": 25.23,
+        "max": 83.88,
+        "n_unique": 196
+      },
+      "duration_sector_2": {
+        "dtype": "float64",
+        "null_fraction": 0.0,
+        "min": 37.185,
+        "max": 55.871,
+        "n_unique": 276
+      },
+      "duration_sector_3": {
+        "dtype": "float64",
+        "null_fraction": 0.010714285714285714,
+        "min": 31.428,
+        "max": 52.655,
+        "n_unique": 275
+      },
+      "i1_speed": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 140.0,
+        "max": 228.0,
+        "n_unique": 77
+      },
+      "i2_speed": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 49.0,
+        "max": 192.0,
+        "n_unique": 83
+      },
+      "is_pit_out_lap": {
+        "dtype": "bool",
+        "null_fraction": 0.0,
+        "min": 0.0,
+        "max": 1.0,
+        "n_unique": 2
+      },
+      "lap_duration": {
+        "dtype": "float64",
+        "null_fraction": 0.08928571428571429,
+        "min": 94.035,
+        "max": 1303.737,
+        "n_unique": 254
+      },
+      "segments_sector_1": {
+        "dtype": "object",
+        "null_fraction": 0.0
+      },
+      "segments_sector_2": {
+        "dtype": "object",
+        "null_fraction": 0.0
+      },
+      "segments_sector_3": {
+        "dtype": "object",
+        "null_fraction": 0.0
+      },
+      "st_speed": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 129.0,
+        "max": 341.0,
+        "n_unique": 122
+      }
+    },
+    "pit_out_laps": {
+      "n": 90,
+      "sector1_null_fraction": 0.9333333333333333,
+      "lap_duration_null_fraction": 0.24444444444444444
+    },
+    "non_pit_out_sector1_null": 0,
+    "lap_duration_is_whole_ms": true,
+    "sector_sum_minus_lap_s": {
+      "n": 193,
+      "n_abs_le_1ms": 192,
+      "outliers": [
+        {
+          "driver": 41,
+          "lap": 15,
+          "lap_duration": 465.315,
+          "sector_sum": 113.366
+        }
+      ]
+    },
+    "chain_next_start_minus_this_end_s": {
+      "n": 168,
+      "median": -0.112,
+      "p05": -807.2812,
+      "p95": 0.08190000000000004,
+      "min": -1177.501,
+      "max": 0.151
+    },
+    "segment_code_counts": {
+      "2048.0": 3118,
+      "2049.0": 2297,
+      "2064.0": 441,
+      "2051.0": 225,
+      "0.0": 1
+    },
+    "null_date_start": [
+      {
+        "driver_number": 11,
+        "lap_number": 1
+      },
+      {
+        "driver_number": 77,
+        "lap_number": 1
+      }
+    ]
+  },
+  "race_control": {
+    "n_messages": 39,
+    "category_counts": {
+      "Other": 19,
+      "Flag": 14,
+      "SessionStatus": 6
+    },
+    "flag_counts": {
+      "GREEN": 3,
+      "CLEAR": 3,
+      "CHEQUERED": 3,
+      "BLACK AND WHITE": 3,
+      "DOUBLE YELLOW": 1,
+      "YELLOW": 1
+    },
+    "date_has_subsecond_fraction": 0.15384615384615385,
+    "deleted_laps": [
+      {
+        "car": 10,
+        "rc_lap": 3,
+        "time_s": 96.76400000000001,
+        "openf1_laps_with_time": [
+          2
+        ],
+        "message": "CAR 10 (GAS) TIME 1:36.764 DELETED - TRACK LIMITS AT TURN 9 LAP 3 16:07:14"
+      },
+      {
+        "car": 55,
+        "rc_lap": 9,
+        "time_s": 98.26400000000001,
+        "openf1_laps_with_time": [
+          8
+        ],
+        "message": "CAR 55 (SAI) TIME 1:38.264 DELETED - TRACK LIMITS AT TURN 19 LAP 9 16:17:30"
+      },
+      {
+        "car": 5,
+        "rc_lap": 9,
+        "time_s": null,
+        "openf1_laps_with_time": [],
+        "message": "CAR 5 (BOR) LAP DELETED - TRACK LIMITS AT TURN 11 LAP 9 16:29:31 (PIT)"
+      },
+      {
+        "car": 5,
+        "rc_lap": 9,
+        "time_s": null,
+        "openf1_laps_with_time": [],
+        "message": "CAR 5 (BOR) LAP DELETED - TRACK LIMITS AT TURN 17 LAP 9 16:30:13 (PIT)"
+      },
+      {
+        "car": 87,
+        "rc_lap": 15,
+        "time_s": 95.592,
+        "openf1_laps_with_time": [
+          14
+        ],
+        "message": "CAR 87 (BEA) TIME 1:35.592 DELETED - TRACK LIMITS AT TURN 11 LAP 15 16:39:40"
+      },
+      {
+        "car": 3,
+        "rc_lap": 12,
+        "time_s": 94.482,
+        "openf1_laps_with_time": [
+          11
+        ],
+        "message": "CAR 3 (VER) TIME 1:34.482 DELETED - TRACK LIMITS AT TURN 19 LAP 12 17:00:34"
+      },
+      {
+        "car": 6,
+        "rc_lap": 12,
+        "time_s": 94.363,
+        "openf1_laps_with_time": [
+          11
+        ],
+        "message": "CAR 6 (HAD) TIME 1:34.363 DELETED - TRACK LIMITS AT TURN 19 LAP 12 17:00:42"
+      },
+      {
+        "car": 1,
+        "rc_lap": 15,
+        "time_s": 94.37899999999999,
+        "openf1_laps_with_time": [
+          14
+        ],
+        "message": "CAR 1 (NOR) TIME 1:34.379 DELETED - TRACK LIMITS AT TURN 19 LAP 15 17:01:02"
+      }
+    ],
+    "rc_lap_minus_openf1_lap_offsets": [
+      1
+    ]
+  },
+  "weather": {
+    "n": 77,
+    "columns": {
+      "date": {
+        "dtype": "object",
+        "null_fraction": 0.0
+      },
+      "session_key": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 11392.0,
+        "max": 11392.0,
+        "n_unique": 1
+      },
+      "meeting_key": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 1297.0,
+        "max": 1297.0,
+        "n_unique": 1
+      },
+      "humidity": {
+        "dtype": "float64",
+        "null_fraction": 0.0,
+        "min": 37.0,
+        "max": 40.8,
+        "n_unique": 28
+      },
+      "rainfall": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n_unique": 1
+      },
+      "pressure": {
+        "dtype": "float64",
+        "null_fraction": 0.0,
+        "min": 1001.6,
+        "max": 1001.9,
+        "n_unique": 4
+      },
+      "track_temperature": {
+        "dtype": "float64",
+        "null_fraction": 0.0,
+        "min": 36.5,
+        "max": 40.7,
+        "n_unique": 32
+      },
+      "wind_direction": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 117.0,
+        "max": 165.0,
+        "n_unique": 34
+      },
+      "wind_speed": {
+        "dtype": "float64",
+        "null_fraction": 0.0,
+        "min": 1.6,
+        "max": 5.6,
+        "n_unique": 30
+      },
+      "air_temperature": {
+        "dtype": "float64",
+        "null_fraction": 0.0,
+        "min": 29.3,
+        "max": 29.9,
+        "n_unique": 7
+      }
+    },
+    "intervals": {
+      "n_samples": 77,
+      "n_duplicates": 0,
+      "n_backwards": 0,
+      "n_gaps": 0,
+      "gap_threshold_s": 600,
+      "min_s": 59.976,
+      "p01_s": 59.976749999999996,
+      "p05_s": 59.9875,
+      "median_s": 60.003,
+      "mean_s": 60.002486842105256,
+      "p95_s": 60.0195,
+      "p99_s": 60.0245,
+      "max_s": 60.026,
+      "std_s": 0.010347251632366085,
+      "effective_hz": 0.016665833374997916,
+      "quantum_s": 0.002
+    }
+  },
+  "stints": {
+    "n": 90,
+    "columns": {
+      "meeting_key": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 1297.0,
+        "max": 1297.0,
+        "n_unique": 1
+      },
+      "session_key": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 11392.0,
+        "max": 11392.0,
+        "n_unique": 1
+      },
+      "stint_number": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 1.0,
+        "max": 6.0,
+        "n_unique": 6
+      },
+      "driver_number": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 1.0,
+        "max": 87.0,
+        "n_unique": 22
+      },
+      "lap_start": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 1.0,
+        "max": 18.0,
+        "n_unique": 10
+      },
+      "lap_end": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 3.0,
+        "max": 20.0,
+        "n_unique": 11
+      },
+      "compound": {
+        "dtype": "object",
+        "null_fraction": 0.0
+      },
+      "tyre_age_at_start": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 0.0,
+        "max": 3.0,
+        "n_unique": 2
+      }
+    },
+    "compound_values": {
+      "SOFT": 86,
+      "MEDIUM": 4
+    }
+  },
+  "pit": {
+    "n": 90,
+    "columns": {
+      "date": {
+        "dtype": "object",
+        "null_fraction": 0.0
+      },
+      "session_key": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 11392.0,
+        "max": 11392.0,
+        "n_unique": 1
+      },
+      "lap_number": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 1.0,
+        "max": 18.0,
+        "n_unique": 10
+      },
+      "stop_duration": {
+        "dtype": "object",
+        "null_fraction": 1.0
+      },
+      "pit_duration": {
+        "dtype": "float64",
+        "null_fraction": 0.24444444444444444,
+        "min": 24.0,
+        "max": 1178.5,
+        "n_unique": 68
+      },
+      "driver_number": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 1.0,
+        "max": 87.0,
+        "n_unique": 22
+      },
+      "meeting_key": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 1297.0,
+        "max": 1297.0,
+        "n_unique": 1
+      },
+      "lane_duration": {
+        "dtype": "float64",
+        "null_fraction": 0.24444444444444444,
+        "min": 24.0,
+        "max": 1178.5,
+        "n_unique": 68
+      }
+    }
+  },
+  "session_result": {
+    "n": 22,
+    "columns": {
+      "position": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 1.0,
+        "max": 22.0,
+        "n_unique": 22
+      },
+      "driver_number": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 1.0,
+        "max": 87.0,
+        "n_unique": 22
+      },
+      "number_of_laps": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 9.0,
+        "max": 20.0,
+        "n_unique": 6
+      },
+      "dnf": {
+        "dtype": "bool",
+        "null_fraction": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n_unique": 1
+      },
+      "dns": {
+        "dtype": "bool",
+        "null_fraction": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n_unique": 1
+      },
+      "dsq": {
+        "dtype": "bool",
+        "null_fraction": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n_unique": 1
+      },
+      "duration": {
+        "dtype": "object",
+        "null_fraction": 0.0
+      },
+      "gap_to_leader": {
+        "dtype": "object",
+        "null_fraction": 0.0
+      },
+      "meeting_key": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 1297.0,
+        "max": 1297.0,
+        "n_unique": 1
+      },
+      "session_key": {
+        "dtype": "int64",
+        "null_fraction": 0.0,
+        "min": 11392.0,
+        "max": 11392.0,
+        "n_unique": 1
+      }
+    }
+  },
+  "cross_check_jolpica": {
+    "n_compared": 47,
+    "session_result_exact_match": 47,
+    "best_valid_lap_exact_match": 47,
+    "mismatches": []
+  },
+  "units_check_xy": {
+    "n_laps": 91,
+    "ratio_units_per_m": {
+      "count": 91.0,
+      "mean": 9.957874827726332,
+      "std": 0.024374325271268985,
+      "min": 9.913604281992221,
+      "5%": 9.92451042295006,
+      "50%": 9.956860336541432,
+      "95%": 9.99443661478123,
+      "max": 10.055935848524822
+    },
+    "speed_integrated_lap_distance_m": {
+      "count": 91.0,
+      "mean": 5428.00378968254,
+      "std": 14.583711225325615,
+      "min": 5369.040555555555,
+      "5%": 5404.472291666667,
+      "50%": 5429.364444444445,
+      "95%": 5449.110069444444,
+      "max": 5458.942222222222
+    },
+    "uncovered_time_at_lap_ends_s": {
+      "car_median": 0.2710000000000008,
+      "loc_median": 0.2740000000000009
+    }
+  }
+}
