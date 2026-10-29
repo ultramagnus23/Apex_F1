@@ -63,6 +63,7 @@ account.
   Distribution on track: 0.20 s 18.9 %, 0.24 s 16.1 %, 0.16 s 16.0 %, 0.28 s 13.7 %, 0.32 s 9.7 %, …
 - No duplicate and no backwards timestamps.
 - 36 gaps > 1 s per car in the full stream, the largest being **7 866 s** (18:37 → 20:48).
+- **On clean flying laps, gaps above 1 s are normal:** the largest in-lap car gap has a median of 0.92 s and p99 **1.92 s** (≈160 m at speed) over 85 laps (Phase 2 measurement; see §10).
   Within the Q window, 8–39 gaps > 1 s per car (on-track rows only).
 
 > ⚠ ADR 0001 says car data arrives at "~10 Hz". **That is wrong for this feed** (4.17 Hz
@@ -258,3 +259,22 @@ To do once FastF1 loads: per-channel diff of FastF1 vs OpenF1 for the same sessi
 7. Pit-out `lap_duration` includes garage time. Never use it as a lap time.
 8. If the sector sum and lap time disagree by more than 1 ms, the lap is invalid for
    timing analysis.
+
+---
+
+## 10. Addendum: measured in Phase 2
+
+Measured on the same session while building alignment
+([`validation_11392.json`](data/validation_11392.json), [METHODOLOGY.md](METHODOLOGY.md)).
+
+| Finding | Value | Tag |
+|---|---|---|
+| Largest in-lap car-data gap, clean flying laps | median 0.92 s, p99 1.92 s | MEASURED |
+| `(0,0,0)` positions on clean flying laps | **0** (dropouts happen in the pits/garage) | MEASURED |
+| Car vs position stream clock offset | residual minimised between −0.05 and 0 s, i.e. ≤ ~±25 ms | MEASURED |
+| Along-track noise of one position sample (after affine fit) | 4.95 m RMS (median lap). 3.3 m is systematic (same on every lap), 3.1 m random. Lag-1 autocorrelation 0.55 | MEASURED |
+| Speed-integrated distance vs reference line | 0.53% longer (scale b = 0.9947 ± 0.0019) | MEASURED; cause HYPOTHESIS (wheel-speed overread and/or position chord shortening) |
+| Lateral scatter of 10 laps (different drivers) around their mean line | median **0.09 m**, p95 0.64 m | MEASURED. That positions are **map-matched** to a track model is a HYPOTHESIS: real racing lines differ by metres. If true, lateral position (racing line) isn't observable |
+| Position-derived line crossing vs `date_start` | crossing is on average 78 ms earlier (σ 67 ms) | MEASURED |
+| Line crossing from positions alone, as a lap-boundary estimate | end-crossing residual σ 139 ms: **worse** than `date_start` (σ 82 ms) | MEASURED |
+| Single-lap sector time reconstructed from telemetry | σ ≈ 63–79 ms vs official | MEASURED ([VALIDATION](VALIDATION.md)) |

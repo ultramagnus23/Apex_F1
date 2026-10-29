@@ -1,10 +1,10 @@
 # ADR 0001: Distance-Based Telemetry Alignment & Interpolation Policy
 
 ## Status
-Accepted
+Accepted, amended 2026-10-29 (Phase 2)
 
 ## Context
-Formula 1 timing and telemetry data emitted from cars arrives on disparate timebases and irregular sampling intervals depending on the CAN bus channel (e.g., speed and throttle at ~10 Hz, GPS position at ~4 Hz). Directly comparing Lap A and Lap B on an elapsed time axis $t$ aligns different spatial locations on track, making corner-by-corner analysis impossible.
+Formula 1 timing and telemetry data arrives on two independent, irregular timebases. Measured on OpenF1 (DATA_CONTRACT §1–2): car data (speed, throttle, brake, gear, RPM) at a median **4.17 Hz** on a 40 ms grid, position at a median **3.86 Hz** on a 20 ms grid, sharing only 0.4% of timestamps. *(The original text said ~10 Hz car data; that was not measured and is wrong for this feed.)* Directly comparing Lap A and Lap B on an elapsed time axis $t$ aligns different spatial locations on track, making corner-by-corner analysis impossible.
 
 ## Decision
 1. **Primary Coordinate**: Apex aligns telemetry on the **Distance along lap** coordinate $s \in [0, S_{\max}]$.
@@ -19,3 +19,24 @@ Formula 1 timing and telemetry data emitted from cars arrives on disparate timeb
 - Enables spatially synchronized delta and trace comparisons across corners and straights.
 - Does not imply identical environmental or vehicle states at identical spatial locations.
 - Interpolation introduces minor discretization error, which is audited in the official timing validation report.
+
+## Amendment (2026-10-29, Phase 2)
+
+Measurement showed that the distance coordinate itself is the dominant error source. The
+lap start is only known to ±~0.1 s, which shifts the distance origin by ~8 m and produces
+delta errors of ~0.25 s in slow corners. Decisions added:
+
+6. **Distance mapping:** `hybrid` by default. The profile shape comes from integrated
+   speed; origin and scale come from a robust affine fit to positions projected onto a
+   reference line (HAC covariance). `speed` and `xy` remain available for sensitivity
+   studies.
+7. **Official timing as constraints:** the official lap time (constrained GLS) and sector
+   times (piecewise-linear warp to sector lines estimated leave-one-out) pin the mapping.
+   The size of each correction is reported as a z-score gate.
+8. **Times are computed at exact distances** via the exact inverse of trapezoid-integrated
+   distance. The 1 m grid is for display and channel comparison only, so grid resolution
+   no longer affects any reported time (decision 5's sensitivity check is now moot for
+   times).
+9. Continuous channels may also use PCHIP. Discrete channels stay previous-value only.
+
+See [METHODOLOGY.md](../METHODOLOGY.md) §2–4 and [VALIDATION.md](../VALIDATION.md).

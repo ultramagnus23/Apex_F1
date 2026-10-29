@@ -31,6 +31,11 @@ jobs:
       - name: Tests
         run: uv run pytest -m "not network" --cov=apex --cov-report=term-missing
 
+      - name: Case study 01 is reproducible (tables, gate and summary; PNGs excluded)
+        run: |
+          uv run python examples/case_study_01.py
+          git diff --exit-code -- docs/case_study_01 ':!docs/case_study_01/*.png'
+
       - name: Restore data cache
         uses: actions/cache@v4
         with:
