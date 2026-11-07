@@ -112,11 +112,9 @@ def corner_metrics(
     post = win[win >= i_min]
     if not np.isnan(thr[post]).any():
         on = thr >= cfg.pickup_throttle_pct
-        pick = (
-            _transition(s, on, i_min, +1)
-            if not on[i_min]
-            else Event(float(s[i_min]), float(s[i_min]))
-        )
+        # If the throttle is already >= threshold at the minimum, the pickup has no
+        # location after it: it is not located, rather than placed at the minimum.
+        pick = _transition(s, on, i_min, +1) if not on[i_min] else None
         if pick and pick.s <= hi:
             out |= {"pickup_s": pick.s, "pickup_resolution_m": pick.resolution_m}
     s_exit = corner.s_apex + cfg.exit_offset_m
