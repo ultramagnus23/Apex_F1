@@ -22,8 +22,9 @@ OPENF1_CAR_DATA = pa.DataFrameSchema(
         "n_gear": pa.Column(int, pa.Check.in_range(0, 8)),
         "throttle": pa.Column(int, pa.Check.in_range(0, 104)),
         "brake": pa.Column(int, pa.Check.isin([0, 100, 104])),
-        # Null for every sample in 2026 sessions (no DRS under 2026 rules).
-        "drs": pa.Column(object, nullable=True),
+        # 2026: null for every sample. 2025: int64 status codes {0, 8, 9, 10, 12, 14}
+        # (meaning not verified; DATA_CONTRACT §11). Dtype therefore unchecked.
+        "drs": pa.Column(None, nullable=True),
     },
     strict=True,
 )

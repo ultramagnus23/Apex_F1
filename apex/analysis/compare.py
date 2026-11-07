@@ -1,7 +1,13 @@
-"""Two-lap comparison pipeline (Phase 2 case study engine)."""
+"""Two-lap comparison pipeline.
+
+``SessionContext`` holds everything computed once per session (track model,
+aligned push laps, per-lap sector-line estimates, calibrated noise model);
+``compare`` then aligns and compares two laps against it.
+"""
 
 from __future__ import annotations
 
+from collections.abc import Iterable
 from dataclasses import dataclass, field
 from typing import Any
 
@@ -20,9 +26,7 @@ from apex.core.align import (
 from apex.core.delta import (
     GateResult,
     SectorBoundaries,
-    add_segment_sigma,
     cumulative_delta,
-    estimate_sector_boundaries,
     minisector_boundaries,
     segment_deltas,
     validation_gate,
@@ -31,8 +35,14 @@ from apex.core.laps import classify_laps
 from apex.core.session import SessionData
 from apex.core.telemetry import LapTelemetry, extract_lap, lap_ref
 from apex.core.track import Corner, CornerConfig, ReferenceLine, detect_corners, reference_from_laps
+from apex.core.uncertainty import NoiseModel, calibrate, delta_sigma, segment_sigma
 
 FloatArray = npt.NDArray[np.float64]
+LapKey = tuple[int, int]
+
+
+def key_of(lap: LapKey) -> str:
+    return f"{lap[0]}:{lap[1]}"
 
 
 @dataclass(frozen=True)
@@ -42,28 +52,8 @@ class TrackModel:
     v_ref_kmh: FloatArray
     kappa: FloatArray
     corners: list[Corner]
-    lap_keys: list[str]  # valid flying laps available for calibration
+    lap_keys: list[str]  # valid push laps available for calibration
     params: dict[str, Any] = field(default_factory=dict)
-
-
-@dataclass(frozen=True)
-class Comparison:
-    session_key: int
-    method: AlignMethod
-    a: AlignedLap
-    b: AlignedLap
-    code_a: str
-    code_b: str
-    track: TrackModel
-    grid: FloatArray
-    delta: FloatArray
-    sectors: pd.DataFrame
-    minisectors: pd.DataFrame
-    corner_segments: pd.DataFrame
-    corners: pd.DataFrame
-    gate: tuple[GateResult, GateResult]
-    boundaries: SectorBoundaries
-    unanchored: tuple[AlignedLap, AlignedLap]
 
 
 def flying_laps(classified: pd.DataFrame, max_ratio: float = 1.07) -> pd.DataFrame:
@@ -86,9 +76,14 @@ def build_track_model(
     fl = flying_laps(classified)
     tels: dict[str, LapTelemetry] = {}
     for r in fl.itertuples():
-        tel = extract_lap(session, lap_ref(session, int(r.driver_number), int(r.lap_number)))
+        try:
+            tel = extract_lap(session, lap_ref(session, int(r.driver_number), int(r.lap_number)))
+        except ValueError:
+            continue  # car data does not bracket the lap: skip, never guess
         tels[tel.lap.key] = tel
     keys = list(tels)
+    if len(keys) < 5:
+        raise ValueError(f"only {len(keys)} usable push laps; cannot build a track model")
     line = reference_from_laps([tels[k] for k in keys[:n_ref_laps]])
     grid = distance_grid(line.length, grid_step)
     speed_laps = [align_lap(tels[k], line) for k in keys[:n_speed_laps]]
@@ -104,70 +99,173 @@ def build_track_model(
     return TrackModel(line, grid, v_ref, kappa, corners, keys, params), tels
 
 
+def _robust_sd(x: FloatArray) -> float:
+    return float(1.4826 * np.median(np.abs(x - np.median(x))))
+
+
+@dataclass
+class SessionContext:
+    session: SessionData
+    classified: pd.DataFrame
+    track: TrackModel
+    tels: dict[str, LapTelemetry]
+    official: pd.DataFrame  # indexed by lap key
+    unanchored: dict[str, AlignedLap]  # hybrid, lap-time constrained
+    line_estimates: dict[str, tuple[float, float]]  # per-lap sector-line estimate
+    noise: NoiseModel
+
+    def boundaries(self, exclude: Iterable[str] = ()) -> SectorBoundaries:
+        ex = set(exclude)
+        e = np.array([v for k, v in self.line_estimates.items() if k not in ex])
+        if len(e) < 3:
+            raise ValueError("fewer than 3 laps left to estimate sector lines")
+        return SectorBoundaries(
+            float(np.median(e[:, 0])),
+            float(np.median(e[:, 1])),
+            _robust_sd(e[:, 0]),
+            _robust_sd(e[:, 1]),
+            len(e),
+        )
+
+    def official_sectors(self, key: str) -> tuple[float, float, float]:
+        r = self.official.loc[key]
+        return (
+            float(r["duration_sector_1"]),
+            float(r["duration_sector_2"]),
+            float(r["duration_sector_3"]),
+        )
+
+    def telemetry(self, key: str) -> LapTelemetry:
+        if key not in self.tels:
+            d, n = (int(x) for x in key.split(":"))
+            self.tels[key] = extract_lap(self.session, lap_ref(self.session, d, n))
+        return self.tels[key]
+
+    def prepare(
+        self,
+        key: str,
+        method: AlignMethod = "hybrid",
+        anchor: bool = True,
+        bnd: SectorBoundaries | None = None,
+    ) -> tuple[AlignedLap, AlignedLap, GateResult]:
+        """(aligned [anchored if requested], unanchored, gate) for one lap."""
+        bnd = bnd or self.boundaries(exclude=[key])
+        if method == "hybrid" and key in self.unanchored:
+            un = self.unanchored[key]
+        else:
+            un = align_lap(self.telemetry(key), self.track.line, method)
+        off = self.official_sectors(key)
+        gate = validation_gate(un, off, bnd)
+        lap = un
+        if anchor and method != "xy":
+            lap = anchor_to_sectors(
+                un, (bnd.s1, bnd.s2), (off[0], off[0] + off[1]), max(bnd.sd_s1, bnd.sd_s2)
+            )
+        return lap, un, gate
+
+
+def _line_estimate(lap: AlignedLap, s1: float, s2: float) -> tuple[float, float]:
+    grid = np.linspace(0, lap.ref_length, int(lap.ref_length * 2) + 1)
+    tt = lap.time_at(grid)
+    return float(np.interp(s1, tt, grid)), float(np.interp(s1 + s2, tt, grid))
+
+
+def build_context(session: SessionData, classified: pd.DataFrame | None = None) -> SessionContext:
+    classified = classified if classified is not None else classify_laps(session)
+    track, tels = build_track_model(session, classified)
+    laps = session.laps.copy()
+    laps["key"] = laps["driver_number"].astype(str) + ":" + laps["lap_number"].astype(str)
+    official = laps.set_index("key")
+    un = {k: align_lap(tels[k], track.line, "hybrid") for k in track.lap_keys}
+    est = {
+        k: _line_estimate(
+            un[k],
+            float(official.loc[k, "duration_sector_1"]),
+            float(official.loc[k, "duration_sector_2"]),
+        )
+        for k in track.lap_keys
+    }
+    ctx = SessionContext(session, classified, track, tels, official, un, est, NoiseModel(0.0))
+    loo = {}
+    for k in track.lap_keys:
+        b = ctx.boundaries(exclude=[k])
+        loo[k] = (b.s1, b.s2)
+    ctx.noise = calibrate(list(un.values()), official, loo)
+    return ctx
+
+
+@dataclass(frozen=True)
+class Comparison:
+    session_key: int
+    method: AlignMethod
+    anchored: bool
+    a: AlignedLap
+    b: AlignedLap
+    code_a: str
+    code_b: str
+    track: TrackModel
+    grid: FloatArray
+    delta: FloatArray
+    delta_sigma: FloatArray
+    sectors: pd.DataFrame
+    minisectors: pd.DataFrame
+    corner_segments: pd.DataFrame
+    corners: pd.DataFrame
+    gate: tuple[GateResult, GateResult]
+    boundaries: SectorBoundaries
+    unanchored: tuple[AlignedLap, AlignedLap]
+    noise: NoiseModel
+
+
+def with_sigma(seg: pd.DataFrame, a: AlignedLap, b: AlignedLap, noise: NoiseModel) -> pd.DataFrame:
+    out = seg.copy()
+    out["sigma"] = segment_sigma(
+        a, b, out["s_start"].to_numpy(float), out["s_end"].to_numpy(float), noise
+    )
+    out["within_noise"] = out["delta"].abs() < 2 * out["sigma"]
+    return out
+
+
 def compare(
     session: SessionData,
-    lap_a: tuple[int, int],
-    lap_b: tuple[int, int],
+    lap_a: LapKey,
+    lap_b: LapKey,
     *,
     method: AlignMethod = "hybrid",
     n_minisectors: int = 25,
     anchor_sectors: bool = True,
     classified: pd.DataFrame | None = None,
-    track: TrackModel | None = None,
-    tels: dict[str, LapTelemetry] | None = None,
+    ctx: SessionContext | None = None,
 ) -> Comparison:
-    classified = classified if classified is not None else classify_laps(session)
-    if track is None or tels is None:
-        track, tels = build_track_model(session, classified)
-    line = track.line
-    for key in (lap_a, lap_b):
-        k = f"{key[0]}:{key[1]}"
-        if k not in tels:
-            tels[k] = extract_lap(session, lap_ref(session, *key))
-    ka, kb = f"{lap_a[0]}:{lap_a[1]}", f"{lap_b[0]}:{lap_b[1]}"
-    a = align_lap(tels[ka], line, method)
-    b = align_lap(tels[kb], line, method)
+    ctx = ctx or build_context(session, classified)
+    line = ctx.track.line
+    ka, kb = key_of(lap_a), key_of(lap_b)
+    # sector lines from the other push laps (both compared laps left out)
+    bnd = ctx.boundaries(exclude=[ka, kb])
+    a, ua, ga = ctx.prepare(ka, method, anchor_sectors, bnd)
+    b, ub, gb = ctx.prepare(kb, method, anchor_sectors, bnd)
+    gate = (ga, gb)
+    off = {ka: ctx.official_sectors(ka), kb: ctx.official_sectors(kb)}
 
-    # sector boundaries from the other flying laps (leave the two compared laps out)
-    laps = session.laps.copy()
-    laps["key"] = laps["driver_number"].astype(str) + ":" + laps["lap_number"].astype(str)
-    sec = laps.set_index("key")
-    cal = [align_lap(tels[k], line, "hybrid") for k in track.lap_keys if k not in (ka, kb)]
-    bnd = estimate_sector_boundaries(cal, sec)
-    official = {
-        k: tuple(
-            float(x)
-            for x in sec.loc[k, ["duration_sector_1", "duration_sector_2", "duration_sector_3"]]
-        )
-        for k in (ka, kb)
-    }
-    gate = (validation_gate(a, official[ka], bnd), validation_gate(b, official[kb], bnd))  # type: ignore[arg-type]
-    unanchored = (a, b)
-    if anchor_sectors and method != "xy":
-        sig = max(bnd.sd_s1, bnd.sd_s2)
-        a = anchor_to_sectors(a, (bnd.s1, bnd.s2), (official[ka][0], sum(official[ka][:2])), sig)
-        b = anchor_to_sectors(b, (bnd.s1, bnd.s2), (official[kb][0], sum(official[kb][:2])), sig)
     knots_s = np.array([0.0, bnd.s1, bnd.s2, line.length])
     ta, tb = np.diff(a.time_at(knots_s)), np.diff(b.time_at(knots_s))
-    ta_u = np.diff(unanchored[0].time_at(knots_s))
-    tb_u = np.diff(unanchored[1].time_at(knots_s))
-
+    ta_u, tb_u = np.diff(ua.time_at(knots_s)), np.diff(ub.time_at(knots_s))
     sector_rows = []
     for i, name in enumerate(("S1", "S2", "S3")):
         sector_rows.append(
             {
+                "sector": name,
+                "official_a": off[ka][i],
+                "official_b": off[kb][i],
+                "official_delta": off[ka][i] - off[kb][i],
                 "anchored_a": float(ta[i]),
                 "anchored_b": float(tb[i]),
                 "unanchored_delta": float(ta_u[i] - tb_u[i]),
-                "sector": name,
-                "official_a": official[ka][i],
-                "official_b": official[kb][i],
-                "official_delta": official[ka][i] - official[kb][i],
-                "telemetry_a": gate[0].telemetry[i],
-                "telemetry_b": gate[1].telemetry[i],
-                "telemetry_delta": gate[0].telemetry[i] - gate[1].telemetry[i],
-                "tolerance_a": gate[0].tolerance[i],
-                "tolerance_b": gate[1].tolerance[i],
+                "telemetry_a": ga.telemetry[i],
+                "telemetry_b": gb.telemetry[i],
+                "telemetry_delta": ga.telemetry[i] - gb.telemetry[i],
+                "tolerance_a": ga.tolerance[i],
+                "tolerance_b": gb.tolerance[i],
             }
         )
     sectors = pd.DataFrame(sector_rows)
@@ -176,45 +274,38 @@ def compare(
         sectors["anchored_a"] - sectors["anchored_b"] - sectors["official_delta"]
     )
 
-    grid = track.grid
+    grid = ctx.track.grid
     delta = cumulative_delta(a, b, grid)
-    mini = segment_deltas(a, b, minisector_boundaries(line.length, n_minisectors))
-    cb = [c.s_start for c in track.corners] + [line.length]
-    corner_seg = segment_deltas(a, b, cb, [c.label for c in track.corners])
-    sigma_s = max(bnd.sd_s1, bnd.sd_s2)
-    pinned = [0.0, line.length] + ([bnd.s1, bnd.s2] if anchor_sectors and method != "xy" else [])
-    mini = add_segment_sigma(mini, a, b, sigma_s, pinned)
-    corner_seg = add_segment_sigma(corner_seg, a, b, sigma_s, pinned)
-    corner_df = compare_corners(a, b, track.corners, CornerMetricsConfig())
-    zone_sigma = []
-    for _, r in corner_df.iterrows():
-        for z in ("braking", "apex", "exit"):
-            z0, z1 = r[f"{z}_zone"]
-            sg = add_segment_sigma(
-                pd.DataFrame({"s_start": [z0], "s_end": [z1], "delta": [r[f"{z}_delta_s"]]}),
-                a,
-                b,
-                sigma_s,
-                pinned,
-            )
-            zone_sigma.append((r.name, z, float(sg["sigma"].iloc[0])))
-    for idx, z, sg in zone_sigma:
-        corner_df.loc[idx, f"{z}_sigma_s"] = sg
+    dsig = delta_sigma(a, b, grid, ctx.noise)
+    mini = with_sigma(
+        segment_deltas(a, b, minisector_boundaries(line.length, n_minisectors)), a, b, ctx.noise
+    )
+    corners = ctx.track.corners
+    cb = [c.s_start for c in corners] + [line.length]
+    corner_seg = with_sigma(segment_deltas(a, b, cb, [c.label for c in corners]), a, b, ctx.noise)
+    corner_df = compare_corners(a, b, corners, CornerMetricsConfig())
+    for z in ("braking", "apex", "exit"):
+        z0 = np.array([r[0] for r in corner_df[f"{z}_zone"]])
+        z1 = np.array([r[1] for r in corner_df[f"{z}_zone"]])
+        corner_df[f"{z}_sigma_s"] = segment_sigma(a, b, z0, z1, ctx.noise)
     return Comparison(
         session.session_key,
         method,
+        anchor_sectors and method != "xy",
         a,
         b,
         session.driver_code(lap_a[0]),
         session.driver_code(lap_b[0]),
-        track,
+        ctx.track,
         grid,
         delta,
+        dsig,
         sectors,
         mini,
         corner_seg,
         corner_df,
         gate,
         bnd,
-        unanchored,
+        (ua, ub),
+        ctx.noise,
     )
