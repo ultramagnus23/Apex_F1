@@ -94,7 +94,10 @@ def load_openf1(session_key: int, cache_dir: Path | str, *, offline: bool = Fals
     q = {"session_key": session_key}
     meta = {str(k): v for k, v in c.frame("sessions", q).iloc[0].to_dict().items()}
     drivers = c.frame("drivers", q)
-    laps = OPENF1_LAPS.validate(c.frame("laps", q))
+    raw_laps = c.frame("laps", q)
+    if raw_laps.empty:
+        raise ValueError(f"OpenF1 has no laps for session {session_key}")
+    laps = OPENF1_LAPS.validate(raw_laps)
     cars, locs = [], []
     for d in drivers["driver_number"]:
         cars.append(OPENF1_CAR_DATA.validate(c.frame("car_data", q | {"driver_number": int(d)})))
