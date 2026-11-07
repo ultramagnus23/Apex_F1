@@ -92,11 +92,39 @@ lines on a green track, or early-session feed behaviour could each explain it
 | Corner detection stable under speed/curvature noise | property |
 | Case study 01 numbers frozen | `tests/regression` (golden, 1e-9) |
 
-## 5. What is *not* validated
+## 5. Season-wide sensitivity (2025)
+
+`scripts/season_study.py` compares the pole driver's fastest valid lap with P2 and P3 in every
+2025 qualifying session, under all reference sets and alignment methods
+([METHODOLOGY §9.4](METHODOLOGY.md#94-season-study-scriptsseason_studypy)). Results are in
+[`season_2025/`](season_2025/).
+
+- **Coverage:** 23 of 24 sessions. Baku failed because OpenF1 has no lap data for session 9900.
+- **Conclusions judged:** 1,801 segment conclusions (non-"none" majority verdict).
+- **Sign flips** (A faster in one configuration, B in another):
+
+| Choice varied | Conclusions that flip |
+|---|---|
+| Reference set (method fixed) | 0.6% (10) |
+| Alignment method (reference fixed) | 4.3% (77) |
+| Either | 6.1% (109) |
+
+- **Stability:** median 100%, mean 83%. Only 52% of conclusions reach the 80% OBSERVED threshold,
+  so about half of the segment verdicts would be downgraded to INCONCLUSIVE.
+- **Concentration:** all 10 reference-set flips and 35 of the 109 flips overall are at
+  Spa-Francorchamps. Jeddah, Montreal, Austin, Mexico City, Las Vegas and Yas Island have no
+  flips. **[HYPOTHESIS, untested]** that Spa's changing conditions across its long lap explain
+  this; no weather or track-evolution analysis has been done.
+- **Reading:** the choice of reference line almost never changes the sign. The alignment method
+  does, so the method must stay part of the stability test.
+
+Limits: one season, one session type, and only the pole driver against P2 and P3.
+
+## 6. What is *not* validated
 
 - **Sector-line positions** are estimated, not published. Their cross-lap scatter (3.1 m)
   is measured; their absolute position isn't.
 - **Corner event locations** (brake-on, lift, pickup) have no independent reference.
   Only their sample-spacing resolution is known.
 - **FastF1 comparison:** not possible without F1TV credentials (DATA_CONTRACT §0).
-- Only one session so far. Phase 3 runs a season.
+- The season study covers 2025 qualifying only, and Baku is missing.
