@@ -7,6 +7,9 @@ theme:
 nav:
   - Home: index.md
   - Data contract: DATA_CONTRACT.md
+  - Methodology: METHODOLOGY.md
+  - Validation: VALIDATION.md
+  - Case study 01: CASE_STUDY_01.md
   - Decisions:
       - Distance alignment: decisions/0001-data-alignment.md
       - Delta sign convention: decisions/0002-time-delta-convention.md
