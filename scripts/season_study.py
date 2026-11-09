@@ -112,7 +112,9 @@ def main() -> None:
     out = Path(args.out) if args.out else ROOT / "docs" / f"season_{args.year}"
     out.mkdir(parents=True, exist_ok=True)
 
-    fetch = json.loads((data_dir / f"fetch_{args.year}_{args.session}.json").read_text())
+    fetch = json.loads(
+        (data_dir / f"fetch_{args.year}_{args.session}.json").read_text(encoding="utf-8")
+    )
     results, failures = [], []
     for row in fetch:
         if row["status"] not in ("ok", "cached"):

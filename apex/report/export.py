@@ -52,7 +52,7 @@ def write_comparison(cmp: Comparison, drivers: pd.DataFrame, out: Path, title: s
     corners = cmp.corners.copy()
     for col in [c for c in corners.columns if c.endswith("_zone")]:
         corners[col] = [
-            "(%.4f, %.4f)" % (lo, hi) if isinstance(lo, float) else "" for lo, hi in corners[col]
+            f"({lo:.4f}, {hi:.4f})" if isinstance(lo, float) else "" for lo, hi in corners[col]
         ]
     corners.to_csv(out / "corners.csv", index=False, float_format="%.4f", lineterminator="\n")
     gate = gate_dict(cmp)
