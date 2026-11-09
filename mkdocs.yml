@@ -1,15 +1,20 @@
 site_name: Apex
-repo_url: ""
+repo_url: https://github.com/ultramagnus23/Apex_F1
 theme:
   name: material
   palette:
     scheme: slate
 nav:
   - Home: index.md
+  - Getting started: GETTING_STARTED.md
+  - Status and roadmap: STATUS.md
+  - FAQ: FAQ.md
+  - Glossary: GLOSSARY.md
   - Data contract: DATA_CONTRACT.md
   - Methodology: METHODOLOGY.md
   - Validation: VALIDATION.md
   - Case study 01: CASE_STUDY_01.md
+  - 2025 season study: season_2025/README.md
   - Decisions:
       - Distance alignment: decisions/0001-data-alignment.md
       - Delta sign convention: decisions/0002-time-delta-convention.md
