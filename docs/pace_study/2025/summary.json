@@ -1,0 +1,38 @@
+{
+  "year": 2025,
+  "races_fitted": 24,
+  "races_ok": 21,
+  "races_not_modelled": [
+    {
+      "location": "Melbourne",
+      "status_reasons": "85% of clean laps on wet-weather tyres; the tyre model assumes dry running"
+    },
+    {
+      "location": "Silverstone",
+      "status_reasons": "69% of clean laps on wet-weather tyres; the tyre model assumes dry running"
+    },
+    {
+      "location": "Spa-Francorchamps",
+      "status_reasons": "lap-time noise 9.7 s exceeds 1.5 s"
+    }
+  ],
+  "failures": [],
+  "ci": 0.9,
+  "coverage_mean": {
+    "random": 0.9005770037364714,
+    "stint": 0.9251135916811283,
+    "forward": 0.7665983672991287
+  },
+  "coverage_min": {
+    "random": 0.8268156424581006,
+    "stint": 0.8646392526410291,
+    "forward": 0.5202020202020202
+  },
+  "mae_s": {
+    "random": 0.3436753492447973,
+    "forward": 0.5218967147391332
+  },
+  "median_noise_sigma_s": 0.40786346929070394,
+  "median_pace_spread_s": 2.0087361015438887,
+  "share_of_pairs_decided_90": 0.6526345135210482
+}
