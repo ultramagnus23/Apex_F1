@@ -1,0 +1,169 @@
+{
+  "years": {
+    "2025": {
+      "sessions_all": 23,
+      "sessions_wet_excluded": [
+        "Las Vegas"
+      ],
+      "wet_sessions_events_per_lap": 0.1373,
+      "sessions": 22,
+      "laps": 1231,
+      "events_per_lap": 0.269,
+      "share_laps_with_event": 0.17465475223395613,
+      "clip_share_mean": 0.005540909090909091,
+      "median_decel_ms2": 1.399,
+      "repeat_lift_median": 14.02565,
+      "repeat_lift_min": 6.8293,
+      "top5_bin_share_median": 1.0
+    },
+    "2026": {
+      "sessions_all": 20,
+      "sessions_wet_excluded": [
+        "S\u00e3o Paulo"
+      ],
+      "wet_sessions_events_per_lap": 0.0938,
+      "sessions": 19,
+      "laps": 1176,
+      "events_per_lap": 1.2328263157894737,
+      "share_laps_with_event": 0.6471088435374149,
+      "clip_share_mean": 0.05427894736842106,
+      "median_decel_ms2": 1.5782,
+      "repeat_lift_median": 7.6167,
+      "repeat_lift_min": 3.669,
+      "top5_bin_share_median": 0.7778
+    }
+  },
+  "detector": {
+    "throttle_min": 99.0,
+    "speed_min_kmh": 150.0,
+    "window_s": 0.5,
+    "decel_threshold_ms2": 0.4,
+    "z": 1.645,
+    "min_duration_s": 0.7,
+    "min_speed_loss_kmh": 3.0,
+    "max_gap_samples": 1,
+    "max_dt_s": 0.6,
+    "drop_run_end_events": true
+  },
+  "confounders": [
+    "road gradient (uphill reduces acceleration)",
+    "headwind or tailwind change along the straight",
+    "slipstream from a car ahead",
+    "engine or fuel mode set by the team",
+    "active-aero or DRS state change (drag step)",
+    "gear-shift transients (excluded within one sample of a shift)",
+    "ERS deployment ending: the hypothesis, not observed"
+  ],
+  "tag": "OBSERVED: the speed-trace feature. HYPOTHESIS: that it is electrical deployment ending.",
+  "era_contrast_2026_minus_2025": {
+    "events_per_lap": {
+      "diff": 0.9638263157894736,
+      "lo": 0.4902293122009569,
+      "hi": 1.5115750358851676,
+      "p_b_greater": 1.0
+    },
+    "clip_share": {
+      "diff": 0.04873803827751197,
+      "lo": 0.029686818181818182,
+      "hi": 0.0710799342105263,
+      "p_b_greater": 1.0
+    },
+    "median_decel_ms2": {
+      "diff": 0.3413330882352943,
+      "lo": -0.07882329044117621,
+      "hi": 0.8548400551470591,
+      "p_b_greater": 0.94
+    },
+    "unit": "dry sessions only; sessions are the resampling unit"
+  },
+  "paired_circuits": {
+    "circuits": 16,
+    "higher_in_2026": 14,
+    "equal": 2,
+    "lower_in_2026": 0,
+    "mean_difference_events_per_lap": 0.9280375000000001,
+    "wilcoxon_p": 0.0009815397525216685,
+    "rows": [
+      {
+        "circuit": "Melbourne",
+        "events_per_lap_2025": 0.0,
+        "events_per_lap_2026": 1.3091
+      },
+      {
+        "circuit": "Shanghai",
+        "events_per_lap_2025": 0.0,
+        "events_per_lap_2026": 1.6462
+      },
+      {
+        "circuit": "Suzuka",
+        "events_per_lap_2025": 0.9828,
+        "events_per_lap_2026": 2.0308
+      },
+      {
+        "circuit": "Miami Gardens",
+        "events_per_lap_2025": 0.0,
+        "events_per_lap_2026": 1.7937
+      },
+      {
+        "circuit": "Monaco",
+        "events_per_lap_2025": 0.0,
+        "events_per_lap_2026": 0.0
+      },
+      {
+        "circuit": "Barcelona",
+        "events_per_lap_2025": 0.0179,
+        "events_per_lap_2026": 0.7119
+      },
+      {
+        "circuit": "Montr\u00e9al",
+        "events_per_lap_2025": 0.0,
+        "events_per_lap_2026": 0.7121
+      },
+      {
+        "circuit": "Spielberg",
+        "events_per_lap_2025": 0.0,
+        "events_per_lap_2026": 0.7258
+      },
+      {
+        "circuit": "Silverstone",
+        "events_per_lap_2025": 1.5536,
+        "events_per_lap_2026": 2.3889
+      },
+      {
+        "circuit": "Spa-Francorchamps",
+        "events_per_lap_2025": 1.9444,
+        "events_per_lap_2026": 4.3548
+      },
+      {
+        "circuit": "Budapest",
+        "events_per_lap_2025": 0.0,
+        "events_per_lap_2026": 0.0161
+      },
+      {
+        "circuit": "Zandvoort",
+        "events_per_lap_2025": 0.193,
+        "events_per_lap_2026": 0.4242
+      },
+      {
+        "circuit": "Monza",
+        "events_per_lap_2025": 0.0351,
+        "events_per_lap_2026": 1.254
+      },
+      {
+        "circuit": "Marina Bay",
+        "events_per_lap_2025": 0.0,
+        "events_per_lap_2026": 0.0
+      },
+      {
+        "circuit": "Austin",
+        "events_per_lap_2025": 0.0,
+        "events_per_lap_2026": 1.9538
+      },
+      {
+        "circuit": "Mexico City",
+        "events_per_lap_2025": 0.0,
+        "events_per_lap_2026": 0.254
+      }
+    ]
+  }
+}
