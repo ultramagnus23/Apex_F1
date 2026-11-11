@@ -10,9 +10,10 @@ from __future__ import annotations
 import argparse
 import json
 import time
+from functools import partial
 from pathlib import Path
 
-from apex.core.session import load_openf1, save_parquet
+from apex.core.session import load_openf1, load_openf1_laps_only, save_parquet
 from apex.core.sources.openf1 import OpenF1Client
 
 
@@ -21,8 +22,26 @@ def main() -> None:
     ap.add_argument("--year", type=int, required=True)
     ap.add_argument("--session", default="Qualifying")
     ap.add_argument("--cache", default="cache/openf1")
-    ap.add_argument("--parquet", default="cache/parquet")
+    ap.add_argument("--parquet", default=None)
+    ap.add_argument(
+        "--laps-only",
+        action="store_true",
+        help="skip car and position streams (enough for race pace); default dir cache/parquet_laps",
+    )
+    ap.add_argument(
+        "--no-location",
+        action="store_true",
+        help="keep car data but skip position data (enough for ERS analysis)",
+    )
     args = ap.parse_args()
+    if args.parquet is None:
+        args.parquet = "cache/parquet_laps" if args.laps_only else "cache/parquet"
+    if args.laps_only:
+        loader = load_openf1_laps_only
+    elif args.no_location:
+        loader = partial(load_openf1, include_location=False)
+    else:
+        loader = load_openf1
 
     c = OpenF1Client(args.cache)
     sessions = c.frame("sessions", {"year": args.year, "session_name": args.session})
@@ -35,7 +54,7 @@ def main() -> None:
         status = "cached"
         if not (out / "meta.json").exists():
             try:
-                save_parquet(load_openf1(key, args.cache), out)
+                save_parquet(loader(key, args.cache), out)
                 status = "ok"
             except Exception as exc:  # recorded, not hidden
                 status = f"error: {type(exc).__name__}: {exc}"

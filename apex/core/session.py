@@ -89,7 +89,13 @@ def _with_time(df: pd.DataFrame, raw: str, parsed: str) -> pd.DataFrame:
     return df
 
 
-def load_openf1(session_key: int, cache_dir: Path | str, *, offline: bool = False) -> SessionData:
+def load_openf1(
+    session_key: int,
+    cache_dir: Path | str,
+    *,
+    offline: bool = False,
+    include_location: bool = True,
+) -> SessionData:
     c = OpenF1Client(cache_dir, offline=offline)
     q = {"session_key": session_key}
     meta = {str(k): v for k, v in c.frame("sessions", q).iloc[0].to_dict().items()}
@@ -101,7 +107,10 @@ def load_openf1(session_key: int, cache_dir: Path | str, *, offline: bool = Fals
     cars, locs = [], []
     for d in drivers["driver_number"]:
         cars.append(OPENF1_CAR_DATA.validate(c.frame("car_data", q | {"driver_number": int(d)})))
-        locs.append(OPENF1_LOCATION.validate(c.frame("location", q | {"driver_number": int(d)})))
+        if include_location:
+            locs.append(
+                OPENF1_LOCATION.validate(c.frame("location", q | {"driver_number": int(d)}))
+            )
     return SessionData(
         session_key=session_key,
         meta=meta,
@@ -109,7 +118,44 @@ def load_openf1(session_key: int, cache_dir: Path | str, *, offline: bool = Fals
         laps=_with_time(laps, "date_start", "t0"),
         race_control=c.frame("race_control", q),
         car=_with_time(pd.concat(cars, ignore_index=True), "date", "t"),
-        location=_with_time(pd.concat(locs, ignore_index=True), "date", "t"),
+        location=(
+            _with_time(pd.concat(locs, ignore_index=True), "date", "t")
+            if include_location
+            else _empty_timed(["driver_number"], "date", "t")
+        ),
+        pit=c.frame("pit", q),
+        stints=c.frame("stints", q),
+    )
+
+
+def _empty_timed(columns: list[str], raw: str, parsed: str) -> pd.DataFrame:
+    df = pd.DataFrame({c: pd.Series(dtype="float64") for c in columns})
+    df[raw] = pd.Series(dtype="object")
+    df[parsed] = pd.Series(dtype="datetime64[ns, UTC]")
+    return df
+
+
+def load_openf1_laps_only(
+    session_key: int, cache_dir: Path | str, *, offline: bool = False
+) -> SessionData:
+    """Like :func:`load_openf1` but without car and position streams.
+
+    Enough for lap-time analysis (race pace). ``car`` and ``location`` are empty.
+    """
+    c = OpenF1Client(cache_dir, offline=offline)
+    q = {"session_key": session_key}
+    meta = {str(k): v for k, v in c.frame("sessions", q).iloc[0].to_dict().items()}
+    raw_laps = c.frame("laps", q)
+    if raw_laps.empty:
+        raise ValueError(f"OpenF1 has no laps for session {session_key}")
+    return SessionData(
+        session_key=session_key,
+        meta=meta,
+        drivers=c.frame("drivers", q),
+        laps=_with_time(OPENF1_LAPS.validate(raw_laps), "date_start", "t0"),
+        race_control=c.frame("race_control", q),
+        car=_empty_timed(["driver_number"], "date", "t"),
+        location=_empty_timed(["driver_number"], "date", "t"),
         pit=c.frame("pit", q),
         stints=c.frame("stints", q),
     )

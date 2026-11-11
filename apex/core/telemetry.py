@@ -83,6 +83,16 @@ def extract_lap(session: SessionData, lap: LapRef, pad_s: float = 3.0) -> LapTel
         }
     )
     loc = session.location
+    if loc.empty:  # car-only sessions: no position stream was loaded
+        loc = pd.DataFrame(
+            {
+                "driver_number": pd.Series(dtype="int64"),
+                "x": pd.Series(dtype="float64"),
+                "y": pd.Series(dtype="float64"),
+                "z": pd.Series(dtype="float64"),
+                "t": pd.Series(dtype="datetime64[ns, UTC]"),
+            }
+        )
     p = loc[(loc["driver_number"] == lap.driver_number) & (loc["t"] >= lo) & (loc["t"] <= hi)]
     zero = (p["x"] == 0) & (p["y"] == 0) & (p["z"] == 0)
     pg = p[~zero]
