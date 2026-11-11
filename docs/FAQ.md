@@ -39,11 +39,15 @@ Apex never handles your credentials. See [Data contract §0](DATA_CONTRACT.md#0-
 
 ## Does it work for races?
 
-Not validated. All studies so far use qualifying. Extending to races is on the roadmap.
+Yes for race pace: [RACE_PACE.md](RACE_PACE.md) covers 42 races from 2025 and 2026. Wet or very noisy races are refused. The corner-level lap comparison and the ERS analysis have only been validated on qualifying.
 
 ## Does it predict anything?
 
-No. The lap simulator (Phase 4) is not built, and any simulator output would be labelled MODEL OUTPUT.
+No. The race-pace model describes a race that happened; predicting later laps from earlier ones under-covers. The lap simulator (Phase 5) is not built, and any simulator output would be labelled MODEL OUTPUT.
+
+## What is ERS clipping, and do you measure it?
+
+We measure its visible footprint: the car decelerating while the throttle is fully open and the brake is off. Reading that as electrical deployment ending is a labelled hypothesis, because battery state is not in public data. See [ERS_CLIPPING.md](ERS_CLIPPING.md).
 
 ## What does a sign flip mean?
 

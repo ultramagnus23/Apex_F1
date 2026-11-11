@@ -1,12 +1,13 @@
 # Project status and roadmap
 
-Last updated: 2026-11-09. Branch `phase-3/uncertainty-claims`.
+Last updated: 2026-11-11. Branch `phase-3/uncertainty-claims`.
 
 ## Summary
 
-Apex is a research toolkit at **Phase 3 of 5**. It can ingest OpenF1 data, validate laps against
-official timing, align and compare laps, estimate uncertainty, stress-test conclusions and tag claims.
-It cannot yet simulate laps, model stints or fuel, or present results in an app.
+Apex is a research toolkit at **Phase 4 of 5**. It ingests OpenF1 data, validates laps against official timing,
+aligns and compares laps, estimates uncertainty, stress-tests conclusions, tags claims, infers race pace with
+posteriors, detects full-throttle deceleration, and presents results on a static dashboard. It cannot yet simulate
+laps or model fuel and stints explicitly.
 
 ## Done
 
@@ -16,23 +17,25 @@ It cannot yet simulate laps, model stints or fuel, or present results in an app.
 | 1 | OpenF1 client with immutable raw cache, FastF1 adapter (needs F1TV credentials), data-quality metrics, and a [data contract](DATA_CONTRACT.md) measured from the 2026 US GP qualifying session. |
 | 2 | Session container, lap validity engine, reference line, hybrid distance alignment, deltas, validation gate, per-corner metrics, figures, `apex compare` CLI, [case study 01](CASE_STUDY_01.md). |
 | 3 | Calibrated Brownian-bridge noise model, 81-configuration sensitivity analysis, claims engine, [85-lap validation](VALIDATION.md), and the [2025 season study](season_2025/README.md) (23 of 24 sessions). |
-| Tests | 57 tests (unit, property-based, golden regression) run offline. CI runs lint, strict type-checking of `apex/core`, tests, and a reproducibility check of case study 01. |
+| 4 | [Race-pace inference](RACE_PACE.md) (42 races, 2025 and 2026), [ERS clipping detection](ERS_CLIPPING.md) (41 dry qualifying sessions, 2025 and 2026), `apex pace` and `apex ers` commands, and the [dashboard](dashboard/index.html). |
+| Tests | 83 tests (unit, property-based, golden regression) run offline. CI runs lint, strict type-checking of `apex/core`, tests, and a reproducibility check of case study 01. |
 
-## Remaining in Phase 3
+## Open housekeeping
 
-- [ ] Open a pull request from `phase-3/uncertainty-claims` into `master`.
+- [x] Pull request open (#4).
 - [ ] Retry the Baku 2025 qualifying session. OpenF1 returned no laps for it, so it is recorded as a failure.
 - [ ] Investigate Spa-Francorchamps, which has 35 of the 109 sign flips in the season study. Weather and track evolution are untested explanations.
-- [ ] Extend the study beyond qualifying (race sessions) and beyond 2025.
+- [x] Race sessions covered by the pace study (2025 and 2026).
+- [ ] Extend ERS analysis to race running and to seasons before 2025.
 - [ ] Regenerate local `out/` outputs (git-ignored) so they no longer say "provisional model".
 
 ## Not started
 
 | Phase | Scope | Notes |
 |---|---|---|
-| 4 | Lap simulator (`apex/sim/`) | Files exist as one-line stubs. Public data has no vehicle parameters, so outputs would be mostly assumptions. Any output would be labelled MODEL OUTPUT. |
-| 5 | Fuel and stint modelling (`apex/analysis/stint.py`) | Fuel mass is not in public data, so it would be a configurable assumption. |
-| n/a | App or UI (`apex/app/`) | Empty. A static report or notebook gallery may be enough. |
+| 5 | Lap simulator (`apex/sim/`) | Files exist as one-line stubs. Public data has no vehicle parameters, so outputs would be mostly assumptions. Any output would be labelled MODEL OUTPUT. |
+| 5 | Explicit fuel and stint modelling (`apex/analysis/stint.py`) | Fuel mass is not in public data, so it would be a configurable assumption. The pace model already absorbs fuel and track evolution in one trend. |
+| n/a | Interactive app (`apex/app/`) | Empty. The static dashboard covers presentation for now. |
 | n/a | `benchmarks/` | Empty. |
 
 ## Known gaps
@@ -42,8 +45,17 @@ It cannot yet simulate laps, model stints or fuel, or present results in an app.
 - FastF1 cross-validation is not possible without F1TV credentials.
 - Cause is never established. Telemetry shows differences, not why they occurred.
 
-## Direction under discussion
+## Open questions from the new products
 
-The strongest result so far is that roughly half of single-session corner conclusions are not stable.
-Options for what to do with that (publish it, extend to races and seasons, or build the simulator) are
-still open. This file will be updated when a direction is chosen.
+- **Race pace:** forward prediction under-covers (as low as 52% against 90%), so it is a descriptive tool, not a forecast. Traffic is handled only by excluding outlier laps; gaps to the car ahead are not ingested.
+- **ERS:** the cause is a hypothesis. Testing it further needs a second signal, for example speed-trap values, or comparison against known energy-management behaviour.
+- The wet-session flag for ERS comes from tyre compounds and can miss a drying track.
+
+## Direction
+
+The aim is team-grade methods that teams can use if they want, packaged for technical analysts. The two products above are the first of these.
+
+## Still to decide
+
+Whether to extend the evidence (race running for ERS, more seasons), build the simulator, or add an interactive app. The
+stability finding (about half of single-session corner conclusions are not stable) remains the strongest standalone result.

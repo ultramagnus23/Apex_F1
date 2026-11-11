@@ -247,3 +247,23 @@ P2 and P3. For each segment with a non-"none" majority verdict, the study record
 the verdict **flips in sign** (A faster in one configuration, B faster in another) when
 either the reference set or the method changes. Results are in
 [`docs/season_2025/`](season_2025/) and [VALIDATION.md §5](VALIDATION.md#5-season-wide-sensitivity-2025).
+
+---
+
+## 10. Race pace inference (`apex/analysis/pace.py`)
+
+A Bayesian linear model of lap time with a per-driver pace term, shrunk per-stint effects, compound offsets, a shared
+lap-number trend and per-compound tyre degradation. Exact conjugate posterior; outputs are credible intervals and pairwise
+probabilities. Checked by held-out laps, held-out stints and forward prediction. Full description, validation and limits:
+[RACE_PACE.md](RACE_PACE.md).
+
+The lap-number trend combines fuel burn and track evolution. They are not separable in public data, so Apex never reports a
+"fuel effect".
+
+## 11. Full-throttle deceleration (`apex/analysis/ers.py`)
+
+A detector for statistically significant deceleration with the throttle fully open and the brake off, using local least-squares
+slopes with standard errors derived from the 1 km/h speed quantisation and irregular sampling. Events that end exactly where
+full throttle ends are flagged and dropped by default, because they are most likely braking onsets seen through slightly
+misaligned channels. Attribution to electrical deployment is a HYPOTHESIS, with confounders listed with every claim.
+Full description, validation and limits: [ERS_CLIPPING.md](ERS_CLIPPING.md).

@@ -50,6 +50,25 @@ Arguments: year, circuit, session (`Q`, `R`, `SQ`, `S`), driver A, driver B. Use
 
 Delta convention: negative means driver A is faster.
 
+## Race pace and ERS deceleration
+
+```bash
+uv run apex pace 2025 Monza R
+uv run apex ers 2026 Austin Q
+```
+
+`pace` prints each driver's pace with a 90% interval, the model parameters and a holdout check, and writes JSON to
+`out/`. `ers` lists full-throttle deceleration events per driver and how well they repeat. Both download from OpenF1 on
+first use. See [Race pace](RACE_PACE.md) and [ERS clipping](ERS_CLIPPING.md).
+
+## Rebuild the dashboard
+
+```bash
+uv run python scripts/build_dashboard.py
+```
+
+This writes `docs/dashboard/index.html` from the committed study outputs. It makes no external requests.
+
 ## Reproduce the 2025 season study
 
 ```bash
