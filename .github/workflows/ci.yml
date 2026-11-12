@@ -38,15 +38,37 @@ jobs:
           # floating-point differences between CPUs / BLAS builds.
           uv run python scripts/check_regenerated.py docs/case_study_01 --exclude '*.png'
 
+      # actions/cache only saves when the whole job succeeds, so a rate-limited first
+      # run could never persist its progress and every later run started from scratch.
+      # Restore the newest partial cache, and save under a unique key even on failure.
       - name: Restore data cache
-        uses: actions/cache@v4
+        id: data-cache
+        uses: actions/cache/restore@v4
         with:
           path: cache
-          key: apex-data-${{ hashFiles('scripts/inspect_openf1_session.py') }}-11392
-          restore-keys: apex-data-
+          key: apex-data-${{ hashFiles('scripts/inspect_openf1_session.py') }}-11392-${{ github.run_id }}
+          restore-keys: |
+            apex-data-${{ hashFiles('scripts/inspect_openf1_session.py') }}-11392-
+            apex-data-
 
       - name: Reproducible example (data contract evidence is regenerated identically)
         run: |
-          uv run python scripts/inspect_openf1_session.py --session-key 11392 \
-            --season 2026 --round 18 --out /tmp/inspection_11392.json
+          # Every OpenF1 response is cached to disk as it arrives, so a retry resumes
+          # where the previous attempt was rate-limited instead of starting over.
+          for attempt in 1 2 3 4; do
+            if uv run python scripts/inspect_openf1_session.py --session-key 11392 \
+                 --season 2026 --round 18 --out /tmp/inspection_11392.json; then
+              break
+            fi
+            if [ "$attempt" -eq 4 ]; then exit 1; fi
+            echo "::warning::OpenF1 fetch attempt ${attempt}/4 failed; retrying after backoff"
+            sleep $((45 * attempt))
+          done
           diff /tmp/inspection_11392.json docs/data/inspection_11392.json
+
+      - name: Save data cache
+        if: always() && steps.data-cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: cache
+          key: apex-data-${{ hashFiles('scripts/inspect_openf1_session.py') }}-11392-${{ github.run_id }}
