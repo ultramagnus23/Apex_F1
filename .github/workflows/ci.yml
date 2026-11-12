@@ -34,7 +34,9 @@ jobs:
       - name: Case study 01 is reproducible (tables, gate and summary; PNGs excluded)
         run: |
           uv run python examples/case_study_01.py
-          git diff --exit-code -- docs/case_study_01 ':!docs/case_study_01/*.png'
+          # Numeric-tolerant comparison: a byte-exact git diff fails on last-digit
+          # floating-point differences between CPUs / BLAS builds.
+          uv run python scripts/check_regenerated.py docs/case_study_01 --exclude '*.png'
 
       - name: Restore data cache
         uses: actions/cache@v4
