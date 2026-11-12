@@ -25,22 +25,22 @@
 
 | Segment | from–to [m] | Δ [s] | ±2σ [s] | |
 |---|---|---|---|---|
-| C1 | 0–730 | -0.002 | 0.185 | within noise |
-| C2 | 730–970 | -0.066 | 0.219 | within noise |
-| C3 | 970–1211 | +0.056 | 0.165 | within noise |
-| C4 | 1211–1407 | +0.074 | 0.172 | within noise |
-| C5 | 1407–1594 | -0.002 | 0.188 | within noise |
-| C6 | 1594–1766 | -0.021 | 0.213 | within noise |
-| C7 | 1766–1996 | -0.140 | 0.223 | within noise |
-| C8 | 1996–2332 | -0.038 | 0.193 | within noise |
-| C9 | 2332–3125 | +0.031 | 0.150 | within noise |
-| C10 | 3125–3830 | -0.009 | 0.191 | within noise |
-| C11 | 3830–4078 | -0.078 | 0.236 | within noise |
-| C12 | 4078–4366 | -0.103 | 0.221 | within noise |
-| C13 | 4366–4560 | -0.036 | 0.189 | within noise |
-| C14 | 4560–4786 | +0.033 | 0.169 | within noise |
-| C15 | 4786–5116 | -0.038 | 0.177 | within noise |
-| C16 | 5116–5418 | +0.161 | 0.132 | exceeds 2σ |
+| C1 | 0–730 | -0.002 | 0.136 | within noise |
+| C2 | 730–970 | -0.066 | 0.093 | within noise |
+| C3 | 970–1211 | +0.056 | 0.061 | within noise |
+| C4 | 1211–1407 | +0.074 | 0.057 | exceeds 2σ |
+| C5 | 1407–1594 | -0.002 | 0.060 | within noise |
+| C6 | 1594–1766 | -0.021 | 0.073 | within noise |
+| C7 | 1766–1996 | -0.140 | 0.082 | exceeds 2σ |
+| C8 | 1996–2332 | -0.038 | 0.081 | within noise |
+| C9 | 2332–3125 | +0.031 | 0.088 | within noise |
+| C10 | 3125–3830 | -0.009 | 0.079 | within noise |
+| C11 | 3830–4078 | -0.078 | 0.090 | within noise |
+| C12 | 4078–4366 | -0.103 | 0.084 | exceeds 2σ |
+| C13 | 4366–4560 | -0.036 | 0.064 | within noise |
+| C14 | 4560–4786 | +0.033 | 0.061 | within noise |
+| C15 | 4786–5116 | -0.038 | 0.072 | within noise |
+| C16 | 5116–5418 | +0.161 | 0.076 | exceeds 2σ |
 
 ## Braking corners (raw-sample events; resolution = half the sample spacing)
 
