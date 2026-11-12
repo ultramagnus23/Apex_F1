@@ -296,7 +296,9 @@ def main() -> None:
     import fastf1
     from fastf1.ergast import Ergast
 
-    fastf1.Cache.configure(cache_dir="cache/fastf1")
+    fastf1_cache = Path("cache/fastf1")
+    fastf1_cache.mkdir(parents=True, exist_ok=True)  # FastF1 refuses a missing directory
+    fastf1.Cache.configure(cache_dir=str(fastf1_cache))
     jq = Ergast().get_qualifying_results(args.season, args.round).content[0]
     sr = c.frame("session_result", q)
     deleted = {
