@@ -325,7 +325,7 @@ function render() {
   else if (current === 'ers') renderErs();
   else if (current === 'check') renderCheck();
 }
-$('built').textContent = 'Data built ' + D.built + '. ' + D.note;
+$('built').textContent = D.note;
 fillRaces();
 pickFirstOk();
 fillSessions();

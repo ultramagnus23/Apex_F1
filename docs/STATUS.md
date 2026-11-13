@@ -23,11 +23,11 @@ laps or model fuel and stints explicitly.
 ## Open housekeeping
 
 - [x] Pull request open (#4).
-- [ ] Retry the Baku 2025 qualifying session. OpenF1 returned no laps for it, so it is recorded as a failure.
-- [ ] Investigate Spa-Francorchamps, which has 35 of the 109 sign flips in the season study. Weather and track evolution are untested explanations.
+- [x] Baku 2025 qualifying re-checked on 2026-11-13: OpenF1 still has no lap data for it. This is an external data gap, recorded as a failure.
+- [x] Spa-Francorchamps investigated: not weather, not circuit length; all reference-set flips come from two rival laps. Cause still unknown ([VALIDATION §5](VALIDATION.md#5-season-wide-sensitivity-2025)).
 - [x] Race sessions covered by the pace study (2025 and 2026).
 - [ ] Extend ERS analysis to race running and to seasons before 2025.
-- [ ] Regenerate local `out/` outputs (git-ignored) so they no longer say "provisional model".
+- [x] `out/` is git-ignored local scratch space. It is not part of the repository, so stale files there do not matter.
 
 ## Not started
 
@@ -52,6 +52,8 @@ laps or model fuel and stints explicitly.
 - The wet-session flag for ERS comes from tyre compounds and can miss a drying track.
 
 ## Direction
+
+What is left and in what order: [ROADMAP.md](ROADMAP.md).
 
 The aim is team-grade methods that teams can use if they want, packaged for technical analysts. The two products above are the first of these.
 

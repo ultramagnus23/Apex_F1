@@ -7,7 +7,8 @@ theme:
 nav:
   - Home: index.md
   - Getting started: GETTING_STARTED.md
-  - Status and roadmap: STATUS.md
+  - Status: STATUS.md
+  - Roadmap: ROADMAP.md
   - FAQ: FAQ.md
   - Glossary: GLOSSARY.md
   - Data contract: DATA_CONTRACT.md

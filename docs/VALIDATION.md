@@ -113,8 +113,15 @@ lines on a green track, or early-session feed behaviour could each explain it
   so about half of the segment verdicts would be downgraded to INCONCLUSIVE.
 - **Concentration:** all 10 reference-set flips and 35 of the 109 flips overall are at
   Spa-Francorchamps. Jeddah, Montreal, Austin, Mexico City, Las Vegas and Yas Island have no
-  flips. **[HYPOTHESIS, untested]** that Spa's changing conditions across its long lap explain
-  this; no weather or track-evolution analysis has been done.
+  flips.
+- **Spa follow-up (2026-11-13).** Three explanations were checked and none holds. **Not weather:**
+  the session was all on soft tyres (101 of 102 stints; the other was a medium) and race control
+  gave a 10% rain risk. **Not circuit length:** across 23 circuits, length and mean stability are
+  not related (Spearman +0.22, p = 0.32), and Las Vegas, the second longest, is the most stable.
+  **Localised:** all 10 reference-set flips involve just two rival laps (driver 81 lap 20: 7;
+  driver 16 lap 9: 3). Spa's mean stability is 70% against 83% overall. The cause is
+  **UNKNOWN**; those two laps are the place to look (traffic, tow or line differences are
+  candidates, none tested). Code: `scripts/length_vs_stability.py`.
 - **Reading:** the choice of reference line almost never changes the sign. The alignment method
   does, so the method must stay part of the stability test.
 

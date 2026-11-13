@@ -22,6 +22,8 @@ uv run ruff format --check .
 uv run mypy apex/core
 uv run pytest -m "not network"
 uv run python scripts/check_case_study.py
+uv run python scripts/check_docs.py
+uv run python scripts/build_dashboard.py --check
 ```
 
 Tests must not need the network. Use the offline fixture in `tests/fixtures/`. Mark anything that does

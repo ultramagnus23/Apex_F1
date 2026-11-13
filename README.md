@@ -127,7 +127,7 @@ Full detail: [Methodology](docs/METHODOLOGY.md).
 
 - [Getting started](docs/GETTING_STARTED.md) and [FAQ](docs/FAQ.md)
 - [Glossary](docs/GLOSSARY.md)
-- [Project status and roadmap](docs/STATUS.md)
+- [Project status](docs/STATUS.md), [roadmap](docs/ROADMAP.md) and [changelog](CHANGELOG.md)
 - [Methodology](docs/METHODOLOGY.md), [Validation](docs/VALIDATION.md), [Data contract](docs/DATA_CONTRACT.md)
 - [Race pace](docs/RACE_PACE.md), [ERS clipping](docs/ERS_CLIPPING.md), [Dashboard](docs/dashboard/index.html)
 - [Case study 01](docs/CASE_STUDY_01.md), [2025 season study](docs/season_2025/README.md)

@@ -86,6 +86,8 @@ uv run ruff check .
 uv run ruff format --check .
 uv run mypy apex/core
 uv run pytest -m "not network"
+uv run python scripts/check_docs.py
+uv run python scripts/build_dashboard.py --check
 ```
 
 The test suite takes a few minutes. Tests marked `network` need internet access and are skipped in CI.

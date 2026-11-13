@@ -21,7 +21,7 @@ uv run python scripts/season_study.py --year 2025
 
 | | |
 |---|---|
-| Sessions studied | 23 of 24 (Baku: OpenF1 has no laps for session 9900) |
+| Sessions studied | 23 of 24 (Baku: OpenF1 has no laps for session 9900, re-checked 2026-11-13) |
 | Conclusions judged | 1,801 |
 | Flip with reference set (method fixed) | 0.6% (10) |
 | Flip with alignment method (reference fixed) | 4.3% (77) |
@@ -30,8 +30,12 @@ uv run python scripts/season_study.py --year 2025
 | Reach the 80% OBSERVED bar | 52% |
 
 Spa-Francorchamps accounts for all 10 reference-set flips and 35 of the 109 overall. Jeddah, Montreal,
-Austin, Mexico City, Las Vegas and Yas Island have none. The explanation for Spa is a hypothesis
-(changing conditions) that has not been tested.
+Austin, Mexico City, Las Vegas and Yas Island have none.
+
+**Spa follow-up.** It is not weather (all soft tyres, 10% rain risk) and not circuit length (Spearman +0.22,
+p = 0.32 across 23 circuits). All 10 reference-set flips involve two rival laps (driver 81 lap 20, driver 16 lap 9).
+The cause is unknown. See [VALIDATION §5](../VALIDATION.md#5-season-wide-sensitivity-2025) and
+`circuit_length_vs_stability.csv` / `length_vs_stability.json` here.
 
 Interpretation and limits: [VALIDATION §5](../VALIDATION.md#5-season-wide-sensitivity-2025).
 
@@ -42,3 +46,4 @@ Interpretation and limits: [VALIDATION §5](../VALIDATION.md#5-season-wide-sensi
 | `summary.json` | Overall rates, failed sessions, rates by consensus driver. |
 | `per_session.csv` | One row per session: conclusions and flip counts. |
 | `conclusion_flips.csv` | One row per judged segment: consensus verdict, stability, which choices flip it. |
+| `circuit_length_vs_stability.csv`, `length_vs_stability.json` | Spa follow-up: lap length against mean stability per circuit. |

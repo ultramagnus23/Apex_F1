@@ -6,6 +6,7 @@
 - [ ] `uv run mypy apex/core`
 - [ ] `uv run pytest -m "not network"`
 - [ ] `uv run python scripts/check_case_study.py`
+- [ ] `uv run python scripts/check_docs.py` and `uv run python scripts/build_dashboard.py --check`
 
 ## Claims and numbers
 

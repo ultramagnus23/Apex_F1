@@ -19,4 +19,4 @@ under 81 analysis configurations. It is at **Phase 4 of 5**. See [Status](STATUS
 | Know how the numbers were checked | [Validation](VALIDATION.md) and the [2025 season study](season_2025/README.md) |
 | Learn what the data does and does not contain | [Data contract](DATA_CONTRACT.md) |
 | Look up a term | [Glossary](GLOSSARY.md) and [FAQ](FAQ.md) |
-| See what is built and what is next | [Status](STATUS.md) |
+| See what is built and what is next | [Status](STATUS.md) and [Roadmap](ROADMAP.md) |

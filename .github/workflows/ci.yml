@@ -33,3 +33,9 @@ jobs:
 
       - name: Case study 01 reproduces from the committed fixture
         run: uv run python scripts/check_case_study.py
+
+      - name: Docs links and anchors resolve
+        run: uv run python scripts/check_docs.py
+
+      - name: Committed dashboard matches the study outputs
+        run: uv run python scripts/build_dashboard.py --check

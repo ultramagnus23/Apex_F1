@@ -3,13 +3,14 @@
 Reads ``docs/pace_study/<year>/`` and ``docs/ers_study/``, writes one self-contained page,
 ``docs/dashboard/index.html`` (no external requests).
 
-    uv run python scripts/build_dashboard.py
+    uv run python scripts/build_dashboard.py          # write
+    uv run python scripts/build_dashboard.py --check  # fail if the committed page is stale
 """
 
 from __future__ import annotations
 
 import json
-from datetime import date
+import sys
 from pathlib import Path
 from typing import Any
 
@@ -69,7 +70,6 @@ def main() -> None:
     data = {
         "pace": load_pace(),
         "ers": load_ers(),
-        "built": date.today().isoformat(),
         "note": (
             "Pace: laps-only OpenF1 data. "
             "ERS: qualifying car data, best three valid laps per driver."
@@ -81,8 +81,16 @@ def main() -> None:
     html = template.replace("%%APP%%", app).replace("%%DATA%%", payload)
     out = DOCS / "dashboard"
     out.mkdir(parents=True, exist_ok=True)
-    (out / "index.html").write_text(html, encoding="utf-8", newline="\n")
-    print(f"wrote {out / 'index.html'} ({len(html) / 1e6:.2f} MB)")
+    target = out / "index.html"
+    if "--check" in sys.argv:
+        current = target.read_text(encoding="utf-8") if target.exists() else ""
+        if current != html:
+            print("dashboard is out of date: run scripts/build_dashboard.py and commit")
+            raise SystemExit(1)
+        print("dashboard is up to date")
+        return
+    target.write_text(html, encoding="utf-8", newline="\n")
+    print(f"wrote {target} ({len(html) / 1e6:.2f} MB)")
 
 
 if __name__ == "__main__":
