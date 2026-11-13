@@ -1,0 +1,26 @@
+{
+  "year": 2025,
+  "session": "Qualifying",
+  "sessions_studied": 23,
+  "sessions_failed": [
+    {
+      "location": "Baku",
+      "reason": "error: ValueError: OpenF1 has no laps for session 9900"
+    }
+  ],
+  "conclusions": 1801,
+  "flip_with_reference_rate": 0.00555247084952804,
+  "flip_with_method_rate": 0.042754025541365905,
+  "flip_any_rate": 0.06052193225985564,
+  "median_stability": 1.0,
+  "by_consensus": {
+    "A": {
+      "flips_with_reference": 0.005,
+      "flips_with_method": 0.038
+    },
+    "B": {
+      "flips_with_reference": 0.006,
+      "flips_with_method": 0.051
+    }
+  }
+}

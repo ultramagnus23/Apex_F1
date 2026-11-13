@@ -19,7 +19,9 @@ OPENF1_CAR_DATA = pa.DataFrameSchema(
         "driver_number": pa.Column(int),
         "speed": pa.Column(int, pa.Check.in_range(0, 400)),
         "rpm": pa.Column(int, pa.Check.in_range(0, 16000)),
-        "n_gear": pa.Column(int, pa.Check.in_range(0, 8)),
+        # Sensor glitches exist (2025 Melbourne: values up to 49). They are
+        # counted by quality checks and masked in telemetry, never fatal.
+        "n_gear": pa.Column(int),
         "throttle": pa.Column(int, pa.Check.in_range(0, 104)),
         "brake": pa.Column(int, pa.Check.isin([0, 100, 104])),
         # 2026: null for every sample. 2025: int64 status codes {0, 8, 9, 10, 12, 14}

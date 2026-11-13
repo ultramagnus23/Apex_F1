@@ -1,0 +1,1802 @@
+pair,segment,consensus,flips_with_reference,flips_with_method,flips_any,stability,driver_a,driver_b,location
+4:19|81:17,C1,A,False,False,False,1.000000,NOR,PIA,Melbourne
+4:19|81:17,C6,B,False,False,False,0.666667,NOR,PIA,Melbourne
+4:19|81:17,C7,B,False,False,False,1.000000,NOR,PIA,Melbourne
+4:19|81:17,C11,A,False,False,False,1.000000,NOR,PIA,Melbourne
+4:19|81:9,C1,A,False,False,False,0.555556,NOR,PIA,Melbourne
+4:19|81:9,C2,A,False,False,False,1.000000,NOR,PIA,Melbourne
+4:19|81:9,C5,A,False,False,False,0.666667,NOR,PIA,Melbourne
+4:19|81:9,C6,A,False,False,False,0.555556,NOR,PIA,Melbourne
+4:19|81:9,C8,A,False,False,False,1.000000,NOR,PIA,Melbourne
+4:19|81:9,C9,B,False,False,False,1.000000,NOR,PIA,Melbourne
+4:19|81:9,C10,A,False,False,False,1.000000,NOR,PIA,Melbourne
+4:19|81:9,C11,B,False,False,False,0.666667,NOR,PIA,Melbourne
+4:19|81:14,C1,A,False,False,False,0.666667,NOR,PIA,Melbourne
+4:19|81:14,C2,A,False,False,False,1.000000,NOR,PIA,Melbourne
+4:19|81:14,C6,A,False,False,False,0.666667,NOR,PIA,Melbourne
+4:19|81:14,C7,B,False,False,False,0.666667,NOR,PIA,Melbourne
+4:19|81:14,C9,B,False,False,False,1.000000,NOR,PIA,Melbourne
+4:19|81:14,C10,A,False,False,False,0.666667,NOR,PIA,Melbourne
+4:19|81:14,C11,A,False,False,False,1.000000,NOR,PIA,Melbourne
+4:19|81:14,C12,A,False,False,False,1.000000,NOR,PIA,Melbourne
+4:13|81:17,C2,B,False,False,False,0.777778,NOR,PIA,Melbourne
+4:13|81:17,C4,B,False,False,False,1.000000,NOR,PIA,Melbourne
+4:13|81:17,C6,B,False,False,False,1.000000,NOR,PIA,Melbourne
+4:13|81:17,C7,B,False,False,False,1.000000,NOR,PIA,Melbourne
+4:13|81:17,C9,A,False,False,False,1.000000,NOR,PIA,Melbourne
+4:13|81:17,C12,B,False,False,False,1.000000,NOR,PIA,Melbourne
+4:13|81:9,C4,B,False,False,False,0.666667,NOR,PIA,Melbourne
+4:13|81:9,C8,A,False,False,False,0.666667,NOR,PIA,Melbourne
+4:13|81:9,C10,A,False,False,False,1.000000,NOR,PIA,Melbourne
+4:13|81:9,C11,B,False,False,False,0.666667,NOR,PIA,Melbourne
+4:13|81:14,C3,A,False,False,False,0.666667,NOR,PIA,Melbourne
+4:13|81:14,C4,B,False,False,False,0.666667,NOR,PIA,Melbourne
+4:13|81:14,C6,A,False,False,False,0.666667,NOR,PIA,Melbourne
+4:13|81:14,C10,A,False,False,False,1.000000,NOR,PIA,Melbourne
+4:13|81:14,C11,A,False,False,False,1.000000,NOR,PIA,Melbourne
+4:13|81:14,C12,A,False,False,False,1.000000,NOR,PIA,Melbourne
+4:10|81:17,C4,B,False,False,False,0.666667,NOR,PIA,Melbourne
+4:10|81:17,C6,B,False,False,False,0.888889,NOR,PIA,Melbourne
+4:10|81:17,C7,B,False,False,False,1.000000,NOR,PIA,Melbourne
+4:10|81:17,C8,B,False,False,False,0.666667,NOR,PIA,Melbourne
+4:10|81:17,C11,A,False,False,False,1.000000,NOR,PIA,Melbourne
+4:10|81:17,C12,B,False,False,False,1.000000,NOR,PIA,Melbourne
+4:10|81:9,C7,A,False,False,False,1.000000,NOR,PIA,Melbourne
+4:10|81:9,C9,B,False,False,False,1.000000,NOR,PIA,Melbourne
+4:10|81:9,C12,B,False,False,False,0.666667,NOR,PIA,Melbourne
+4:10|81:14,C3,A,False,False,False,1.000000,NOR,PIA,Melbourne
+4:10|81:14,C8,B,False,False,False,1.000000,NOR,PIA,Melbourne
+4:10|81:14,C9,B,False,False,False,1.000000,NOR,PIA,Melbourne
+4:10|81:14,C11,A,False,False,False,1.000000,NOR,PIA,Melbourne
+4:10|81:14,C12,A,False,False,False,1.000000,NOR,PIA,Melbourne
+4:19|1:16,C1,B,False,False,False,1.000000,NOR,VER,Melbourne
+4:19|1:16,C2,A,False,False,False,1.000000,NOR,VER,Melbourne
+4:19|1:16,C3,B,False,False,False,1.000000,NOR,VER,Melbourne
+4:19|1:16,C4,A,False,False,False,1.000000,NOR,VER,Melbourne
+4:19|1:16,C5,A,False,False,False,0.777778,NOR,VER,Melbourne
+4:19|1:16,C7,B,False,False,False,1.000000,NOR,VER,Melbourne
+4:19|1:16,C9,A,False,True,True,0.555556,NOR,VER,Melbourne
+4:19|1:16,C10,A,False,False,False,0.777778,NOR,VER,Melbourne
+4:19|1:16,C11,A,False,False,False,1.000000,NOR,VER,Melbourne
+4:19|1:16,C12,A,False,False,False,1.000000,NOR,VER,Melbourne
+4:19|1:13,C1,B,False,False,False,1.000000,NOR,VER,Melbourne
+4:19|1:13,C2,A,False,False,False,1.000000,NOR,VER,Melbourne
+4:19|1:13,C4,A,False,False,False,0.666667,NOR,VER,Melbourne
+4:19|1:13,C5,A,False,True,True,0.666667,NOR,VER,Melbourne
+4:19|1:13,C7,B,False,False,False,0.666667,NOR,VER,Melbourne
+4:19|1:13,C10,A,False,False,False,1.000000,NOR,VER,Melbourne
+4:19|1:13,C11,A,False,False,False,0.888889,NOR,VER,Melbourne
+4:19|1:13,C12,A,False,False,False,1.000000,NOR,VER,Melbourne
+4:19|1:7,C1,A,False,False,False,0.666667,NOR,VER,Melbourne
+4:19|1:7,C2,A,False,False,False,1.000000,NOR,VER,Melbourne
+4:19|1:7,C3,B,False,False,False,0.666667,NOR,VER,Melbourne
+4:19|1:7,C4,A,False,False,False,0.666667,NOR,VER,Melbourne
+4:19|1:7,C5,A,False,False,False,1.000000,NOR,VER,Melbourne
+4:19|1:7,C7,B,False,False,False,0.666667,NOR,VER,Melbourne
+4:19|1:7,C8,A,False,False,False,1.000000,NOR,VER,Melbourne
+4:19|1:7,C10,A,False,False,False,0.666667,NOR,VER,Melbourne
+4:19|1:7,C12,A,False,False,False,0.666667,NOR,VER,Melbourne
+4:13|1:16,C1,B,False,False,False,1.000000,NOR,VER,Melbourne
+4:13|1:16,C3,B,False,False,False,0.666667,NOR,VER,Melbourne
+4:13|1:16,C7,B,False,False,False,1.000000,NOR,VER,Melbourne
+4:13|1:16,C9,A,False,False,False,1.000000,NOR,VER,Melbourne
+4:13|1:16,C10,A,False,False,False,1.000000,NOR,VER,Melbourne
+4:13|1:13,C1,B,False,False,False,1.000000,NOR,VER,Melbourne
+4:13|1:13,C2,A,False,False,False,0.666667,NOR,VER,Melbourne
+4:13|1:13,C6,B,False,False,False,0.888889,NOR,VER,Melbourne
+4:13|1:13,C9,A,False,False,False,1.000000,NOR,VER,Melbourne
+4:13|1:13,C10,A,False,False,False,1.000000,NOR,VER,Melbourne
+4:13|1:13,C12,A,False,False,False,0.666667,NOR,VER,Melbourne
+4:13|1:7,C7,B,False,False,False,0.666667,NOR,VER,Melbourne
+4:13|1:7,C8,A,False,False,False,1.000000,NOR,VER,Melbourne
+4:13|1:7,C9,A,False,False,False,1.000000,NOR,VER,Melbourne
+4:13|1:7,C10,A,False,False,False,1.000000,NOR,VER,Melbourne
+4:10|1:16,C1,B,False,False,False,1.000000,NOR,VER,Melbourne
+4:10|1:16,C4,A,False,False,False,0.666667,NOR,VER,Melbourne
+4:10|1:16,C6,B,False,False,False,0.666667,NOR,VER,Melbourne
+4:10|1:16,C7,B,False,False,False,1.000000,NOR,VER,Melbourne
+4:10|1:16,C8,B,False,False,False,1.000000,NOR,VER,Melbourne
+4:10|1:16,C9,A,False,False,False,0.666667,NOR,VER,Melbourne
+4:10|1:16,C10,A,False,False,False,1.000000,NOR,VER,Melbourne
+4:10|1:16,C11,A,False,False,False,1.000000,NOR,VER,Melbourne
+4:10|1:13,C1,B,False,False,False,1.000000,NOR,VER,Melbourne
+4:10|1:13,C2,A,False,False,False,0.666667,NOR,VER,Melbourne
+4:10|1:13,C5,A,False,True,True,0.666667,NOR,VER,Melbourne
+4:10|1:13,C6,B,False,False,False,1.000000,NOR,VER,Melbourne
+4:10|1:13,C8,B,False,False,False,1.000000,NOR,VER,Melbourne
+4:10|1:13,C10,A,False,False,False,1.000000,NOR,VER,Melbourne
+4:10|1:13,C11,A,False,False,False,1.000000,NOR,VER,Melbourne
+4:10|1:13,C12,A,False,False,False,0.666667,NOR,VER,Melbourne
+4:10|1:7,C2,A,False,False,False,0.666667,NOR,VER,Melbourne
+4:10|1:7,C4,A,False,False,False,0.666667,NOR,VER,Melbourne
+4:10|1:7,C10,A,False,False,False,0.666667,NOR,VER,Melbourne
+81:19|63:8,C8,A,False,False,False,0.666667,PIA,RUS,Shanghai
+81:19|63:8,C9,A,False,False,False,1.000000,PIA,RUS,Shanghai
+81:16|63:21,C8,B,False,False,False,0.666667,PIA,RUS,Shanghai
+81:16|63:18,C9,B,False,False,False,1.000000,PIA,RUS,Shanghai
+81:16|63:8,C5,A,False,False,False,0.666667,PIA,RUS,Shanghai
+81:10|63:21,C1,B,False,False,False,1.000000,PIA,RUS,Shanghai
+81:10|63:21,C5,B,False,False,False,0.666667,PIA,RUS,Shanghai
+81:10|63:21,C8,B,False,False,False,1.000000,PIA,RUS,Shanghai
+81:10|63:18,C5,B,False,False,False,0.666667,PIA,RUS,Shanghai
+81:10|63:8,C5,B,False,True,True,0.444444,PIA,RUS,Shanghai
+81:10|63:8,C9,A,False,False,False,1.000000,PIA,RUS,Shanghai
+81:19|4:11,C5,A,False,False,False,0.666667,PIA,NOR,Shanghai
+81:19|4:11,C8,A,False,False,False,0.666667,PIA,NOR,Shanghai
+81:19|4:8,C5,A,False,True,True,0.444444,PIA,NOR,Shanghai
+81:19|4:8,C8,A,False,False,False,0.888889,PIA,NOR,Shanghai
+81:16|4:11,C7,A,False,False,False,0.666667,PIA,NOR,Shanghai
+81:16|4:14,C2,A,False,False,False,0.666667,PIA,NOR,Shanghai
+81:16|4:14,C8,B,False,False,False,0.666667,PIA,NOR,Shanghai
+81:16|4:8,C7,A,False,False,False,1.000000,PIA,NOR,Shanghai
+81:16|4:8,C8,A,False,False,False,1.000000,PIA,NOR,Shanghai
+81:16|4:8,C9,B,False,False,False,0.666667,PIA,NOR,Shanghai
+81:10|4:11,C1,B,False,False,False,0.666667,PIA,NOR,Shanghai
+81:10|4:14,C1,B,False,False,False,0.888889,PIA,NOR,Shanghai
+81:10|4:14,C2,A,False,False,False,0.666667,PIA,NOR,Shanghai
+81:10|4:14,C5,B,False,False,False,0.666667,PIA,NOR,Shanghai
+81:10|4:14,C8,B,False,False,False,1.000000,PIA,NOR,Shanghai
+81:10|4:8,C1,B,False,False,False,1.000000,PIA,NOR,Shanghai
+81:10|4:8,C2,A,False,False,False,0.666667,PIA,NOR,Shanghai
+81:10|4:8,C8,A,False,False,False,0.666667,PIA,NOR,Shanghai
+1:16|4:14,C1,A,False,False,False,1.000000,VER,NOR,Suzuka
+1:16|4:14,C2,B,False,False,False,0.666667,VER,NOR,Suzuka
+1:16|4:14,C4,B,False,False,False,0.666667,VER,NOR,Suzuka
+1:16|4:14,C7,B,False,False,False,0.666667,VER,NOR,Suzuka
+1:16|4:14,C8,A,False,True,True,0.666667,VER,NOR,Suzuka
+1:16|4:14,C9,B,False,True,True,0.666667,VER,NOR,Suzuka
+1:16|4:14,C11,A,False,False,False,0.833333,VER,NOR,Suzuka
+1:16|4:14,C14,B,False,False,False,1.000000,VER,NOR,Suzuka
+1:16|4:14,C15,B,False,False,False,0.666667,VER,NOR,Suzuka
+1:16|4:14,C16,A,False,False,False,1.000000,VER,NOR,Suzuka
+1:16|4:8,C1,A,False,False,False,1.000000,VER,NOR,Suzuka
+1:16|4:8,C2,B,False,False,False,1.000000,VER,NOR,Suzuka
+1:16|4:8,C8,A,False,False,False,1.000000,VER,NOR,Suzuka
+1:16|4:8,C9,B,False,False,False,0.666667,VER,NOR,Suzuka
+1:16|4:8,C13,A,False,False,False,0.666667,VER,NOR,Suzuka
+1:16|4:8,C14,A,False,False,False,0.666667,VER,NOR,Suzuka
+1:16|4:8,C15,B,False,False,False,1.000000,VER,NOR,Suzuka
+1:16|4:8,C16,A,False,False,False,1.000000,VER,NOR,Suzuka
+1:16|4:11,C1,A,False,False,False,1.000000,VER,NOR,Suzuka
+1:16|4:11,C2,B,False,False,False,0.666667,VER,NOR,Suzuka
+1:16|4:11,C4,B,False,False,False,0.666667,VER,NOR,Suzuka
+1:16|4:11,C8,A,False,False,False,0.666667,VER,NOR,Suzuka
+1:16|4:11,C9,B,False,True,True,0.666667,VER,NOR,Suzuka
+1:16|4:11,C13,A,False,False,False,1.000000,VER,NOR,Suzuka
+1:16|4:11,C15,B,False,False,False,0.666667,VER,NOR,Suzuka
+1:16|4:11,C16,A,False,False,False,1.000000,VER,NOR,Suzuka
+1:13|4:14,C1,A,False,False,False,0.666667,VER,NOR,Suzuka
+1:13|4:14,C2,B,False,False,False,1.000000,VER,NOR,Suzuka
+1:13|4:14,C4,B,False,False,False,0.666667,VER,NOR,Suzuka
+1:13|4:14,C7,B,False,False,False,1.000000,VER,NOR,Suzuka
+1:13|4:14,C9,B,False,False,False,0.666667,VER,NOR,Suzuka
+1:13|4:14,C11,A,False,False,False,1.000000,VER,NOR,Suzuka
+1:13|4:14,C14,B,False,False,False,1.000000,VER,NOR,Suzuka
+1:13|4:8,C1,A,False,False,False,1.000000,VER,NOR,Suzuka
+1:13|4:8,C2,B,False,False,False,1.000000,VER,NOR,Suzuka
+1:13|4:8,C9,B,False,False,False,1.000000,VER,NOR,Suzuka
+1:13|4:8,C15,B,False,False,False,1.000000,VER,NOR,Suzuka
+1:13|4:11,C1,A,False,False,False,0.666667,VER,NOR,Suzuka
+1:13|4:11,C2,B,False,False,False,1.000000,VER,NOR,Suzuka
+1:13|4:11,C4,B,False,False,False,0.666667,VER,NOR,Suzuka
+1:13|4:11,C5,A,False,False,False,0.666667,VER,NOR,Suzuka
+1:13|4:11,C6,A,False,False,False,1.000000,VER,NOR,Suzuka
+1:13|4:11,C8,A,False,False,False,0.666667,VER,NOR,Suzuka
+1:13|4:11,C9,B,False,False,False,1.000000,VER,NOR,Suzuka
+1:13|4:11,C13,A,False,False,False,0.833333,VER,NOR,Suzuka
+1:8|4:14,C2,B,False,False,False,1.000000,VER,NOR,Suzuka
+1:8|4:14,C6,B,False,True,True,0.666667,VER,NOR,Suzuka
+1:8|4:14,C7,B,False,False,False,1.000000,VER,NOR,Suzuka
+1:8|4:14,C9,B,False,False,False,1.000000,VER,NOR,Suzuka
+1:8|4:14,C10,B,False,False,False,0.666667,VER,NOR,Suzuka
+1:8|4:14,C14,B,False,False,False,1.000000,VER,NOR,Suzuka
+1:8|4:14,C16,B,False,False,False,1.000000,VER,NOR,Suzuka
+1:8|4:8,C1,A,False,False,False,0.666667,VER,NOR,Suzuka
+1:8|4:8,C2,B,False,False,False,1.000000,VER,NOR,Suzuka
+1:8|4:8,C3,B,False,True,True,0.666667,VER,NOR,Suzuka
+1:8|4:8,C6,B,False,True,True,0.666667,VER,NOR,Suzuka
+1:8|4:8,C8,A,False,False,False,1.000000,VER,NOR,Suzuka
+1:8|4:8,C9,B,False,False,False,1.000000,VER,NOR,Suzuka
+1:8|4:8,C16,B,False,False,False,1.000000,VER,NOR,Suzuka
+1:8|4:11,C1,A,False,False,False,0.666667,VER,NOR,Suzuka
+1:8|4:11,C2,B,False,False,False,1.000000,VER,NOR,Suzuka
+1:8|4:11,C8,A,False,False,False,0.666667,VER,NOR,Suzuka
+1:8|4:11,C9,B,False,False,False,1.000000,VER,NOR,Suzuka
+1:8|4:11,C13,A,False,False,False,1.000000,VER,NOR,Suzuka
+1:16|81:17,C1,A,False,False,False,1.000000,VER,PIA,Suzuka
+1:16|81:17,C2,A,False,False,False,0.666667,VER,PIA,Suzuka
+1:16|81:17,C5,A,False,False,False,1.000000,VER,PIA,Suzuka
+1:16|81:17,C9,B,False,False,False,1.000000,VER,PIA,Suzuka
+1:16|81:14,C1,A,False,False,False,1.000000,VER,PIA,Suzuka
+1:16|81:14,C5,A,False,False,False,1.000000,VER,PIA,Suzuka
+1:16|81:14,C8,A,False,False,False,0.666667,VER,PIA,Suzuka
+1:16|81:14,C9,B,False,False,False,1.000000,VER,PIA,Suzuka
+1:16|81:14,C11,B,False,False,False,0.666667,VER,PIA,Suzuka
+1:16|81:14,C15,B,False,False,False,0.666667,VER,PIA,Suzuka
+1:16|81:14,C16,A,False,False,False,0.666667,VER,PIA,Suzuka
+1:16|81:11,C1,A,False,False,False,1.000000,VER,PIA,Suzuka
+1:16|81:11,C5,A,False,False,False,1.000000,VER,PIA,Suzuka
+1:16|81:11,C8,A,False,False,False,1.000000,VER,PIA,Suzuka
+1:16|81:11,C9,B,False,False,False,0.666667,VER,PIA,Suzuka
+1:16|81:11,C11,A,False,False,False,0.666667,VER,PIA,Suzuka
+1:16|81:11,C15,B,False,False,False,1.000000,VER,PIA,Suzuka
+1:16|81:11,C16,A,False,False,False,1.000000,VER,PIA,Suzuka
+1:13|81:17,C1,A,False,False,False,0.666667,VER,PIA,Suzuka
+1:13|81:17,C5,A,False,False,False,0.666667,VER,PIA,Suzuka
+1:13|81:17,C7,B,False,False,False,1.000000,VER,PIA,Suzuka
+1:13|81:17,C9,B,False,False,False,1.000000,VER,PIA,Suzuka
+1:13|81:17,C13,B,False,False,False,0.833333,VER,PIA,Suzuka
+1:13|81:17,C16,B,False,False,False,1.000000,VER,PIA,Suzuka
+1:13|81:14,C1,A,False,False,False,1.000000,VER,PIA,Suzuka
+1:13|81:14,C5,A,False,False,False,0.666667,VER,PIA,Suzuka
+1:13|81:14,C7,B,False,True,True,0.666667,VER,PIA,Suzuka
+1:13|81:14,C9,B,False,False,False,1.000000,VER,PIA,Suzuka
+1:13|81:14,C11,B,False,False,False,0.666667,VER,PIA,Suzuka
+1:13|81:14,C14,B,False,False,False,0.666667,VER,PIA,Suzuka
+1:13|81:14,C16,B,False,False,False,1.000000,VER,PIA,Suzuka
+1:13|81:11,C1,A,False,False,False,1.000000,VER,PIA,Suzuka
+1:13|81:11,C5,A,False,False,False,0.833333,VER,PIA,Suzuka
+1:13|81:11,C7,B,False,False,False,0.666667,VER,PIA,Suzuka
+1:13|81:11,C8,A,False,False,False,1.000000,VER,PIA,Suzuka
+1:13|81:11,C9,B,False,False,False,1.000000,VER,PIA,Suzuka
+1:13|81:11,C11,A,False,False,False,0.666667,VER,PIA,Suzuka
+1:13|81:11,C12,A,False,False,False,0.666667,VER,PIA,Suzuka
+1:13|81:11,C14,B,False,False,False,0.666667,VER,PIA,Suzuka
+1:13|81:11,C16,A,False,False,False,1.000000,VER,PIA,Suzuka
+1:8|81:17,C1,A,False,False,False,0.666667,VER,PIA,Suzuka
+1:8|81:17,C5,A,False,False,False,0.833333,VER,PIA,Suzuka
+1:8|81:17,C9,B,False,False,False,1.000000,VER,PIA,Suzuka
+1:8|81:17,C13,B,False,False,False,0.666667,VER,PIA,Suzuka
+1:8|81:17,C14,B,False,False,False,1.000000,VER,PIA,Suzuka
+1:8|81:17,C15,A,False,False,False,0.666667,VER,PIA,Suzuka
+1:8|81:17,C16,B,False,False,False,1.000000,VER,PIA,Suzuka
+1:8|81:14,C1,A,False,False,False,0.666667,VER,PIA,Suzuka
+1:8|81:14,C5,A,False,False,False,0.666667,VER,PIA,Suzuka
+1:8|81:14,C8,A,False,False,False,0.666667,VER,PIA,Suzuka
+1:8|81:14,C9,B,False,False,False,1.000000,VER,PIA,Suzuka
+1:8|81:14,C11,B,False,False,False,0.666667,VER,PIA,Suzuka
+1:8|81:14,C14,B,False,False,False,1.000000,VER,PIA,Suzuka
+1:8|81:14,C16,B,False,False,False,1.000000,VER,PIA,Suzuka
+1:8|81:11,C1,A,False,False,False,0.666667,VER,PIA,Suzuka
+1:8|81:11,C5,A,False,False,False,1.000000,VER,PIA,Suzuka
+1:8|81:11,C8,A,False,False,False,1.000000,VER,PIA,Suzuka
+1:8|81:11,C9,B,False,False,False,1.000000,VER,PIA,Suzuka
+1:8|81:11,C14,B,False,False,False,1.000000,VER,PIA,Suzuka
+81:14|63:19,C3,A,False,False,False,0.666667,PIA,RUS,Sakhir
+81:14|63:19,C6,A,False,False,False,1.000000,PIA,RUS,Sakhir
+81:14|63:19,C10,A,False,False,False,0.666667,PIA,RUS,Sakhir
+81:14|63:16,C6,A,False,False,False,1.000000,PIA,RUS,Sakhir
+81:14|63:16,C7,A,False,False,False,1.000000,PIA,RUS,Sakhir
+81:14|63:16,C8,A,False,False,False,0.666667,PIA,RUS,Sakhir
+81:14|63:16,C10,A,False,False,False,1.000000,PIA,RUS,Sakhir
+81:14|63:13,C1,A,False,False,False,1.000000,PIA,RUS,Sakhir
+81:14|63:13,C3,A,False,False,False,0.666667,PIA,RUS,Sakhir
+81:14|63:13,C4,A,False,False,False,1.000000,PIA,RUS,Sakhir
+81:14|63:13,C5,A,False,False,False,1.000000,PIA,RUS,Sakhir
+81:14|63:13,C7,A,False,False,False,0.666667,PIA,RUS,Sakhir
+81:14|63:13,C8,A,False,False,False,1.000000,PIA,RUS,Sakhir
+81:14|63:13,C10,A,False,False,False,1.000000,PIA,RUS,Sakhir
+81:11|63:19,C2,B,False,False,False,0.666667,PIA,RUS,Sakhir
+81:11|63:19,C6,A,False,False,False,1.000000,PIA,RUS,Sakhir
+81:11|63:19,C7,B,False,False,False,0.555556,PIA,RUS,Sakhir
+81:11|63:19,C8,B,False,False,False,0.666667,PIA,RUS,Sakhir
+81:11|63:16,C2,B,False,False,False,1.000000,PIA,RUS,Sakhir
+81:11|63:16,C6,A,False,False,False,1.000000,PIA,RUS,Sakhir
+81:11|63:16,C7,A,False,False,False,0.666667,PIA,RUS,Sakhir
+81:11|63:16,C10,A,False,False,False,0.666667,PIA,RUS,Sakhir
+81:11|63:13,C1,A,False,False,False,0.666667,PIA,RUS,Sakhir
+81:11|63:13,C2,B,False,False,False,1.000000,PIA,RUS,Sakhir
+81:11|63:13,C4,A,False,False,False,1.000000,PIA,RUS,Sakhir
+81:11|63:13,C5,A,False,False,False,0.666667,PIA,RUS,Sakhir
+81:11|63:13,C6,A,False,False,False,1.000000,PIA,RUS,Sakhir
+81:11|63:13,C7,A,False,False,False,0.666667,PIA,RUS,Sakhir
+81:11|63:13,C10,A,False,False,False,0.666667,PIA,RUS,Sakhir
+81:8|63:19,C2,B,False,False,False,0.666667,PIA,RUS,Sakhir
+81:8|63:19,C4,B,False,False,False,1.000000,PIA,RUS,Sakhir
+81:8|63:19,C6,A,False,False,False,0.888889,PIA,RUS,Sakhir
+81:8|63:19,C7,B,False,False,False,0.666667,PIA,RUS,Sakhir
+81:8|63:19,C8,B,False,True,True,0.333333,PIA,RUS,Sakhir
+81:8|63:19,C10,B,False,False,False,1.000000,PIA,RUS,Sakhir
+81:8|63:19,C11,B,False,False,False,1.000000,PIA,RUS,Sakhir
+81:8|63:16,C2,B,False,False,False,0.666667,PIA,RUS,Sakhir
+81:8|63:16,C4,B,False,False,False,1.000000,PIA,RUS,Sakhir
+81:8|63:16,C6,A,False,False,False,1.000000,PIA,RUS,Sakhir
+81:8|63:16,C11,B,False,False,False,1.000000,PIA,RUS,Sakhir
+81:8|63:13,C3,A,False,False,False,0.666667,PIA,RUS,Sakhir
+81:8|63:13,C4,A,False,False,False,1.000000,PIA,RUS,Sakhir
+81:8|63:13,C5,A,False,False,False,0.777778,PIA,RUS,Sakhir
+81:8|63:13,C7,A,False,False,False,0.666667,PIA,RUS,Sakhir
+81:8|63:13,C11,B,False,False,False,1.000000,PIA,RUS,Sakhir
+81:14|16:15,C1,B,False,False,False,0.666667,PIA,LEC,Sakhir
+81:14|16:15,C2,A,False,False,False,1.000000,PIA,LEC,Sakhir
+81:14|16:15,C3,A,False,False,False,0.888889,PIA,LEC,Sakhir
+81:14|16:15,C5,A,False,True,True,0.555556,PIA,LEC,Sakhir
+81:14|16:15,C7,B,False,False,False,0.666667,PIA,LEC,Sakhir
+81:14|16:15,C8,A,False,False,False,1.000000,PIA,LEC,Sakhir
+81:14|16:15,C10,A,False,False,False,1.000000,PIA,LEC,Sakhir
+81:14|16:9,C1,B,False,False,False,0.666667,PIA,LEC,Sakhir
+81:14|16:9,C2,A,False,False,False,1.000000,PIA,LEC,Sakhir
+81:14|16:9,C3,A,False,False,False,1.000000,PIA,LEC,Sakhir
+81:14|16:9,C4,A,False,False,False,1.000000,PIA,LEC,Sakhir
+81:14|16:9,C5,A,False,False,False,0.666667,PIA,LEC,Sakhir
+81:14|16:9,C6,A,False,False,False,1.000000,PIA,LEC,Sakhir
+81:14|16:9,C8,A,False,False,False,1.000000,PIA,LEC,Sakhir
+81:14|16:9,C10,A,False,False,False,0.666667,PIA,LEC,Sakhir
+81:14|16:6,C1,B,False,False,False,0.666667,PIA,LEC,Sakhir
+81:14|16:6,C2,A,False,False,False,1.000000,PIA,LEC,Sakhir
+81:14|16:6,C3,A,False,False,False,1.000000,PIA,LEC,Sakhir
+81:14|16:6,C4,A,False,False,False,1.000000,PIA,LEC,Sakhir
+81:14|16:6,C5,A,False,False,False,1.000000,PIA,LEC,Sakhir
+81:14|16:6,C6,A,False,False,False,0.666667,PIA,LEC,Sakhir
+81:14|16:6,C7,A,False,False,False,1.000000,PIA,LEC,Sakhir
+81:14|16:6,C8,A,False,False,False,1.000000,PIA,LEC,Sakhir
+81:14|16:6,C9,A,False,False,False,0.666667,PIA,LEC,Sakhir
+81:14|16:6,C10,A,False,False,False,1.000000,PIA,LEC,Sakhir
+81:11|16:15,C1,B,False,False,False,0.555556,PIA,LEC,Sakhir
+81:11|16:15,C2,A,False,False,False,0.666667,PIA,LEC,Sakhir
+81:11|16:15,C6,A,False,False,False,1.000000,PIA,LEC,Sakhir
+81:11|16:15,C7,B,False,False,False,1.000000,PIA,LEC,Sakhir
+81:11|16:9,C3,A,False,False,False,0.666667,PIA,LEC,Sakhir
+81:11|16:9,C4,A,False,False,False,1.000000,PIA,LEC,Sakhir
+81:11|16:9,C5,A,False,False,False,0.666667,PIA,LEC,Sakhir
+81:11|16:9,C6,A,False,False,False,1.000000,PIA,LEC,Sakhir
+81:11|16:9,C7,B,False,False,False,0.666667,PIA,LEC,Sakhir
+81:11|16:9,C8,A,False,False,False,0.666667,PIA,LEC,Sakhir
+81:11|16:9,C10,A,False,True,True,0.666667,PIA,LEC,Sakhir
+81:11|16:6,C1,B,False,False,False,1.000000,PIA,LEC,Sakhir
+81:11|16:6,C2,A,False,False,False,1.000000,PIA,LEC,Sakhir
+81:11|16:6,C3,A,False,False,False,1.000000,PIA,LEC,Sakhir
+81:11|16:6,C4,A,False,False,False,1.000000,PIA,LEC,Sakhir
+81:11|16:6,C5,A,False,False,False,1.000000,PIA,LEC,Sakhir
+81:11|16:6,C6,A,False,False,False,1.000000,PIA,LEC,Sakhir
+81:11|16:6,C7,A,False,False,False,0.666667,PIA,LEC,Sakhir
+81:11|16:6,C8,A,False,False,False,1.000000,PIA,LEC,Sakhir
+81:11|16:6,C10,A,False,False,False,0.777778,PIA,LEC,Sakhir
+81:8|16:15,C2,A,False,False,False,0.666667,PIA,LEC,Sakhir
+81:8|16:15,C3,A,False,False,False,0.666667,PIA,LEC,Sakhir
+81:8|16:15,C7,B,False,False,False,1.000000,PIA,LEC,Sakhir
+81:8|16:15,C8,A,False,False,False,0.666667,PIA,LEC,Sakhir
+81:8|16:15,C10,B,False,False,False,1.000000,PIA,LEC,Sakhir
+81:8|16:15,C11,B,False,False,False,1.000000,PIA,LEC,Sakhir
+81:8|16:9,C1,B,False,False,False,0.666667,PIA,LEC,Sakhir
+81:8|16:9,C2,A,False,False,False,0.666667,PIA,LEC,Sakhir
+81:8|16:9,C3,A,False,False,False,0.666667,PIA,LEC,Sakhir
+81:8|16:9,C5,A,False,False,False,0.666667,PIA,LEC,Sakhir
+81:8|16:9,C6,A,False,False,False,1.000000,PIA,LEC,Sakhir
+81:8|16:9,C7,B,False,False,False,0.666667,PIA,LEC,Sakhir
+81:8|16:9,C8,A,False,False,False,1.000000,PIA,LEC,Sakhir
+81:8|16:9,C11,B,False,False,False,0.666667,PIA,LEC,Sakhir
+81:8|16:6,C1,B,False,False,False,1.000000,PIA,LEC,Sakhir
+81:8|16:6,C2,A,False,False,False,1.000000,PIA,LEC,Sakhir
+81:8|16:6,C3,A,False,False,False,1.000000,PIA,LEC,Sakhir
+81:8|16:6,C4,A,False,True,True,0.666667,PIA,LEC,Sakhir
+81:8|16:6,C5,A,False,False,False,1.000000,PIA,LEC,Sakhir
+81:8|16:6,C6,A,False,False,False,0.666667,PIA,LEC,Sakhir
+81:8|16:6,C7,A,False,False,False,0.666667,PIA,LEC,Sakhir
+81:8|16:6,C8,A,False,False,False,1.000000,PIA,LEC,Sakhir
+81:8|16:6,C11,B,False,False,False,1.000000,PIA,LEC,Sakhir
+1:18|81:17,C2,A,False,False,False,0.666667,VER,PIA,Jeddah
+1:18|81:17,C5,A,False,False,False,1.000000,VER,PIA,Jeddah
+1:18|81:17,C7,B,False,False,False,1.000000,VER,PIA,Jeddah
+1:18|81:11,C1,A,False,False,False,1.000000,VER,PIA,Jeddah
+1:18|81:11,C2,A,False,False,False,0.666667,VER,PIA,Jeddah
+1:18|81:8,C1,A,False,False,False,1.000000,VER,PIA,Jeddah
+1:18|81:8,C2,A,False,False,False,0.666667,VER,PIA,Jeddah
+1:18|81:8,C3,A,False,False,False,0.666667,VER,PIA,Jeddah
+1:18|81:8,C5,A,False,False,False,1.000000,VER,PIA,Jeddah
+1:8|81:17,C3,B,False,False,False,1.000000,VER,PIA,Jeddah
+1:8|81:17,C8,A,False,False,False,0.666667,VER,PIA,Jeddah
+1:8|81:17,C9,B,False,False,False,1.000000,VER,PIA,Jeddah
+1:8|81:11,C1,A,False,False,False,1.000000,VER,PIA,Jeddah
+1:8|81:11,C4,B,False,False,False,0.555556,VER,PIA,Jeddah
+1:8|81:11,C8,A,False,False,False,0.666667,VER,PIA,Jeddah
+1:8|81:11,C9,B,False,False,False,1.000000,VER,PIA,Jeddah
+1:8|81:8,C1,A,False,False,False,1.000000,VER,PIA,Jeddah
+1:8|81:8,C5,A,False,False,False,1.000000,VER,PIA,Jeddah
+1:8|81:8,C6,B,False,False,False,0.666667,VER,PIA,Jeddah
+1:8|81:8,C8,A,False,False,False,0.666667,VER,PIA,Jeddah
+1:8|81:8,C9,B,False,False,False,1.000000,VER,PIA,Jeddah
+1:15|81:17,C1,B,False,False,False,0.666667,VER,PIA,Jeddah
+1:15|81:17,C3,B,False,False,False,1.000000,VER,PIA,Jeddah
+1:15|81:17,C9,B,False,False,False,0.555556,VER,PIA,Jeddah
+1:15|81:11,C1,A,False,False,False,0.666667,VER,PIA,Jeddah
+1:15|81:11,C5,B,False,False,False,0.666667,VER,PIA,Jeddah
+1:15|81:8,C1,A,False,False,False,0.666667,VER,PIA,Jeddah
+1:15|81:8,C6,B,False,False,False,0.666667,VER,PIA,Jeddah
+1:15|81:8,C8,A,False,False,False,1.000000,VER,PIA,Jeddah
+1:15|81:8,C9,B,False,False,False,0.666667,VER,PIA,Jeddah
+1:18|63:15,C1,A,False,False,False,1.000000,VER,RUS,Jeddah
+1:18|63:15,C6,B,False,False,False,1.000000,VER,RUS,Jeddah
+1:18|63:15,C7,B,False,False,False,1.000000,VER,RUS,Jeddah
+1:18|63:15,C9,A,False,False,False,1.000000,VER,RUS,Jeddah
+1:18|63:10,C1,A,False,False,False,1.000000,VER,RUS,Jeddah
+1:18|63:10,C5,A,False,False,False,0.777778,VER,RUS,Jeddah
+1:18|63:10,C9,A,False,False,False,1.000000,VER,RUS,Jeddah
+1:18|63:7,C1,A,False,False,False,1.000000,VER,RUS,Jeddah
+1:18|63:7,C2,A,False,False,False,1.000000,VER,RUS,Jeddah
+1:18|63:7,C3,A,False,False,False,0.555556,VER,RUS,Jeddah
+1:18|63:7,C5,A,False,False,False,1.000000,VER,RUS,Jeddah
+1:18|63:7,C9,A,False,False,False,1.000000,VER,RUS,Jeddah
+1:8|63:15,C1,A,False,False,False,1.000000,VER,RUS,Jeddah
+1:8|63:15,C3,B,False,False,False,1.000000,VER,RUS,Jeddah
+1:8|63:15,C6,B,False,False,False,0.666667,VER,RUS,Jeddah
+1:8|63:15,C8,A,False,False,False,0.666667,VER,RUS,Jeddah
+1:8|63:10,C1,A,False,False,False,1.000000,VER,RUS,Jeddah
+1:8|63:10,C8,A,False,False,False,0.666667,VER,RUS,Jeddah
+1:8|63:10,C9,B,False,False,False,0.777778,VER,RUS,Jeddah
+1:8|63:7,C1,A,False,False,False,1.000000,VER,RUS,Jeddah
+1:8|63:7,C2,A,False,False,False,1.000000,VER,RUS,Jeddah
+1:8|63:7,C5,A,False,False,False,1.000000,VER,RUS,Jeddah
+1:8|63:7,C8,A,False,False,False,0.666667,VER,RUS,Jeddah
+1:8|63:7,C9,B,False,False,False,0.555556,VER,RUS,Jeddah
+1:15|63:15,C2,B,False,False,False,0.666667,VER,RUS,Jeddah
+1:15|63:15,C3,B,False,False,False,1.000000,VER,RUS,Jeddah
+1:15|63:15,C6,B,False,False,False,1.000000,VER,RUS,Jeddah
+1:15|63:15,C8,A,False,False,False,1.000000,VER,RUS,Jeddah
+1:15|63:15,C9,A,False,False,False,1.000000,VER,RUS,Jeddah
+1:15|63:10,C2,B,False,False,False,0.666667,VER,RUS,Jeddah
+1:15|63:10,C3,B,False,False,False,0.666667,VER,RUS,Jeddah
+1:15|63:7,C1,A,False,False,False,0.666667,VER,RUS,Jeddah
+1:15|63:7,C5,A,False,False,False,0.777778,VER,RUS,Jeddah
+1:15|63:7,C8,A,False,False,False,1.000000,VER,RUS,Jeddah
+1:15|63:7,C9,A,False,False,False,1.000000,VER,RUS,Jeddah
+1:17|4:20,C5,A,False,False,False,1.000000,VER,NOR,Miami Gardens
+1:17|4:20,C8,B,False,False,False,1.000000,VER,NOR,Miami Gardens
+1:17|4:20,C10,B,False,False,False,0.666667,VER,NOR,Miami Gardens
+1:17|4:20,C11,A,False,False,False,1.000000,VER,NOR,Miami Gardens
+1:17|4:20,C12,B,False,False,False,1.000000,VER,NOR,Miami Gardens
+1:17|4:17,C4,A,False,False,False,1.000000,VER,NOR,Miami Gardens
+1:17|4:17,C5,A,False,False,False,1.000000,VER,NOR,Miami Gardens
+1:17|4:17,C6,B,False,False,False,0.666667,VER,NOR,Miami Gardens
+1:17|4:17,C9,A,False,False,False,0.666667,VER,NOR,Miami Gardens
+1:17|4:17,C11,A,False,False,False,1.000000,VER,NOR,Miami Gardens
+1:17|4:17,C12,B,False,False,False,0.666667,VER,NOR,Miami Gardens
+1:17|4:11,C1,A,False,False,False,0.666667,VER,NOR,Miami Gardens
+1:17|4:11,C3,A,False,False,False,0.666667,VER,NOR,Miami Gardens
+1:17|4:11,C4,A,False,False,False,1.000000,VER,NOR,Miami Gardens
+1:17|4:11,C5,A,False,False,False,1.000000,VER,NOR,Miami Gardens
+1:17|4:11,C6,A,False,True,True,0.666667,VER,NOR,Miami Gardens
+1:17|4:11,C12,B,False,False,False,0.666667,VER,NOR,Miami Gardens
+1:14|4:20,C1,A,False,False,False,1.000000,VER,NOR,Miami Gardens
+1:14|4:20,C5,A,False,False,False,1.000000,VER,NOR,Miami Gardens
+1:14|4:20,C6,B,False,False,False,0.777778,VER,NOR,Miami Gardens
+1:14|4:20,C8,B,False,False,False,1.000000,VER,NOR,Miami Gardens
+1:14|4:17,C1,A,False,False,False,0.666667,VER,NOR,Miami Gardens
+1:14|4:17,C5,A,False,False,False,1.000000,VER,NOR,Miami Gardens
+1:14|4:17,C6,B,False,False,False,1.000000,VER,NOR,Miami Gardens
+1:14|4:17,C7,B,False,False,False,1.000000,VER,NOR,Miami Gardens
+1:14|4:17,C8,B,False,False,False,0.666667,VER,NOR,Miami Gardens
+1:14|4:17,C11,A,False,False,False,1.000000,VER,NOR,Miami Gardens
+1:14|4:11,C1,A,False,False,False,1.000000,VER,NOR,Miami Gardens
+1:14|4:11,C3,A,False,False,False,0.666667,VER,NOR,Miami Gardens
+1:14|4:11,C5,A,False,False,False,1.000000,VER,NOR,Miami Gardens
+1:14|4:11,C7,B,False,False,False,0.666667,VER,NOR,Miami Gardens
+1:14|4:11,C11,B,False,False,False,0.666667,VER,NOR,Miami Gardens
+1:8|4:20,C5,A,False,False,False,1.000000,VER,NOR,Miami Gardens
+1:8|4:20,C7,B,False,False,False,0.666667,VER,NOR,Miami Gardens
+1:8|4:20,C8,B,False,False,False,1.000000,VER,NOR,Miami Gardens
+1:8|4:20,C10,B,False,False,False,0.666667,VER,NOR,Miami Gardens
+1:8|4:20,C11,A,False,False,False,0.666667,VER,NOR,Miami Gardens
+1:8|4:17,C2,B,False,False,False,0.666667,VER,NOR,Miami Gardens
+1:8|4:17,C4,A,False,False,False,0.555556,VER,NOR,Miami Gardens
+1:8|4:17,C5,A,False,False,False,1.000000,VER,NOR,Miami Gardens
+1:8|4:17,C6,B,False,False,False,0.666667,VER,NOR,Miami Gardens
+1:8|4:17,C7,B,False,False,False,0.666667,VER,NOR,Miami Gardens
+1:8|4:17,C8,B,False,False,False,0.888889,VER,NOR,Miami Gardens
+1:8|4:17,C9,A,False,False,False,0.666667,VER,NOR,Miami Gardens
+1:8|4:17,C10,B,False,False,False,0.666667,VER,NOR,Miami Gardens
+1:8|4:17,C11,A,False,False,False,1.000000,VER,NOR,Miami Gardens
+1:8|4:11,C3,A,False,False,False,0.666667,VER,NOR,Miami Gardens
+1:8|4:11,C4,A,False,False,False,0.888889,VER,NOR,Miami Gardens
+1:8|4:11,C5,A,False,False,False,1.000000,VER,NOR,Miami Gardens
+1:8|4:11,C7,B,False,False,False,1.000000,VER,NOR,Miami Gardens
+1:8|4:11,C8,B,False,False,False,0.777778,VER,NOR,Miami Gardens
+1:8|4:11,C9,A,False,False,False,0.666667,VER,NOR,Miami Gardens
+1:8|4:11,C10,B,False,False,False,1.000000,VER,NOR,Miami Gardens
+1:17|81:9,C2,B,False,False,False,0.555556,VER,PIA,Miami Gardens
+1:17|81:9,C5,A,False,False,False,1.000000,VER,PIA,Miami Gardens
+1:17|81:9,C6,B,False,False,False,1.000000,VER,PIA,Miami Gardens
+1:17|81:9,C11,A,False,False,False,0.666667,VER,PIA,Miami Gardens
+1:17|81:9,C12,B,False,False,False,0.666667,VER,PIA,Miami Gardens
+1:17|81:15,C1,A,False,False,False,1.000000,VER,PIA,Miami Gardens
+1:17|81:15,C2,B,False,False,False,0.666667,VER,PIA,Miami Gardens
+1:17|81:15,C5,A,False,False,False,0.888889,VER,PIA,Miami Gardens
+1:17|81:15,C6,A,False,True,True,0.666667,VER,PIA,Miami Gardens
+1:17|81:15,C12,B,False,False,False,1.000000,VER,PIA,Miami Gardens
+1:17|81:12,C4,A,False,False,False,1.000000,VER,PIA,Miami Gardens
+1:17|81:12,C5,A,False,False,False,1.000000,VER,PIA,Miami Gardens
+1:17|81:12,C8,A,False,False,False,0.666667,VER,PIA,Miami Gardens
+1:17|81:12,C9,A,False,False,False,0.666667,VER,PIA,Miami Gardens
+1:17|81:12,C10,A,False,False,False,0.666667,VER,PIA,Miami Gardens
+1:17|81:12,C12,B,False,False,False,0.666667,VER,PIA,Miami Gardens
+1:14|81:9,C1,A,False,False,False,0.666667,VER,PIA,Miami Gardens
+1:14|81:9,C5,A,False,False,False,1.000000,VER,PIA,Miami Gardens
+1:14|81:9,C6,B,False,False,False,1.000000,VER,PIA,Miami Gardens
+1:14|81:9,C7,B,False,False,False,0.666667,VER,PIA,Miami Gardens
+1:14|81:9,C9,B,False,False,False,0.666667,VER,PIA,Miami Gardens
+1:14|81:9,C10,A,False,False,False,0.666667,VER,PIA,Miami Gardens
+1:14|81:9,C11,B,False,False,False,0.666667,VER,PIA,Miami Gardens
+1:14|81:15,C1,A,False,False,False,1.000000,VER,PIA,Miami Gardens
+1:14|81:15,C5,A,False,False,False,0.555556,VER,PIA,Miami Gardens
+1:14|81:15,C8,B,False,False,False,0.666667,VER,PIA,Miami Gardens
+1:14|81:15,C11,B,False,False,False,0.666667,VER,PIA,Miami Gardens
+1:14|81:12,C1,A,False,False,False,1.000000,VER,PIA,Miami Gardens
+1:14|81:12,C5,A,False,False,False,1.000000,VER,PIA,Miami Gardens
+1:14|81:12,C6,B,False,False,False,1.000000,VER,PIA,Miami Gardens
+1:14|81:12,C7,B,False,False,False,0.666667,VER,PIA,Miami Gardens
+1:14|81:12,C10,A,False,False,False,0.666667,VER,PIA,Miami Gardens
+1:14|81:12,C11,B,False,False,False,0.666667,VER,PIA,Miami Gardens
+1:8|81:9,C5,A,False,False,False,1.000000,VER,PIA,Miami Gardens
+1:8|81:9,C6,B,False,False,False,1.000000,VER,PIA,Miami Gardens
+1:8|81:9,C7,B,False,False,False,0.666667,VER,PIA,Miami Gardens
+1:8|81:9,C8,B,False,False,False,1.000000,VER,PIA,Miami Gardens
+1:8|81:15,C1,A,False,False,False,0.666667,VER,PIA,Miami Gardens
+1:8|81:15,C2,B,False,False,False,0.666667,VER,PIA,Miami Gardens
+1:8|81:15,C5,A,False,False,False,1.000000,VER,PIA,Miami Gardens
+1:8|81:15,C6,A,False,False,False,0.777778,VER,PIA,Miami Gardens
+1:8|81:15,C7,B,False,False,False,0.666667,VER,PIA,Miami Gardens
+1:8|81:15,C8,B,False,False,False,1.000000,VER,PIA,Miami Gardens
+1:8|81:15,C10,B,False,False,False,0.666667,VER,PIA,Miami Gardens
+1:8|81:15,C11,B,False,False,False,0.666667,VER,PIA,Miami Gardens
+1:8|81:12,C5,A,False,False,False,1.000000,VER,PIA,Miami Gardens
+1:8|81:12,C7,B,False,False,False,1.000000,VER,PIA,Miami Gardens
+1:8|81:12,C9,A,False,False,False,0.666667,VER,PIA,Miami Gardens
+81:17|1:16,C1,B,False,False,False,1.000000,PIA,VER,Imola
+81:17|1:16,C6,A,False,False,False,1.000000,PIA,VER,Imola
+81:17|1:16,C8,A,False,False,False,1.000000,PIA,VER,Imola
+81:17|1:13,C1,B,False,False,False,1.000000,PIA,VER,Imola
+81:17|1:13,C4,A,False,False,False,1.000000,PIA,VER,Imola
+81:17|1:13,C6,A,False,False,False,1.000000,PIA,VER,Imola
+81:17|1:13,C8,A,False,False,False,0.666667,PIA,VER,Imola
+81:17|1:13,C9,B,False,False,False,0.666667,PIA,VER,Imola
+81:17|1:13,C10,A,False,False,False,0.666667,PIA,VER,Imola
+81:17|1:4,C1,B,False,False,False,1.000000,PIA,VER,Imola
+81:17|1:4,C2,A,False,False,False,0.666667,PIA,VER,Imola
+81:17|1:4,C4,A,False,False,False,1.000000,PIA,VER,Imola
+81:17|1:4,C5,A,False,False,False,1.000000,PIA,VER,Imola
+81:17|1:4,C6,A,False,False,False,1.000000,PIA,VER,Imola
+81:17|1:4,C8,A,False,False,False,1.000000,PIA,VER,Imola
+81:17|1:4,C9,B,False,False,False,0.666667,PIA,VER,Imola
+81:17|1:4,C11,A,False,False,False,1.000000,PIA,VER,Imola
+81:14|1:16,C1,B,False,False,False,1.000000,PIA,VER,Imola
+81:14|1:16,C3,B,False,True,True,0.666667,PIA,VER,Imola
+81:14|1:16,C8,A,False,False,False,1.000000,PIA,VER,Imola
+81:14|1:13,C1,B,False,False,False,1.000000,PIA,VER,Imola
+81:14|1:13,C3,B,False,True,True,0.666667,PIA,VER,Imola
+81:14|1:13,C4,A,False,False,False,0.666667,PIA,VER,Imola
+81:14|1:13,C8,A,False,False,False,0.666667,PIA,VER,Imola
+81:14|1:13,C9,B,False,True,True,0.666667,PIA,VER,Imola
+81:14|1:13,C10,A,False,False,False,0.666667,PIA,VER,Imola
+81:14|1:4,C1,B,False,False,False,1.000000,PIA,VER,Imola
+81:14|1:4,C2,A,False,False,False,0.666667,PIA,VER,Imola
+81:14|1:4,C4,A,False,False,False,1.000000,PIA,VER,Imola
+81:14|1:4,C5,A,False,False,False,1.000000,PIA,VER,Imola
+81:14|1:4,C6,A,False,False,False,1.000000,PIA,VER,Imola
+81:14|1:4,C8,A,False,False,False,1.000000,PIA,VER,Imola
+81:14|1:4,C11,A,False,False,False,1.000000,PIA,VER,Imola
+81:11|1:16,C1,B,False,False,False,1.000000,PIA,VER,Imola
+81:11|1:16,C3,B,False,False,False,0.666667,PIA,VER,Imola
+81:11|1:16,C4,B,False,False,False,1.000000,PIA,VER,Imola
+81:11|1:16,C5,B,False,False,False,1.000000,PIA,VER,Imola
+81:11|1:16,C6,B,False,False,False,0.666667,PIA,VER,Imola
+81:11|1:16,C7,B,False,False,False,0.777778,PIA,VER,Imola
+81:11|1:16,C8,A,False,False,False,0.666667,PIA,VER,Imola
+81:11|1:16,C10,B,False,False,False,1.000000,PIA,VER,Imola
+81:11|1:13,C1,B,False,False,False,1.000000,PIA,VER,Imola
+81:11|1:13,C3,B,False,False,False,0.666667,PIA,VER,Imola
+81:11|1:13,C5,B,False,False,False,1.000000,PIA,VER,Imola
+81:11|1:13,C6,B,False,False,False,0.666667,PIA,VER,Imola
+81:11|1:13,C7,B,False,False,False,0.666667,PIA,VER,Imola
+81:11|1:13,C8,A,False,False,False,0.666667,PIA,VER,Imola
+81:11|1:13,C9,B,False,True,True,0.333333,PIA,VER,Imola
+81:11|1:4,C1,B,False,False,False,1.000000,PIA,VER,Imola
+81:11|1:4,C2,A,False,False,False,0.666667,PIA,VER,Imola
+81:11|1:4,C3,B,False,False,False,1.000000,PIA,VER,Imola
+81:11|1:4,C4,A,False,False,False,0.666667,PIA,VER,Imola
+81:11|1:4,C5,A,False,False,False,1.000000,PIA,VER,Imola
+81:11|1:4,C7,B,False,False,False,0.666667,PIA,VER,Imola
+81:11|1:4,C8,A,False,False,False,0.666667,PIA,VER,Imola
+81:11|1:4,C11,A,False,False,False,1.000000,PIA,VER,Imola
+81:17|63:16,C1,A,False,False,False,1.000000,PIA,RUS,Imola
+81:17|63:13,C5,A,False,False,False,1.000000,PIA,RUS,Imola
+81:17|63:13,C6,A,False,False,False,1.000000,PIA,RUS,Imola
+81:17|63:13,C8,A,False,False,False,1.000000,PIA,RUS,Imola
+81:17|63:10,C2,A,False,False,False,0.666667,PIA,RUS,Imola
+81:17|63:10,C3,A,False,False,False,0.666667,PIA,RUS,Imola
+81:17|63:10,C5,A,False,False,False,1.000000,PIA,RUS,Imola
+81:17|63:10,C6,A,False,False,False,1.000000,PIA,RUS,Imola
+81:17|63:10,C8,A,False,False,False,1.000000,PIA,RUS,Imola
+81:17|63:10,C9,A,False,False,False,1.000000,PIA,RUS,Imola
+81:17|63:10,C10,A,False,False,False,0.666667,PIA,RUS,Imola
+81:14|63:16,C6,B,False,False,False,1.000000,PIA,RUS,Imola
+81:14|63:16,C8,A,False,True,True,0.666667,PIA,RUS,Imola
+81:14|63:13,C1,B,False,False,False,1.000000,PIA,RUS,Imola
+81:14|63:13,C4,A,False,True,True,0.333333,PIA,RUS,Imola
+81:14|63:13,C8,A,False,False,False,1.000000,PIA,RUS,Imola
+81:14|63:13,C9,A,False,False,False,1.000000,PIA,RUS,Imola
+81:14|63:10,C2,A,False,False,False,1.000000,PIA,RUS,Imola
+81:14|63:10,C4,A,False,True,True,0.666667,PIA,RUS,Imola
+81:14|63:10,C5,A,False,False,False,1.000000,PIA,RUS,Imola
+81:14|63:10,C8,A,False,False,False,1.000000,PIA,RUS,Imola
+81:14|63:10,C9,A,False,False,False,1.000000,PIA,RUS,Imola
+81:14|63:10,C10,A,False,False,False,0.666667,PIA,RUS,Imola
+81:11|63:16,C3,B,False,False,False,0.666667,PIA,RUS,Imola
+81:11|63:16,C4,B,False,False,False,1.000000,PIA,RUS,Imola
+81:11|63:16,C5,B,False,False,False,0.666667,PIA,RUS,Imola
+81:11|63:16,C6,B,False,False,False,1.000000,PIA,RUS,Imola
+81:11|63:16,C10,B,False,False,False,0.666667,PIA,RUS,Imola
+81:11|63:13,C1,B,False,False,False,1.000000,PIA,RUS,Imola
+81:11|63:13,C4,B,False,False,False,1.000000,PIA,RUS,Imola
+81:11|63:13,C5,B,False,False,False,0.666667,PIA,RUS,Imola
+81:11|63:13,C6,B,False,False,False,1.000000,PIA,RUS,Imola
+81:11|63:13,C8,A,False,False,False,0.666667,PIA,RUS,Imola
+81:11|63:13,C9,A,False,False,False,1.000000,PIA,RUS,Imola
+81:11|63:10,C2,A,False,False,False,0.666667,PIA,RUS,Imola
+81:11|63:10,C6,B,False,False,False,0.666667,PIA,RUS,Imola
+81:11|63:10,C7,B,False,False,False,0.666667,PIA,RUS,Imola
+81:11|63:10,C8,A,False,False,False,0.666667,PIA,RUS,Imola
+81:11|63:10,C9,A,False,False,False,1.000000,PIA,RUS,Imola
+81:11|63:10,C10,A,False,True,True,0.333333,PIA,RUS,Imola
+81:11|63:10,C11,A,False,False,False,0.666667,PIA,RUS,Imola
+4:26|16:26,C1,A,False,True,True,0.666667,NOR,LEC,Monaco
+4:26|16:26,C7,B,False,True,True,0.666667,NOR,LEC,Monaco
+4:26|16:26,C10,A,False,False,False,0.888889,NOR,LEC,Monaco
+4:26|16:26,C13,B,False,False,False,1.000000,NOR,LEC,Monaco
+4:26|16:26,C14,A,False,False,False,0.666667,NOR,LEC,Monaco
+4:26|16:26,C15,A,False,False,False,0.666667,NOR,LEC,Monaco
+4:26|16:17,C3,A,False,False,False,0.555556,NOR,LEC,Monaco
+4:26|16:17,C4,A,False,False,False,1.000000,NOR,LEC,Monaco
+4:26|16:17,C6,B,False,False,False,0.666667,NOR,LEC,Monaco
+4:26|16:17,C10,A,False,False,False,1.000000,NOR,LEC,Monaco
+4:26|16:17,C13,B,False,False,False,0.666667,NOR,LEC,Monaco
+4:26|16:17,C14,A,False,False,False,0.666667,NOR,LEC,Monaco
+4:26|16:20,C1,A,False,False,False,0.666667,NOR,LEC,Monaco
+4:26|16:20,C2,A,False,False,False,0.666667,NOR,LEC,Monaco
+4:26|16:20,C4,A,False,False,False,0.666667,NOR,LEC,Monaco
+4:26|16:20,C6,A,False,True,True,0.333333,NOR,LEC,Monaco
+4:26|16:20,C10,A,False,False,False,1.000000,NOR,LEC,Monaco
+4:26|16:20,C13,B,False,False,False,1.000000,NOR,LEC,Monaco
+4:26|16:20,C15,A,False,False,False,1.000000,NOR,LEC,Monaco
+4:24|16:26,C8,B,False,False,False,0.888889,NOR,LEC,Monaco
+4:24|16:26,C9,B,False,False,False,0.666667,NOR,LEC,Monaco
+4:24|16:26,C11,B,False,False,False,1.000000,NOR,LEC,Monaco
+4:24|16:26,C15,A,False,False,False,0.666667,NOR,LEC,Monaco
+4:24|16:17,C3,A,False,False,False,1.000000,NOR,LEC,Monaco
+4:24|16:17,C4,A,False,False,False,1.000000,NOR,LEC,Monaco
+4:24|16:17,C9,B,False,True,True,0.555556,NOR,LEC,Monaco
+4:24|16:17,C10,A,False,False,False,0.666667,NOR,LEC,Monaco
+4:24|16:17,C14,A,False,False,False,0.666667,NOR,LEC,Monaco
+4:24|16:20,C3,A,False,False,False,1.000000,NOR,LEC,Monaco
+4:24|16:20,C4,A,False,True,True,0.666667,NOR,LEC,Monaco
+4:24|16:20,C6,A,False,True,True,0.666667,NOR,LEC,Monaco
+4:24|16:20,C8,B,False,False,False,0.666667,NOR,LEC,Monaco
+4:24|16:20,C9,B,False,False,False,1.000000,NOR,LEC,Monaco
+4:24|16:20,C15,A,False,False,False,1.000000,NOR,LEC,Monaco
+4:21|16:26,C11,B,False,False,False,0.666667,NOR,LEC,Monaco
+4:21|16:17,C1,B,False,False,False,1.000000,NOR,LEC,Monaco
+4:21|16:17,C3,A,False,False,False,0.666667,NOR,LEC,Monaco
+4:21|16:20,C3,A,False,False,False,0.666667,NOR,LEC,Monaco
+4:26|81:28,C3,B,False,False,False,0.888889,NOR,PIA,Monaco
+4:26|81:28,C10,A,False,False,False,1.000000,NOR,PIA,Monaco
+4:26|81:28,C13,B,False,False,False,0.666667,NOR,PIA,Monaco
+4:26|81:28,C15,A,False,False,False,0.666667,NOR,PIA,Monaco
+4:26|81:26,C2,A,False,False,False,0.666667,NOR,PIA,Monaco
+4:26|81:26,C3,B,False,False,False,1.000000,NOR,PIA,Monaco
+4:26|81:26,C5,A,False,False,False,0.666667,NOR,PIA,Monaco
+4:26|81:26,C6,B,False,False,False,0.666667,NOR,PIA,Monaco
+4:26|81:26,C13,B,False,False,False,1.000000,NOR,PIA,Monaco
+4:26|81:26,C15,A,False,False,False,1.000000,NOR,PIA,Monaco
+4:26|81:23,C1,A,False,False,False,0.666667,NOR,PIA,Monaco
+4:26|81:23,C10,A,False,False,False,1.000000,NOR,PIA,Monaco
+4:26|81:23,C11,A,False,False,False,1.000000,NOR,PIA,Monaco
+4:24|81:28,C6,A,False,False,False,0.777778,NOR,PIA,Monaco
+4:24|81:28,C8,B,False,False,False,0.888889,NOR,PIA,Monaco
+4:24|81:26,C3,B,False,False,False,0.666667,NOR,PIA,Monaco
+4:24|81:26,C5,A,False,False,False,0.666667,NOR,PIA,Monaco
+4:24|81:26,C8,B,False,False,False,0.666667,NOR,PIA,Monaco
+4:24|81:26,C13,B,False,False,False,1.000000,NOR,PIA,Monaco
+4:24|81:26,C15,A,False,False,False,1.000000,NOR,PIA,Monaco
+4:24|81:23,C6,A,False,False,False,0.666667,NOR,PIA,Monaco
+4:24|81:23,C10,A,False,False,False,0.888889,NOR,PIA,Monaco
+4:21|81:28,C1,B,False,False,False,1.000000,NOR,PIA,Monaco
+4:21|81:28,C3,B,False,False,False,0.666667,NOR,PIA,Monaco
+4:21|81:28,C4,B,False,False,False,0.666667,NOR,PIA,Monaco
+4:21|81:26,C1,B,False,False,False,1.000000,NOR,PIA,Monaco
+4:21|81:26,C3,B,False,False,False,1.000000,NOR,PIA,Monaco
+4:21|81:26,C4,B,False,False,False,0.666667,NOR,PIA,Monaco
+4:21|81:26,C6,B,False,False,False,0.666667,NOR,PIA,Monaco
+4:21|81:26,C10,B,False,False,False,0.666667,NOR,PIA,Monaco
+4:21|81:26,C13,B,False,False,False,1.000000,NOR,PIA,Monaco
+4:21|81:23,C4,B,False,False,False,1.000000,NOR,PIA,Monaco
+4:21|81:23,C10,A,False,False,False,0.666667,NOR,PIA,Monaco
+4:21|81:23,C13,A,False,False,False,0.666667,NOR,PIA,Monaco
+81:13|4:14,C3,B,False,False,False,1.000000,PIA,NOR,Barcelona
+81:13|4:14,C4,A,False,False,False,1.000000,PIA,NOR,Barcelona
+81:13|4:14,C5,A,False,False,False,0.666667,PIA,NOR,Barcelona
+81:13|4:14,C10,A,False,False,False,1.000000,PIA,NOR,Barcelona
+81:13|4:11,C1,A,False,False,False,1.000000,PIA,NOR,Barcelona
+81:13|4:11,C4,A,False,False,False,1.000000,PIA,NOR,Barcelona
+81:13|4:11,C5,A,False,False,False,0.666667,PIA,NOR,Barcelona
+81:13|4:11,C10,A,False,False,False,1.000000,PIA,NOR,Barcelona
+81:13|4:8,C1,A,False,False,False,1.000000,PIA,NOR,Barcelona
+81:13|4:8,C2,A,False,False,False,0.666667,PIA,NOR,Barcelona
+81:13|4:8,C5,A,False,True,True,0.666667,PIA,NOR,Barcelona
+81:13|4:8,C6,A,False,False,False,0.666667,PIA,NOR,Barcelona
+81:13|4:8,C10,A,False,False,False,1.000000,PIA,NOR,Barcelona
+81:10|4:14,C1,B,False,False,False,1.000000,PIA,NOR,Barcelona
+81:10|4:14,C3,B,False,False,False,1.000000,PIA,NOR,Barcelona
+81:10|4:14,C5,A,False,False,False,1.000000,PIA,NOR,Barcelona
+81:10|4:14,C6,A,False,False,False,0.666667,PIA,NOR,Barcelona
+81:10|4:11,C4,B,False,True,True,0.666667,PIA,NOR,Barcelona
+81:10|4:11,C5,A,False,False,False,1.000000,PIA,NOR,Barcelona
+81:10|4:11,C6,A,False,False,False,0.666667,PIA,NOR,Barcelona
+81:10|4:11,C8,B,False,False,False,1.000000,PIA,NOR,Barcelona
+81:10|4:8,C4,B,False,True,True,0.666667,PIA,NOR,Barcelona
+81:10|4:8,C5,A,False,False,False,0.666667,PIA,NOR,Barcelona
+81:10|4:8,C6,A,False,False,False,1.000000,PIA,NOR,Barcelona
+81:10|4:8,C7,A,False,False,False,0.666667,PIA,NOR,Barcelona
+81:10|4:8,C9,A,False,False,False,0.666667,PIA,NOR,Barcelona
+81:7|4:14,C1,B,False,False,False,1.000000,PIA,NOR,Barcelona
+81:7|4:14,C3,B,False,False,False,1.000000,PIA,NOR,Barcelona
+81:7|4:14,C8,B,False,False,False,1.000000,PIA,NOR,Barcelona
+81:7|4:11,C1,A,False,False,False,0.777778,PIA,NOR,Barcelona
+81:7|4:11,C2,B,False,False,False,0.888889,PIA,NOR,Barcelona
+81:7|4:11,C3,B,False,False,False,0.888889,PIA,NOR,Barcelona
+81:7|4:11,C8,B,False,False,False,1.000000,PIA,NOR,Barcelona
+81:7|4:8,C1,A,False,False,False,0.666667,PIA,NOR,Barcelona
+81:7|4:8,C4,B,False,True,True,0.666667,PIA,NOR,Barcelona
+81:7|4:8,C8,B,False,False,False,0.666667,PIA,NOR,Barcelona
+81:13|1:11,C1,A,False,False,False,1.000000,PIA,VER,Barcelona
+81:13|1:11,C2,A,False,False,False,0.666667,PIA,VER,Barcelona
+81:13|1:11,C3,A,False,False,False,1.000000,PIA,VER,Barcelona
+81:13|1:11,C5,A,False,False,False,1.000000,PIA,VER,Barcelona
+81:13|1:11,C7,B,False,False,False,0.555556,PIA,VER,Barcelona
+81:13|1:11,C8,B,False,False,False,1.000000,PIA,VER,Barcelona
+81:13|1:8,C1,A,False,False,False,1.000000,PIA,VER,Barcelona
+81:13|1:8,C2,A,False,False,True,0.666667,PIA,VER,Barcelona
+81:13|1:8,C3,A,False,False,False,1.000000,PIA,VER,Barcelona
+81:13|1:8,C4,A,False,False,False,1.000000,PIA,VER,Barcelona
+81:13|1:8,C5,A,False,False,False,1.000000,PIA,VER,Barcelona
+81:13|1:8,C7,B,False,False,False,0.666667,PIA,VER,Barcelona
+81:13|1:8,C8,A,False,True,True,0.666667,PIA,VER,Barcelona
+81:13|1:8,C9,A,False,False,False,0.666667,PIA,VER,Barcelona
+81:13|1:8,C10,A,False,False,False,1.000000,PIA,VER,Barcelona
+81:13|1:5,C1,A,False,False,False,1.000000,PIA,VER,Barcelona
+81:13|1:5,C2,A,False,False,True,0.666667,PIA,VER,Barcelona
+81:13|1:5,C3,A,False,False,False,1.000000,PIA,VER,Barcelona
+81:13|1:5,C4,A,False,False,False,0.666667,PIA,VER,Barcelona
+81:13|1:5,C5,A,False,False,False,1.000000,PIA,VER,Barcelona
+81:13|1:5,C8,A,False,False,False,1.000000,PIA,VER,Barcelona
+81:10|1:11,C3,A,False,False,False,0.888889,PIA,VER,Barcelona
+81:10|1:11,C4,B,False,False,False,1.000000,PIA,VER,Barcelona
+81:10|1:11,C5,A,False,False,False,1.000000,PIA,VER,Barcelona
+81:10|1:11,C8,B,False,False,False,1.000000,PIA,VER,Barcelona
+81:10|1:8,C3,A,False,False,False,1.000000,PIA,VER,Barcelona
+81:10|1:8,C4,A,False,False,False,1.000000,PIA,VER,Barcelona
+81:10|1:8,C5,A,False,False,False,1.000000,PIA,VER,Barcelona
+81:10|1:8,C6,A,False,False,False,0.777778,PIA,VER,Barcelona
+81:10|1:8,C7,B,False,False,False,0.666667,PIA,VER,Barcelona
+81:10|1:8,C9,A,False,False,False,0.666667,PIA,VER,Barcelona
+81:10|1:5,C1,A,False,False,False,1.000000,PIA,VER,Barcelona
+81:10|1:5,C3,A,False,False,False,1.000000,PIA,VER,Barcelona
+81:10|1:5,C5,A,False,False,False,1.000000,PIA,VER,Barcelona
+81:10|1:5,C9,A,False,False,False,0.666667,PIA,VER,Barcelona
+81:7|1:11,C1,A,False,False,False,1.000000,PIA,VER,Barcelona
+81:7|1:11,C3,A,False,False,False,1.000000,PIA,VER,Barcelona
+81:7|1:11,C4,B,False,False,False,1.000000,PIA,VER,Barcelona
+81:7|1:11,C7,B,False,False,False,1.000000,PIA,VER,Barcelona
+81:7|1:11,C8,B,False,False,False,1.000000,PIA,VER,Barcelona
+81:7|1:8,C1,A,False,False,False,0.666667,PIA,VER,Barcelona
+81:7|1:8,C3,A,False,False,False,1.000000,PIA,VER,Barcelona
+81:7|1:8,C4,A,False,False,False,1.000000,PIA,VER,Barcelona
+81:7|1:8,C5,A,False,False,False,1.000000,PIA,VER,Barcelona
+81:7|1:8,C7,B,False,False,False,0.666667,PIA,VER,Barcelona
+81:7|1:8,C9,A,False,True,True,0.666667,PIA,VER,Barcelona
+81:7|1:5,C1,A,False,False,False,1.000000,PIA,VER,Barcelona
+81:7|1:5,C3,A,False,False,False,1.000000,PIA,VER,Barcelona
+81:7|1:5,C5,A,False,False,False,1.000000,PIA,VER,Barcelona
+63:20|1:19,C5,A,False,False,False,1.000000,RUS,VER,Montréal
+63:20|1:16,C5,A,False,False,False,1.000000,RUS,VER,Montréal
+63:20|1:8,C1,B,False,False,False,0.666667,RUS,VER,Montréal
+63:20|1:8,C2,A,False,False,False,0.888889,RUS,VER,Montréal
+63:20|1:8,C4,A,False,False,False,0.666667,RUS,VER,Montréal
+63:20|1:8,C5,A,False,False,False,1.000000,RUS,VER,Montréal
+63:20|1:8,C6,A,False,False,False,1.000000,RUS,VER,Montréal
+63:20|1:8,C7,A,False,False,False,0.666667,RUS,VER,Montréal
+63:17|1:19,C1,B,False,False,False,1.000000,RUS,VER,Montréal
+63:17|1:19,C2,B,False,False,False,1.000000,RUS,VER,Montréal
+63:17|1:19,C4,B,False,False,False,0.666667,RUS,VER,Montréal
+63:17|1:16,C1,B,False,False,False,1.000000,RUS,VER,Montréal
+63:17|1:16,C2,B,False,False,False,1.000000,RUS,VER,Montréal
+63:17|1:16,C4,B,False,False,False,0.666667,RUS,VER,Montréal
+63:17|1:16,C5,A,False,False,False,1.000000,RUS,VER,Montréal
+63:17|1:8,C1,B,False,False,False,1.000000,RUS,VER,Montréal
+63:17|1:8,C5,A,False,False,False,1.000000,RUS,VER,Montréal
+63:17|1:8,C6,A,False,False,False,0.666667,RUS,VER,Montréal
+63:17|1:8,C7,A,False,False,False,0.666667,RUS,VER,Montréal
+63:14|1:19,C1,B,False,False,False,1.000000,RUS,VER,Montréal
+63:14|1:19,C2,B,False,False,False,1.000000,RUS,VER,Montréal
+63:14|1:16,C1,B,False,False,False,1.000000,RUS,VER,Montréal
+63:14|1:16,C2,B,False,False,False,1.000000,RUS,VER,Montréal
+63:14|1:16,C4,B,False,False,False,0.666667,RUS,VER,Montréal
+63:14|1:16,C5,A,False,False,False,0.666667,RUS,VER,Montréal
+63:14|1:8,C1,B,False,False,False,1.000000,RUS,VER,Montréal
+63:14|1:8,C2,B,False,False,False,1.000000,RUS,VER,Montréal
+63:14|1:8,C4,A,False,False,False,0.666667,RUS,VER,Montréal
+63:14|1:8,C5,A,False,False,False,1.000000,RUS,VER,Montréal
+63:20|81:22,C2,A,False,False,False,0.666667,RUS,PIA,Montréal
+63:20|81:22,C4,A,False,False,False,0.666667,RUS,PIA,Montréal
+63:20|81:22,C5,A,False,False,False,1.000000,RUS,PIA,Montréal
+63:20|81:17,C1,A,False,False,False,1.000000,RUS,PIA,Montréal
+63:20|81:17,C4,A,False,False,False,1.000000,RUS,PIA,Montréal
+63:20|81:19,C1,A,False,False,False,1.000000,RUS,PIA,Montréal
+63:20|81:19,C5,A,False,False,False,1.000000,RUS,PIA,Montréal
+63:20|81:19,C6,A,False,False,False,0.666667,RUS,PIA,Montréal
+63:17|81:22,C1,B,False,False,False,1.000000,RUS,PIA,Montréal
+63:17|81:22,C6,B,False,False,False,1.000000,RUS,PIA,Montréal
+63:17|81:17,C2,B,False,False,False,0.666667,RUS,PIA,Montréal
+63:17|81:17,C5,B,False,False,False,0.666667,RUS,PIA,Montréal
+63:17|81:19,C5,A,False,False,False,1.000000,RUS,PIA,Montréal
+63:14|81:22,C1,B,False,False,False,0.666667,RUS,PIA,Montréal
+63:14|81:22,C2,B,False,False,False,1.000000,RUS,PIA,Montréal
+63:14|81:22,C6,B,False,False,False,1.000000,RUS,PIA,Montréal
+63:14|81:22,C7,B,False,False,False,1.000000,RUS,PIA,Montréal
+63:14|81:17,C2,B,False,False,False,1.000000,RUS,PIA,Montréal
+63:14|81:17,C4,A,False,False,False,1.000000,RUS,PIA,Montréal
+63:14|81:17,C5,B,False,False,False,0.666667,RUS,PIA,Montréal
+63:14|81:17,C6,B,False,False,False,0.666667,RUS,PIA,Montréal
+63:14|81:19,C1,A,False,False,False,0.666667,RUS,PIA,Montréal
+63:14|81:19,C2,B,False,False,False,0.666667,RUS,PIA,Montréal
+63:14|81:19,C5,A,False,False,False,1.000000,RUS,PIA,Montréal
+63:14|81:19,C7,B,False,False,False,1.000000,RUS,PIA,Montréal
+4:14|16:17,C2,B,False,False,False,0.666667,NOR,LEC,Spielberg
+4:14|16:17,C3,A,False,False,False,0.666667,NOR,LEC,Spielberg
+4:14|16:17,C5,A,False,False,False,1.000000,NOR,LEC,Spielberg
+4:14|16:17,C6,B,False,False,False,1.000000,NOR,LEC,Spielberg
+4:14|16:17,C7,B,False,True,True,0.333333,NOR,LEC,Spielberg
+4:14|16:17,C8,A,False,False,False,1.000000,NOR,LEC,Spielberg
+4:14|16:14,C1,A,False,False,False,1.000000,NOR,LEC,Spielberg
+4:14|16:14,C3,A,False,False,False,1.000000,NOR,LEC,Spielberg
+4:14|16:14,C4,A,False,False,False,0.666667,NOR,LEC,Spielberg
+4:14|16:14,C5,A,False,False,False,1.000000,NOR,LEC,Spielberg
+4:14|16:14,C7,B,False,False,False,0.555556,NOR,LEC,Spielberg
+4:14|16:14,C8,A,False,False,False,1.000000,NOR,LEC,Spielberg
+4:14|16:11,C1,A,False,False,False,0.666667,NOR,LEC,Spielberg
+4:14|16:11,C3,A,False,False,False,1.000000,NOR,LEC,Spielberg
+4:14|16:11,C5,A,False,False,False,1.000000,NOR,LEC,Spielberg
+4:14|16:11,C8,A,False,False,False,1.000000,NOR,LEC,Spielberg
+4:8|16:17,C1,B,False,True,True,0.666667,NOR,LEC,Spielberg
+4:8|16:17,C3,A,False,False,False,0.666667,NOR,LEC,Spielberg
+4:8|16:17,C6,B,False,False,False,0.666667,NOR,LEC,Spielberg
+4:8|16:14,C2,A,False,True,True,0.666667,NOR,LEC,Spielberg
+4:8|16:14,C3,A,False,False,False,1.000000,NOR,LEC,Spielberg
+4:8|16:14,C4,A,False,False,False,0.666667,NOR,LEC,Spielberg
+4:8|16:14,C5,A,False,False,False,1.000000,NOR,LEC,Spielberg
+4:8|16:11,C2,A,False,False,False,0.666667,NOR,LEC,Spielberg
+4:8|16:11,C3,A,False,False,False,1.000000,NOR,LEC,Spielberg
+4:8|16:11,C5,A,False,False,False,0.777778,NOR,LEC,Spielberg
+4:8|16:11,C8,A,False,False,False,1.000000,NOR,LEC,Spielberg
+4:2|16:17,C1,B,False,False,False,0.666667,NOR,LEC,Spielberg
+4:2|16:17,C2,B,False,False,False,0.666667,NOR,LEC,Spielberg
+4:2|16:17,C3,A,False,True,True,0.666667,NOR,LEC,Spielberg
+4:2|16:17,C4,B,False,False,False,0.666667,NOR,LEC,Spielberg
+4:2|16:17,C6,B,False,False,False,1.000000,NOR,LEC,Spielberg
+4:2|16:14,C1,B,False,False,False,0.666667,NOR,LEC,Spielberg
+4:2|16:14,C5,A,False,False,False,1.000000,NOR,LEC,Spielberg
+4:2|16:14,C7,B,False,False,False,0.666667,NOR,LEC,Spielberg
+4:2|16:14,C8,A,False,False,False,0.666667,NOR,LEC,Spielberg
+4:2|16:11,C1,B,False,False,False,0.666667,NOR,LEC,Spielberg
+4:2|16:11,C3,A,False,False,False,1.000000,NOR,LEC,Spielberg
+4:2|16:11,C5,A,False,False,False,0.666667,NOR,LEC,Spielberg
+4:2|16:11,C8,A,False,False,False,1.000000,NOR,LEC,Spielberg
+4:14|81:16,C1,A,False,False,False,1.000000,NOR,PIA,Spielberg
+4:14|81:16,C2,A,False,False,False,1.000000,NOR,PIA,Spielberg
+4:14|81:16,C3,A,False,False,False,0.666667,NOR,PIA,Spielberg
+4:14|81:16,C6,B,False,False,False,1.000000,NOR,PIA,Spielberg
+4:14|81:16,C8,A,False,False,False,0.666667,NOR,PIA,Spielberg
+4:14|81:10,C2,B,False,False,False,0.666667,NOR,PIA,Spielberg
+4:14|81:10,C3,A,False,False,False,0.666667,NOR,PIA,Spielberg
+4:14|81:10,C4,A,False,False,False,1.000000,NOR,PIA,Spielberg
+4:14|81:10,C5,A,False,False,False,1.000000,NOR,PIA,Spielberg
+4:14|81:10,C8,A,False,False,False,1.000000,NOR,PIA,Spielberg
+4:14|81:13,C2,A,False,False,False,1.000000,NOR,PIA,Spielberg
+4:14|81:13,C3,A,False,False,False,0.666667,NOR,PIA,Spielberg
+4:14|81:13,C4,A,False,False,False,0.666667,NOR,PIA,Spielberg
+4:14|81:13,C5,A,False,False,False,1.000000,NOR,PIA,Spielberg
+4:14|81:13,C7,A,False,False,False,1.000000,NOR,PIA,Spielberg
+4:14|81:13,C8,A,False,False,False,1.000000,NOR,PIA,Spielberg
+4:8|81:16,C1,A,False,False,False,1.000000,NOR,PIA,Spielberg
+4:8|81:16,C2,A,False,False,False,1.000000,NOR,PIA,Spielberg
+4:8|81:16,C8,B,False,False,False,0.666667,NOR,PIA,Spielberg
+4:8|81:10,C1,B,False,False,False,0.666667,NOR,PIA,Spielberg
+4:8|81:10,C4,A,False,False,False,1.000000,NOR,PIA,Spielberg
+4:8|81:10,C5,A,False,False,False,1.000000,NOR,PIA,Spielberg
+4:8|81:10,C8,A,False,False,False,0.666667,NOR,PIA,Spielberg
+4:8|81:13,C1,B,False,False,False,0.666667,NOR,PIA,Spielberg
+4:8|81:13,C2,A,False,False,False,0.666667,NOR,PIA,Spielberg
+4:8|81:13,C4,A,False,False,False,0.666667,NOR,PIA,Spielberg
+4:8|81:13,C5,A,False,False,False,1.000000,NOR,PIA,Spielberg
+4:8|81:13,C7,A,False,False,False,1.000000,NOR,PIA,Spielberg
+4:2|81:16,C1,A,False,False,False,0.555556,NOR,PIA,Spielberg
+4:2|81:16,C2,A,False,False,False,1.000000,NOR,PIA,Spielberg
+4:2|81:16,C4,B,False,False,False,0.666667,NOR,PIA,Spielberg
+4:2|81:16,C6,B,False,False,False,0.666667,NOR,PIA,Spielberg
+4:2|81:16,C8,B,False,False,False,0.666667,NOR,PIA,Spielberg
+4:2|81:10,C1,B,False,False,False,1.000000,NOR,PIA,Spielberg
+4:2|81:10,C2,B,False,False,False,1.000000,NOR,PIA,Spielberg
+4:2|81:10,C5,A,False,False,False,0.666667,NOR,PIA,Spielberg
+4:2|81:10,C8,A,False,False,False,1.000000,NOR,PIA,Spielberg
+4:2|81:13,C1,B,False,False,False,1.000000,NOR,PIA,Spielberg
+4:2|81:13,C2,A,False,False,False,0.666667,NOR,PIA,Spielberg
+4:2|81:13,C5,A,False,False,False,1.000000,NOR,PIA,Spielberg
+4:2|81:13,C7,A,False,False,False,0.666667,NOR,PIA,Spielberg
+1:17|81:17,C1,A,False,True,True,0.666667,VER,PIA,Silverstone
+1:17|81:17,C6,A,False,False,False,1.000000,VER,PIA,Silverstone
+1:17|81:17,C7,A,False,False,False,1.000000,VER,PIA,Silverstone
+1:17|81:17,C8,A,False,False,False,1.000000,VER,PIA,Silverstone
+1:17|81:17,C11,B,False,False,False,0.666667,VER,PIA,Silverstone
+1:17|81:20,C1,A,False,False,False,0.666667,VER,PIA,Silverstone
+1:17|81:20,C6,A,False,False,False,1.000000,VER,PIA,Silverstone
+1:17|81:20,C7,A,False,False,False,0.666667,VER,PIA,Silverstone
+1:17|81:20,C8,A,False,False,False,1.000000,VER,PIA,Silverstone
+1:17|81:20,C11,B,False,False,False,0.666667,VER,PIA,Silverstone
+1:17|81:11,C1,A,False,False,False,1.000000,VER,PIA,Silverstone
+1:17|81:11,C2,B,False,False,False,0.666667,VER,PIA,Silverstone
+1:17|81:11,C3,A,False,False,False,0.666667,VER,PIA,Silverstone
+1:17|81:11,C6,A,False,False,False,1.000000,VER,PIA,Silverstone
+1:17|81:11,C7,A,False,False,False,1.000000,VER,PIA,Silverstone
+1:17|81:11,C8,A,False,False,False,0.666667,VER,PIA,Silverstone
+1:17|81:11,C10,A,False,False,False,0.666667,VER,PIA,Silverstone
+1:17|81:11,C11,B,False,False,False,1.000000,VER,PIA,Silverstone
+1:14|81:17,C3,B,False,False,False,0.666667,VER,PIA,Silverstone
+1:14|81:17,C4,B,False,False,False,0.666667,VER,PIA,Silverstone
+1:14|81:17,C6,A,False,False,False,1.000000,VER,PIA,Silverstone
+1:14|81:17,C7,A,False,False,False,1.000000,VER,PIA,Silverstone
+1:14|81:17,C9,B,False,False,False,0.666667,VER,PIA,Silverstone
+1:14|81:17,C11,B,False,False,False,1.000000,VER,PIA,Silverstone
+1:14|81:20,C1,A,False,False,False,0.666667,VER,PIA,Silverstone
+1:14|81:20,C3,B,False,False,False,0.666667,VER,PIA,Silverstone
+1:14|81:20,C4,B,False,False,False,1.000000,VER,PIA,Silverstone
+1:14|81:20,C7,A,False,False,False,1.000000,VER,PIA,Silverstone
+1:14|81:20,C11,B,False,False,False,0.666667,VER,PIA,Silverstone
+1:14|81:11,C1,A,False,False,False,1.000000,VER,PIA,Silverstone
+1:14|81:11,C2,B,False,False,False,0.666667,VER,PIA,Silverstone
+1:14|81:11,C4,B,False,False,False,0.666667,VER,PIA,Silverstone
+1:14|81:11,C7,A,False,False,False,1.000000,VER,PIA,Silverstone
+1:14|81:11,C10,A,False,False,False,1.000000,VER,PIA,Silverstone
+1:8|81:17,C1,A,False,False,False,0.666667,VER,PIA,Silverstone
+1:8|81:17,C2,B,False,False,False,1.000000,VER,PIA,Silverstone
+1:8|81:17,C4,B,False,False,False,1.000000,VER,PIA,Silverstone
+1:8|81:17,C6,A,False,False,False,1.000000,VER,PIA,Silverstone
+1:8|81:17,C7,A,False,False,False,0.666667,VER,PIA,Silverstone
+1:8|81:17,C9,B,False,False,False,1.000000,VER,PIA,Silverstone
+1:8|81:17,C11,B,False,False,False,0.666667,VER,PIA,Silverstone
+1:8|81:20,C1,A,False,False,False,1.000000,VER,PIA,Silverstone
+1:8|81:20,C2,B,False,False,False,1.000000,VER,PIA,Silverstone
+1:8|81:20,C3,A,False,False,False,0.666667,VER,PIA,Silverstone
+1:8|81:20,C4,B,False,False,False,1.000000,VER,PIA,Silverstone
+1:8|81:20,C6,A,False,False,False,1.000000,VER,PIA,Silverstone
+1:8|81:20,C7,A,False,False,False,0.666667,VER,PIA,Silverstone
+1:8|81:20,C8,A,False,False,False,0.666667,VER,PIA,Silverstone
+1:8|81:20,C9,B,False,False,False,1.000000,VER,PIA,Silverstone
+1:8|81:20,C11,B,False,False,False,0.666667,VER,PIA,Silverstone
+1:8|81:11,C1,A,False,False,False,1.000000,VER,PIA,Silverstone
+1:8|81:11,C2,B,False,False,False,1.000000,VER,PIA,Silverstone
+1:8|81:11,C4,B,False,False,False,0.666667,VER,PIA,Silverstone
+1:8|81:11,C6,A,False,False,False,1.000000,VER,PIA,Silverstone
+1:8|81:11,C7,A,False,False,False,1.000000,VER,PIA,Silverstone
+1:8|81:11,C9,B,False,False,False,1.000000,VER,PIA,Silverstone
+1:8|81:11,C10,A,False,False,False,0.666667,VER,PIA,Silverstone
+1:8|81:11,C11,B,False,False,False,1.000000,VER,PIA,Silverstone
+1:17|4:19,C1,A,False,False,False,1.000000,VER,NOR,Silverstone
+1:17|4:19,C2,B,False,False,False,0.666667,VER,NOR,Silverstone
+1:17|4:19,C3,A,False,False,False,0.666667,VER,NOR,Silverstone
+1:17|4:19,C6,A,False,False,False,1.000000,VER,NOR,Silverstone
+1:17|4:19,C7,A,False,False,False,0.666667,VER,NOR,Silverstone
+1:17|4:19,C11,B,False,False,False,1.000000,VER,NOR,Silverstone
+1:17|4:16,C1,A,False,False,False,0.666667,VER,NOR,Silverstone
+1:17|4:16,C3,A,False,False,False,0.666667,VER,NOR,Silverstone
+1:17|4:16,C6,A,False,False,False,1.000000,VER,NOR,Silverstone
+1:17|4:16,C7,A,False,False,False,0.666667,VER,NOR,Silverstone
+1:17|4:16,C8,A,False,False,False,0.666667,VER,NOR,Silverstone
+1:17|4:16,C11,B,False,False,False,0.666667,VER,NOR,Silverstone
+1:17|4:10,C1,A,False,False,False,0.666667,VER,NOR,Silverstone
+1:17|4:10,C5,B,False,False,False,1.000000,VER,NOR,Silverstone
+1:17|4:10,C6,A,False,False,False,0.666667,VER,NOR,Silverstone
+1:17|4:10,C7,A,False,False,False,1.000000,VER,NOR,Silverstone
+1:17|4:10,C8,A,False,False,False,0.666667,VER,NOR,Silverstone
+1:17|4:10,C10,A,False,False,False,0.666667,VER,NOR,Silverstone
+1:17|4:10,C11,B,False,False,False,0.666667,VER,NOR,Silverstone
+1:14|4:19,C1,A,False,False,False,1.000000,VER,NOR,Silverstone
+1:14|4:19,C3,B,False,False,False,0.666667,VER,NOR,Silverstone
+1:14|4:19,C6,A,False,False,False,0.666667,VER,NOR,Silverstone
+1:14|4:19,C7,A,False,False,False,1.000000,VER,NOR,Silverstone
+1:14|4:19,C11,B,False,False,False,1.000000,VER,NOR,Silverstone
+1:14|4:16,C4,B,False,False,False,0.666667,VER,NOR,Silverstone
+1:14|4:16,C6,A,False,False,False,0.666667,VER,NOR,Silverstone
+1:14|4:16,C7,A,False,False,False,1.000000,VER,NOR,Silverstone
+1:14|4:16,C11,B,False,False,False,0.666667,VER,NOR,Silverstone
+1:14|4:10,C1,A,False,False,False,0.666667,VER,NOR,Silverstone
+1:14|4:10,C3,B,False,False,False,0.666667,VER,NOR,Silverstone
+1:14|4:10,C5,B,False,False,False,0.666667,VER,NOR,Silverstone
+1:14|4:10,C6,A,False,True,True,0.333333,VER,NOR,Silverstone
+1:14|4:10,C7,A,False,False,False,1.000000,VER,NOR,Silverstone
+1:14|4:10,C10,A,False,False,False,1.000000,VER,NOR,Silverstone
+1:14|4:10,C11,B,False,False,False,1.000000,VER,NOR,Silverstone
+1:8|4:19,C1,A,False,False,False,1.000000,VER,NOR,Silverstone
+1:8|4:19,C2,B,False,False,False,1.000000,VER,NOR,Silverstone
+1:8|4:19,C4,B,False,False,False,0.666667,VER,NOR,Silverstone
+1:8|4:19,C6,A,False,False,False,1.000000,VER,NOR,Silverstone
+1:8|4:19,C7,A,False,False,False,0.666667,VER,NOR,Silverstone
+1:8|4:19,C9,B,False,False,False,1.000000,VER,NOR,Silverstone
+1:8|4:19,C11,B,False,False,False,1.000000,VER,NOR,Silverstone
+1:8|4:16,C1,A,False,False,False,1.000000,VER,NOR,Silverstone
+1:8|4:16,C2,B,False,False,False,1.000000,VER,NOR,Silverstone
+1:8|4:16,C4,B,False,False,False,0.666667,VER,NOR,Silverstone
+1:8|4:16,C5,B,False,True,True,0.333333,VER,NOR,Silverstone
+1:8|4:16,C6,A,False,False,False,1.000000,VER,NOR,Silverstone
+1:8|4:16,C7,A,False,False,False,0.666667,VER,NOR,Silverstone
+1:8|4:16,C9,B,False,False,False,1.000000,VER,NOR,Silverstone
+1:8|4:16,C11,B,False,False,False,0.666667,VER,NOR,Silverstone
+1:8|4:10,C1,A,False,False,False,0.666667,VER,NOR,Silverstone
+1:8|4:10,C5,B,False,False,False,0.666667,VER,NOR,Silverstone
+1:8|4:10,C6,A,False,False,False,0.666667,VER,NOR,Silverstone
+1:8|4:10,C7,A,False,False,False,1.000000,VER,NOR,Silverstone
+1:8|4:10,C8,A,False,False,False,0.666667,VER,NOR,Silverstone
+1:8|4:10,C9,B,False,False,False,1.000000,VER,NOR,Silverstone
+1:8|4:10,C10,A,False,False,False,0.666667,VER,NOR,Silverstone
+1:8|4:10,C11,B,False,False,False,1.000000,VER,NOR,Silverstone
+4:16|81:11,C1,A,False,False,False,1.000000,NOR,PIA,Spa-Francorchamps
+4:16|81:11,C4,A,False,False,False,0.500000,NOR,PIA,Spa-Francorchamps
+4:16|81:11,C5,A,False,False,False,0.666667,NOR,PIA,Spa-Francorchamps
+4:16|81:11,C6,A,False,False,False,0.500000,NOR,PIA,Spa-Francorchamps
+4:16|81:11,C11,B,False,False,True,0.500000,NOR,PIA,Spa-Francorchamps
+4:16|81:11,C12,B,False,False,False,0.833333,NOR,PIA,Spa-Francorchamps
+4:16|81:11,C14,B,False,False,False,0.666667,NOR,PIA,Spa-Francorchamps
+4:16|81:20,C4,A,False,False,True,0.500000,NOR,PIA,Spa-Francorchamps
+4:16|81:20,C5,B,True,False,True,0.500000,NOR,PIA,Spa-Francorchamps
+4:16|81:20,C6,A,True,False,True,0.500000,NOR,PIA,Spa-Francorchamps
+4:16|81:20,C7,B,True,False,True,0.500000,NOR,PIA,Spa-Francorchamps
+4:16|81:20,C8,B,False,False,False,1.000000,NOR,PIA,Spa-Francorchamps
+4:16|81:20,C9,B,False,True,True,0.833333,NOR,PIA,Spa-Francorchamps
+4:16|81:20,C10,A,True,False,True,0.666667,NOR,PIA,Spa-Francorchamps
+4:16|81:20,C11,A,False,False,True,0.500000,NOR,PIA,Spa-Francorchamps
+4:16|81:17,C11,A,False,False,False,1.000000,NOR,PIA,Spa-Francorchamps
+4:19|81:11,C1,B,False,False,False,0.833333,NOR,PIA,Spa-Francorchamps
+4:19|81:11,C3,A,False,False,False,0.500000,NOR,PIA,Spa-Francorchamps
+4:19|81:11,C4,A,False,False,False,0.666667,NOR,PIA,Spa-Francorchamps
+4:19|81:11,C5,A,False,False,False,0.666667,NOR,PIA,Spa-Francorchamps
+4:19|81:11,C14,B,False,False,False,0.666667,NOR,PIA,Spa-Francorchamps
+4:19|81:20,C1,B,False,False,False,1.000000,NOR,PIA,Spa-Francorchamps
+4:19|81:20,C6,A,False,False,False,0.500000,NOR,PIA,Spa-Francorchamps
+4:19|81:20,C7,B,True,False,True,0.500000,NOR,PIA,Spa-Francorchamps
+4:19|81:20,C8,B,False,False,False,1.000000,NOR,PIA,Spa-Francorchamps
+4:19|81:20,C10,A,False,False,False,0.500000,NOR,PIA,Spa-Francorchamps
+4:19|81:20,C12,A,False,False,False,0.833333,NOR,PIA,Spa-Francorchamps
+4:19|81:20,C14,B,False,False,False,0.666667,NOR,PIA,Spa-Francorchamps
+4:19|81:17,C1,B,False,False,False,0.666667,NOR,PIA,Spa-Francorchamps
+4:19|81:17,C5,A,False,False,True,0.500000,NOR,PIA,Spa-Francorchamps
+4:19|81:17,C6,A,False,False,False,0.666667,NOR,PIA,Spa-Francorchamps
+4:19|81:17,C11,A,False,False,False,1.000000,NOR,PIA,Spa-Francorchamps
+4:19|81:17,C12,A,False,False,False,0.833333,NOR,PIA,Spa-Francorchamps
+4:19|81:17,C14,B,False,True,True,0.666667,NOR,PIA,Spa-Francorchamps
+4:10|81:11,C14,B,False,False,False,0.666667,NOR,PIA,Spa-Francorchamps
+4:10|81:20,C1,B,False,False,False,1.000000,NOR,PIA,Spa-Francorchamps
+4:10|81:20,C6,A,False,False,True,0.500000,NOR,PIA,Spa-Francorchamps
+4:10|81:20,C7,B,True,False,True,0.500000,NOR,PIA,Spa-Francorchamps
+4:10|81:20,C8,B,False,False,False,1.000000,NOR,PIA,Spa-Francorchamps
+4:10|81:20,C9,B,False,False,False,0.833333,NOR,PIA,Spa-Francorchamps
+4:10|81:20,C10,A,True,False,True,0.500000,NOR,PIA,Spa-Francorchamps
+4:10|81:20,C11,A,False,False,False,0.666667,NOR,PIA,Spa-Francorchamps
+4:10|81:20,C12,A,False,False,False,1.000000,NOR,PIA,Spa-Francorchamps
+4:10|81:20,C13,A,False,False,False,0.666667,NOR,PIA,Spa-Francorchamps
+4:10|81:17,C1,B,False,False,False,1.000000,NOR,PIA,Spa-Francorchamps
+4:10|81:17,C8,B,False,False,False,0.500000,NOR,PIA,Spa-Francorchamps
+4:10|81:17,C11,A,False,False,False,1.000000,NOR,PIA,Spa-Francorchamps
+4:10|81:17,C12,A,False,False,False,1.000000,NOR,PIA,Spa-Francorchamps
+4:10|81:17,C14,B,False,True,True,0.666667,NOR,PIA,Spa-Francorchamps
+4:16|16:17,C2,B,False,False,False,0.666667,NOR,LEC,Spa-Francorchamps
+4:16|16:17,C3,B,False,False,False,0.666667,NOR,LEC,Spa-Francorchamps
+4:16|16:17,C4,B,False,False,True,0.500000,NOR,LEC,Spa-Francorchamps
+4:16|16:17,C6,A,False,False,False,0.500000,NOR,LEC,Spa-Francorchamps
+4:16|16:17,C7,A,False,False,True,0.500000,NOR,LEC,Spa-Francorchamps
+4:16|16:17,C10,A,False,False,False,0.500000,NOR,LEC,Spa-Francorchamps
+4:16|16:17,C11,A,False,False,True,0.500000,NOR,LEC,Spa-Francorchamps
+4:16|16:17,C14,A,False,False,False,0.666667,NOR,LEC,Spa-Francorchamps
+4:16|16:9,C1,A,False,False,False,1.000000,NOR,LEC,Spa-Francorchamps
+4:16|16:9,C5,A,False,False,False,0.500000,NOR,LEC,Spa-Francorchamps
+4:16|16:9,C6,A,False,False,False,1.000000,NOR,LEC,Spa-Francorchamps
+4:16|16:9,C7,A,True,False,True,0.500000,NOR,LEC,Spa-Francorchamps
+4:16|16:9,C8,A,True,False,True,0.500000,NOR,LEC,Spa-Francorchamps
+4:16|16:9,C9,A,False,False,True,0.500000,NOR,LEC,Spa-Francorchamps
+4:16|16:9,C10,A,False,False,True,0.500000,NOR,LEC,Spa-Francorchamps
+4:16|16:9,C13,B,False,False,False,0.666667,NOR,LEC,Spa-Francorchamps
+4:16|16:14,C1,A,False,False,False,1.000000,NOR,LEC,Spa-Francorchamps
+4:16|16:14,C4,A,False,False,False,0.500000,NOR,LEC,Spa-Francorchamps
+4:16|16:14,C5,A,False,False,False,0.833333,NOR,LEC,Spa-Francorchamps
+4:16|16:14,C6,A,False,False,False,0.833333,NOR,LEC,Spa-Francorchamps
+4:16|16:14,C10,A,False,False,False,0.500000,NOR,LEC,Spa-Francorchamps
+4:16|16:14,C11,A,False,False,False,0.666667,NOR,LEC,Spa-Francorchamps
+4:16|16:14,C12,A,False,False,False,1.000000,NOR,LEC,Spa-Francorchamps
+4:16|16:14,C14,A,False,False,False,1.000000,NOR,LEC,Spa-Francorchamps
+4:19|16:17,C1,B,False,False,False,0.666667,NOR,LEC,Spa-Francorchamps
+4:19|16:17,C5,A,False,False,False,0.500000,NOR,LEC,Spa-Francorchamps
+4:19|16:17,C6,A,False,False,False,1.000000,NOR,LEC,Spa-Francorchamps
+4:19|16:17,C10,A,False,False,False,0.500000,NOR,LEC,Spa-Francorchamps
+4:19|16:17,C11,A,False,True,True,0.666667,NOR,LEC,Spa-Francorchamps
+4:19|16:9,C1,B,False,False,False,0.666667,NOR,LEC,Spa-Francorchamps
+4:19|16:9,C5,A,False,False,True,0.500000,NOR,LEC,Spa-Francorchamps
+4:19|16:9,C6,A,False,False,False,1.000000,NOR,LEC,Spa-Francorchamps
+4:19|16:9,C7,A,False,False,True,0.500000,NOR,LEC,Spa-Francorchamps
+4:19|16:9,C8,A,False,False,True,0.500000,NOR,LEC,Spa-Francorchamps
+4:19|16:9,C9,A,False,False,True,0.500000,NOR,LEC,Spa-Francorchamps
+4:19|16:9,C10,A,False,False,True,0.500000,NOR,LEC,Spa-Francorchamps
+4:19|16:9,C11,A,False,False,False,0.666667,NOR,LEC,Spa-Francorchamps
+4:19|16:9,C12,A,False,False,False,0.833333,NOR,LEC,Spa-Francorchamps
+4:19|16:9,C13,B,False,False,False,0.666667,NOR,LEC,Spa-Francorchamps
+4:19|16:14,C1,B,False,True,True,0.666667,NOR,LEC,Spa-Francorchamps
+4:19|16:14,C5,A,False,False,False,0.666667,NOR,LEC,Spa-Francorchamps
+4:19|16:14,C6,A,False,False,False,1.000000,NOR,LEC,Spa-Francorchamps
+4:19|16:14,C7,A,False,True,True,0.833333,NOR,LEC,Spa-Francorchamps
+4:19|16:14,C8,A,False,False,True,0.833333,NOR,LEC,Spa-Francorchamps
+4:19|16:14,C10,A,False,False,False,0.500000,NOR,LEC,Spa-Francorchamps
+4:19|16:14,C11,A,False,False,False,0.833333,NOR,LEC,Spa-Francorchamps
+4:19|16:14,C12,A,False,False,False,1.000000,NOR,LEC,Spa-Francorchamps
+4:10|16:17,C1,B,False,False,False,1.000000,NOR,LEC,Spa-Francorchamps
+4:10|16:17,C3,B,False,False,False,0.666667,NOR,LEC,Spa-Francorchamps
+4:10|16:17,C4,B,False,False,False,0.666667,NOR,LEC,Spa-Francorchamps
+4:10|16:17,C6,A,False,False,False,0.666667,NOR,LEC,Spa-Francorchamps
+4:10|16:17,C7,A,False,False,True,0.500000,NOR,LEC,Spa-Francorchamps
+4:10|16:17,C10,A,False,False,False,0.500000,NOR,LEC,Spa-Francorchamps
+4:10|16:17,C11,A,False,False,False,0.666667,NOR,LEC,Spa-Francorchamps
+4:10|16:17,C12,A,False,False,False,0.833333,NOR,LEC,Spa-Francorchamps
+4:10|16:17,C14,A,False,False,False,1.000000,NOR,LEC,Spa-Francorchamps
+4:10|16:9,C5,A,False,False,True,0.500000,NOR,LEC,Spa-Francorchamps
+4:10|16:9,C6,A,False,False,False,1.000000,NOR,LEC,Spa-Francorchamps
+4:10|16:9,C7,A,True,False,True,0.500000,NOR,LEC,Spa-Francorchamps
+4:10|16:9,C10,A,False,False,True,0.500000,NOR,LEC,Spa-Francorchamps
+4:10|16:9,C12,A,False,False,False,1.000000,NOR,LEC,Spa-Francorchamps
+4:10|16:14,C3,B,False,False,False,0.500000,NOR,LEC,Spa-Francorchamps
+4:10|16:14,C6,A,False,False,False,0.833333,NOR,LEC,Spa-Francorchamps
+4:10|16:14,C10,A,False,False,False,0.500000,NOR,LEC,Spa-Francorchamps
+4:10|16:14,C11,A,False,False,False,1.000000,NOR,LEC,Spa-Francorchamps
+4:10|16:14,C12,A,False,False,False,1.000000,NOR,LEC,Spa-Francorchamps
+4:10|16:14,C14,A,False,False,False,0.666667,NOR,LEC,Spa-Francorchamps
+4:8|81:8,C2,A,False,False,False,0.666667,NOR,PIA,Budapest
+4:8|81:8,C7,B,False,False,False,1.000000,NOR,PIA,Budapest
+4:8|81:8,C11,B,False,False,False,1.000000,NOR,PIA,Budapest
+4:8|81:11,C6,A,False,False,False,0.666667,NOR,PIA,Budapest
+4:8|81:11,C7,B,False,False,False,0.666667,NOR,PIA,Budapest
+4:8|81:11,C12,A,False,False,False,1.000000,NOR,PIA,Budapest
+4:8|81:5,C2,A,False,False,False,0.666667,NOR,PIA,Budapest
+4:8|81:5,C3,B,False,False,False,0.666667,NOR,PIA,Budapest
+4:8|81:5,C4,A,False,False,False,0.666667,NOR,PIA,Budapest
+4:8|81:5,C5,A,False,False,False,0.666667,NOR,PIA,Budapest
+4:8|81:5,C6,A,False,False,False,0.666667,NOR,PIA,Budapest
+4:8|81:5,C7,B,False,False,True,0.666667,NOR,PIA,Budapest
+4:8|81:5,C13,A,False,True,True,0.666667,NOR,PIA,Budapest
+4:11|81:8,C1,B,False,False,False,0.666667,NOR,PIA,Budapest
+4:11|81:8,C5,B,False,False,False,1.000000,NOR,PIA,Budapest
+4:11|81:8,C11,B,False,False,False,0.666667,NOR,PIA,Budapest
+4:11|81:8,C12,B,False,True,True,0.666667,NOR,PIA,Budapest
+4:11|81:11,C1,B,False,False,False,1.000000,NOR,PIA,Budapest
+4:11|81:11,C11,A,False,False,False,1.000000,NOR,PIA,Budapest
+4:11|81:11,C12,A,False,False,False,1.000000,NOR,PIA,Budapest
+4:11|81:11,C13,A,False,False,False,0.666667,NOR,PIA,Budapest
+4:11|81:5,C10,A,False,True,True,0.333333,NOR,PIA,Budapest
+4:11|81:5,C11,A,False,False,False,0.666667,NOR,PIA,Budapest
+4:11|81:5,C13,A,False,True,True,0.666667,NOR,PIA,Budapest
+4:17|81:8,C1,B,False,False,False,0.777778,NOR,PIA,Budapest
+4:17|81:8,C5,B,False,False,False,1.000000,NOR,PIA,Budapest
+4:17|81:8,C6,A,False,False,False,0.666667,NOR,PIA,Budapest
+4:17|81:8,C8,B,False,False,False,0.666667,NOR,PIA,Budapest
+4:17|81:8,C11,B,False,False,False,1.000000,NOR,PIA,Budapest
+4:17|81:8,C12,B,False,False,False,0.666667,NOR,PIA,Budapest
+4:17|81:11,C1,B,False,False,False,1.000000,NOR,PIA,Budapest
+4:17|81:11,C2,B,False,False,False,0.666667,NOR,PIA,Budapest
+4:17|81:11,C6,A,False,False,False,0.666667,NOR,PIA,Budapest
+4:17|81:11,C8,B,False,False,False,0.666667,NOR,PIA,Budapest
+4:17|81:11,C12,A,False,False,False,0.666667,NOR,PIA,Budapest
+4:17|81:5,C1,B,False,False,False,1.000000,NOR,PIA,Budapest
+4:17|81:5,C4,A,False,False,False,0.666667,NOR,PIA,Budapest
+4:17|81:5,C6,A,False,False,False,0.666667,NOR,PIA,Budapest
+4:17|81:5,C8,B,False,False,False,0.666667,NOR,PIA,Budapest
+4:17|81:5,C9,B,False,False,False,0.666667,NOR,PIA,Budapest
+4:17|81:5,C12,B,False,False,False,1.000000,NOR,PIA,Budapest
+4:17|81:5,C13,A,False,True,True,0.666667,NOR,PIA,Budapest
+4:8|18:11,C6,A,False,False,False,0.666667,NOR,STR,Budapest
+4:8|18:11,C7,B,False,False,False,1.000000,NOR,STR,Budapest
+4:8|18:11,C8,B,False,False,False,0.666667,NOR,STR,Budapest
+4:8|18:11,C10,A,False,False,False,0.666667,NOR,STR,Budapest
+4:8|18:11,C11,A,False,False,False,1.000000,NOR,STR,Budapest
+4:8|18:11,C13,A,False,False,False,0.666667,NOR,STR,Budapest
+4:8|18:17,C1,A,False,False,False,0.666667,NOR,STR,Budapest
+4:8|18:17,C6,A,False,False,False,1.000000,NOR,STR,Budapest
+4:8|18:17,C7,B,False,False,False,0.666667,NOR,STR,Budapest
+4:8|18:17,C10,A,False,False,False,1.000000,NOR,STR,Budapest
+4:8|18:17,C11,A,False,False,False,0.666667,NOR,STR,Budapest
+4:8|18:17,C13,A,False,False,False,0.777778,NOR,STR,Budapest
+4:8|18:5,C1,A,False,False,False,0.666667,NOR,STR,Budapest
+4:8|18:5,C2,A,False,False,False,1.000000,NOR,STR,Budapest
+4:8|18:5,C5,A,False,False,False,1.000000,NOR,STR,Budapest
+4:8|18:5,C6,A,False,False,False,1.000000,NOR,STR,Budapest
+4:8|18:5,C7,B,False,False,False,0.666667,NOR,STR,Budapest
+4:8|18:5,C10,A,False,True,True,0.666667,NOR,STR,Budapest
+4:8|18:5,C12,A,False,False,False,1.000000,NOR,STR,Budapest
+4:8|18:5,C13,A,False,False,False,1.000000,NOR,STR,Budapest
+4:11|18:11,C1,B,False,False,False,0.555556,NOR,STR,Budapest
+4:11|18:11,C10,A,False,False,False,0.666667,NOR,STR,Budapest
+4:11|18:11,C11,A,False,False,False,1.000000,NOR,STR,Budapest
+4:11|18:11,C12,B,False,False,False,0.666667,NOR,STR,Budapest
+4:11|18:11,C13,A,False,False,False,0.666667,NOR,STR,Budapest
+4:11|18:17,C8,A,False,False,False,0.666667,NOR,STR,Budapest
+4:11|18:17,C10,A,False,False,False,0.666667,NOR,STR,Budapest
+4:11|18:17,C11,A,False,False,False,1.000000,NOR,STR,Budapest
+4:11|18:17,C13,A,False,False,False,0.666667,NOR,STR,Budapest
+4:11|18:5,C6,A,False,False,False,0.666667,NOR,STR,Budapest
+4:11|18:5,C9,A,False,False,False,0.666667,NOR,STR,Budapest
+4:11|18:5,C10,A,False,True,True,0.666667,NOR,STR,Budapest
+4:11|18:5,C11,A,False,False,False,1.000000,NOR,STR,Budapest
+4:11|18:5,C12,A,False,False,False,1.000000,NOR,STR,Budapest
+4:11|18:5,C13,A,False,False,False,1.000000,NOR,STR,Budapest
+4:17|18:11,C1,B,False,False,False,1.000000,NOR,STR,Budapest
+4:17|18:11,C6,A,False,False,False,0.666667,NOR,STR,Budapest
+4:17|18:11,C8,B,False,False,False,1.000000,NOR,STR,Budapest
+4:17|18:11,C11,A,False,False,False,1.000000,NOR,STR,Budapest
+4:17|18:11,C12,B,False,False,False,1.000000,NOR,STR,Budapest
+4:17|18:17,C6,A,False,False,False,1.000000,NOR,STR,Budapest
+4:17|18:17,C11,A,False,False,False,0.666667,NOR,STR,Budapest
+4:17|18:17,C12,B,False,False,False,1.000000,NOR,STR,Budapest
+4:17|18:17,C13,A,False,False,False,0.666667,NOR,STR,Budapest
+4:17|18:5,C1,B,False,False,False,1.000000,NOR,STR,Budapest
+4:17|18:5,C6,A,False,False,False,1.000000,NOR,STR,Budapest
+4:17|18:5,C8,B,False,False,False,0.666667,NOR,STR,Budapest
+4:17|18:5,C11,A,False,False,False,1.000000,NOR,STR,Budapest
+4:17|18:5,C13,A,False,False,False,1.000000,NOR,STR,Budapest
+81:14|4:14,C1,B,False,False,False,0.666667,PIA,NOR,Zandvoort
+81:14|4:14,C4,A,False,False,False,1.000000,PIA,NOR,Zandvoort
+81:14|4:14,C8,B,False,False,False,1.000000,PIA,NOR,Zandvoort
+81:14|4:17,C4,A,False,False,False,0.777778,PIA,NOR,Zandvoort
+81:14|4:17,C7,A,False,False,False,1.000000,PIA,NOR,Zandvoort
+81:14|4:17,C8,B,False,False,False,1.000000,PIA,NOR,Zandvoort
+81:14|4:17,C9,A,False,False,False,0.666667,PIA,NOR,Zandvoort
+81:14|4:8,C3,A,False,False,False,1.000000,PIA,NOR,Zandvoort
+81:14|4:8,C4,A,False,False,False,0.666667,PIA,NOR,Zandvoort
+81:14|4:8,C6,A,False,False,False,0.666667,PIA,NOR,Zandvoort
+81:14|4:8,C7,A,False,False,False,1.000000,PIA,NOR,Zandvoort
+81:14|4:8,C8,B,False,False,False,1.000000,PIA,NOR,Zandvoort
+81:17|4:14,C4,A,False,False,False,0.666667,PIA,NOR,Zandvoort
+81:17|4:14,C8,B,False,True,True,0.333333,PIA,NOR,Zandvoort
+81:17|4:14,C9,B,False,False,False,0.666667,PIA,NOR,Zandvoort
+81:17|4:14,C10,B,False,True,True,0.333333,PIA,NOR,Zandvoort
+81:17|4:17,C7,A,False,False,False,0.666667,PIA,NOR,Zandvoort
+81:17|4:17,C8,B,False,False,False,1.000000,PIA,NOR,Zandvoort
+81:17|4:17,C10,B,False,True,True,0.333333,PIA,NOR,Zandvoort
+81:17|4:8,C3,A,False,False,False,0.666667,PIA,NOR,Zandvoort
+81:17|4:8,C4,A,False,False,False,0.666667,PIA,NOR,Zandvoort
+81:17|4:8,C6,A,False,False,False,0.666667,PIA,NOR,Zandvoort
+81:17|4:8,C7,A,False,False,False,0.666667,PIA,NOR,Zandvoort
+81:17|4:8,C9,B,False,False,False,0.666667,PIA,NOR,Zandvoort
+81:8|4:14,C1,B,False,False,False,0.666667,PIA,NOR,Zandvoort
+81:8|4:14,C3,B,False,False,False,0.666667,PIA,NOR,Zandvoort
+81:8|4:14,C8,B,False,False,False,0.666667,PIA,NOR,Zandvoort
+81:8|4:14,C10,A,False,False,False,0.666667,PIA,NOR,Zandvoort
+81:8|4:17,C4,B,False,False,False,0.666667,PIA,NOR,Zandvoort
+81:8|4:17,C7,A,False,False,False,1.000000,PIA,NOR,Zandvoort
+81:8|4:17,C8,B,False,False,False,1.000000,PIA,NOR,Zandvoort
+81:8|4:17,C10,A,False,False,False,0.666667,PIA,NOR,Zandvoort
+81:8|4:8,C4,B,False,False,False,0.555556,PIA,NOR,Zandvoort
+81:8|4:8,C7,A,False,False,False,0.666667,PIA,NOR,Zandvoort
+81:8|4:8,C8,B,False,False,False,0.666667,PIA,NOR,Zandvoort
+81:8|4:8,C9,B,False,False,False,0.666667,PIA,NOR,Zandvoort
+81:14|1:17,C1,A,False,True,True,0.666667,PIA,VER,Zandvoort
+81:14|1:17,C3,A,False,False,False,1.000000,PIA,VER,Zandvoort
+81:14|1:17,C4,A,False,False,False,1.000000,PIA,VER,Zandvoort
+81:14|1:17,C8,B,False,False,False,1.000000,PIA,VER,Zandvoort
+81:14|1:17,C9,A,False,False,False,0.666667,PIA,VER,Zandvoort
+81:14|1:14,C1,A,False,False,False,0.666667,PIA,VER,Zandvoort
+81:14|1:14,C4,A,False,False,False,1.000000,PIA,VER,Zandvoort
+81:14|1:14,C5,B,False,False,False,0.555556,PIA,VER,Zandvoort
+81:14|1:14,C7,A,False,False,False,1.000000,PIA,VER,Zandvoort
+81:14|1:14,C8,B,False,False,False,1.000000,PIA,VER,Zandvoort
+81:14|1:14,C10,A,False,False,False,1.000000,PIA,VER,Zandvoort
+81:14|1:14,C11,A,False,False,False,1.000000,PIA,VER,Zandvoort
+81:14|1:8,C4,A,False,False,False,1.000000,PIA,VER,Zandvoort
+81:14|1:8,C5,A,False,False,False,0.888889,PIA,VER,Zandvoort
+81:14|1:8,C9,A,False,False,False,1.000000,PIA,VER,Zandvoort
+81:17|1:17,C1,A,False,False,False,0.666667,PIA,VER,Zandvoort
+81:17|1:17,C3,A,False,False,False,0.777778,PIA,VER,Zandvoort
+81:17|1:17,C4,A,False,False,False,1.000000,PIA,VER,Zandvoort
+81:17|1:17,C12,B,False,False,False,1.000000,PIA,VER,Zandvoort
+81:17|1:14,C1,A,False,False,False,0.666667,PIA,VER,Zandvoort
+81:17|1:14,C4,A,False,False,False,1.000000,PIA,VER,Zandvoort
+81:17|1:14,C5,B,False,False,False,0.777778,PIA,VER,Zandvoort
+81:17|1:14,C7,A,False,False,False,1.000000,PIA,VER,Zandvoort
+81:17|1:14,C11,A,False,False,False,0.666667,PIA,VER,Zandvoort
+81:17|1:8,C4,A,False,False,False,1.000000,PIA,VER,Zandvoort
+81:17|1:8,C11,A,False,False,False,0.666667,PIA,VER,Zandvoort
+81:8|1:17,C8,B,False,False,False,1.000000,PIA,VER,Zandvoort
+81:8|1:17,C10,A,False,False,False,0.666667,PIA,VER,Zandvoort
+81:8|1:14,C5,B,False,False,False,0.777778,PIA,VER,Zandvoort
+81:8|1:14,C7,A,False,False,False,1.000000,PIA,VER,Zandvoort
+81:8|1:14,C8,B,False,False,False,0.666667,PIA,VER,Zandvoort
+81:8|1:14,C10,A,False,False,False,1.000000,PIA,VER,Zandvoort
+81:8|1:14,C11,A,False,False,False,1.000000,PIA,VER,Zandvoort
+81:8|1:8,C10,A,False,False,False,0.666667,PIA,VER,Zandvoort
+81:8|1:8,C11,A,False,False,False,0.666667,PIA,VER,Zandvoort
+1:17|4:20,C1,A,False,False,False,1.000000,VER,NOR,Monza
+1:17|4:20,C3,B,False,False,False,1.000000,VER,NOR,Monza
+1:17|4:14,C1,A,False,False,False,1.000000,VER,NOR,Monza
+1:17|4:14,C2,A,False,False,False,1.000000,VER,NOR,Monza
+1:17|4:14,C3,B,False,False,False,0.666667,VER,NOR,Monza
+1:17|4:14,C5,A,False,False,False,0.666667,VER,NOR,Monza
+1:17|4:14,C6,A,False,False,False,0.666667,VER,NOR,Monza
+1:17|4:17,C1,A,False,False,False,1.000000,VER,NOR,Monza
+1:17|4:17,C2,A,False,False,False,1.000000,VER,NOR,Monza
+1:17|4:17,C3,B,False,False,False,1.000000,VER,NOR,Monza
+1:17|4:17,C5,A,False,False,False,0.666667,VER,NOR,Monza
+1:17|4:17,C6,A,False,False,False,0.666667,VER,NOR,Monza
+1:17|4:17,C7,A,False,False,False,1.000000,VER,NOR,Monza
+1:14|4:20,C1,A,False,False,False,1.000000,VER,NOR,Monza
+1:14|4:20,C3,B,False,False,False,1.000000,VER,NOR,Monza
+1:14|4:20,C6,B,False,False,False,0.666667,VER,NOR,Monza
+1:14|4:14,C1,A,False,False,False,1.000000,VER,NOR,Monza
+1:14|4:14,C2,A,False,False,False,1.000000,VER,NOR,Monza
+1:14|4:14,C5,A,False,False,False,0.666667,VER,NOR,Monza
+1:14|4:17,C1,A,False,False,False,1.000000,VER,NOR,Monza
+1:14|4:17,C2,A,False,False,False,1.000000,VER,NOR,Monza
+1:14|4:17,C3,B,False,False,False,1.000000,VER,NOR,Monza
+1:14|4:17,C5,A,False,False,False,1.000000,VER,NOR,Monza
+1:14|4:17,C7,A,False,False,False,1.000000,VER,NOR,Monza
+1:8|4:20,C1,B,False,True,True,0.666667,VER,NOR,Monza
+1:8|4:20,C3,B,False,False,False,0.666667,VER,NOR,Monza
+1:8|4:20,C6,B,False,False,False,1.000000,VER,NOR,Monza
+1:8|4:14,C1,A,False,False,False,1.000000,VER,NOR,Monza
+1:8|4:14,C2,A,False,False,False,1.000000,VER,NOR,Monza
+1:8|4:14,C5,A,False,False,False,0.666667,VER,NOR,Monza
+1:8|4:17,C1,A,False,False,False,1.000000,VER,NOR,Monza
+1:8|4:17,C2,A,False,False,False,1.000000,VER,NOR,Monza
+1:8|4:17,C3,B,False,False,False,1.000000,VER,NOR,Monza
+1:8|4:17,C4,B,False,False,False,1.000000,VER,NOR,Monza
+1:8|4:17,C5,A,False,False,False,1.000000,VER,NOR,Monza
+1:8|4:17,C7,A,False,False,False,1.000000,VER,NOR,Monza
+1:17|81:18,C1,A,False,False,False,1.000000,VER,PIA,Monza
+1:17|81:18,C3,B,False,False,False,1.000000,VER,PIA,Monza
+1:17|81:18,C5,B,False,False,False,0.666667,VER,PIA,Monza
+1:17|81:18,C6,A,False,False,False,0.666667,VER,PIA,Monza
+1:17|81:18,C7,A,False,False,False,1.000000,VER,PIA,Monza
+1:17|81:15,C1,A,False,False,False,1.000000,VER,PIA,Monza
+1:17|81:15,C2,A,False,False,False,0.666667,VER,PIA,Monza
+1:17|81:15,C3,B,False,False,False,1.000000,VER,PIA,Monza
+1:17|81:12,C1,A,False,False,False,1.000000,VER,PIA,Monza
+1:17|81:12,C2,A,False,False,False,1.000000,VER,PIA,Monza
+1:17|81:12,C5,A,False,False,False,1.000000,VER,PIA,Monza
+1:17|81:12,C6,A,False,False,False,0.666667,VER,PIA,Monza
+1:17|81:12,C7,A,False,False,False,1.000000,VER,PIA,Monza
+1:14|81:18,C1,A,False,False,False,1.000000,VER,PIA,Monza
+1:14|81:18,C3,B,False,False,False,1.000000,VER,PIA,Monza
+1:14|81:18,C4,B,False,False,False,0.666667,VER,PIA,Monza
+1:14|81:18,C5,B,False,False,False,0.666667,VER,PIA,Monza
+1:14|81:15,C1,A,False,False,False,1.000000,VER,PIA,Monza
+1:14|81:15,C2,A,False,False,False,0.666667,VER,PIA,Monza
+1:14|81:15,C3,B,False,False,False,1.000000,VER,PIA,Monza
+1:14|81:12,C1,A,False,False,False,1.000000,VER,PIA,Monza
+1:14|81:12,C2,A,False,False,False,1.000000,VER,PIA,Monza
+1:14|81:12,C5,A,False,False,False,1.000000,VER,PIA,Monza
+1:8|81:18,C1,A,False,False,False,1.000000,VER,PIA,Monza
+1:8|81:18,C3,B,False,False,False,1.000000,VER,PIA,Monza
+1:8|81:18,C4,B,False,False,False,1.000000,VER,PIA,Monza
+1:8|81:18,C5,B,False,False,False,1.000000,VER,PIA,Monza
+1:8|81:18,C7,A,False,False,False,0.666667,VER,PIA,Monza
+1:8|81:15,C1,A,False,False,False,1.000000,VER,PIA,Monza
+1:8|81:15,C3,B,False,False,False,0.666667,VER,PIA,Monza
+1:8|81:15,C4,B,False,False,False,1.000000,VER,PIA,Monza
+1:8|81:12,C1,A,False,False,False,1.000000,VER,PIA,Monza
+63:17|1:14,C1,A,False,True,True,0.666667,RUS,VER,Marina Bay
+63:17|1:14,C5,A,False,False,False,0.666667,RUS,VER,Marina Bay
+63:17|1:14,C6,A,False,False,False,0.666667,RUS,VER,Marina Bay
+63:17|1:14,C7,A,False,False,False,1.000000,RUS,VER,Marina Bay
+63:17|1:14,C11,B,False,False,False,0.666667,RUS,VER,Marina Bay
+63:17|1:11,C1,A,False,False,False,0.666667,RUS,VER,Marina Bay
+63:17|1:11,C6,A,False,False,False,0.666667,RUS,VER,Marina Bay
+63:17|1:11,C7,A,False,False,False,1.000000,RUS,VER,Marina Bay
+63:17|1:11,C10,B,False,False,False,0.666667,RUS,VER,Marina Bay
+63:17|1:8,C3,A,False,False,False,0.666667,RUS,VER,Marina Bay
+63:17|1:8,C7,A,False,False,False,1.000000,RUS,VER,Marina Bay
+63:14|1:14,C3,A,False,False,False,0.666667,RUS,VER,Marina Bay
+63:14|1:14,C7,A,False,False,False,1.000000,RUS,VER,Marina Bay
+63:14|1:11,C3,A,False,False,False,1.000000,RUS,VER,Marina Bay
+63:14|1:11,C7,A,False,False,False,1.000000,RUS,VER,Marina Bay
+63:14|1:11,C11,A,False,False,False,1.000000,RUS,VER,Marina Bay
+63:14|1:8,C3,A,False,False,False,0.666667,RUS,VER,Marina Bay
+63:14|1:8,C7,A,False,False,False,1.000000,RUS,VER,Marina Bay
+63:14|1:8,C10,A,False,True,True,0.666667,RUS,VER,Marina Bay
+63:11|1:14,C4,B,False,False,False,0.666667,RUS,VER,Marina Bay
+63:11|1:11,C2,B,False,False,False,0.666667,RUS,VER,Marina Bay
+63:11|1:11,C10,B,False,False,False,0.666667,RUS,VER,Marina Bay
+63:11|1:11,C11,A,False,False,False,0.666667,RUS,VER,Marina Bay
+63:11|1:8,C3,A,False,True,True,0.666667,RUS,VER,Marina Bay
+63:11|1:8,C9,A,False,False,False,0.666667,RUS,VER,Marina Bay
+63:17|81:16,C1,A,False,False,False,0.666667,RUS,PIA,Marina Bay
+63:17|81:16,C2,B,False,False,False,1.000000,RUS,PIA,Marina Bay
+63:17|81:16,C5,A,False,False,False,1.000000,RUS,PIA,Marina Bay
+63:17|81:16,C7,A,False,False,False,0.666667,RUS,PIA,Marina Bay
+63:17|81:13,C1,A,False,False,False,1.000000,RUS,PIA,Marina Bay
+63:17|81:13,C3,A,False,False,False,0.666667,RUS,PIA,Marina Bay
+63:17|81:13,C4,A,False,False,False,1.000000,RUS,PIA,Marina Bay
+63:17|81:13,C5,A,False,False,False,0.666667,RUS,PIA,Marina Bay
+63:17|81:13,C7,A,False,False,False,0.666667,RUS,PIA,Marina Bay
+63:17|81:13,C11,A,False,False,False,0.666667,RUS,PIA,Marina Bay
+63:17|81:10,C3,A,False,False,False,1.000000,RUS,PIA,Marina Bay
+63:17|81:10,C4,A,False,False,False,0.666667,RUS,PIA,Marina Bay
+63:17|81:10,C5,A,False,False,False,1.000000,RUS,PIA,Marina Bay
+63:17|81:10,C11,A,False,True,True,0.333333,RUS,PIA,Marina Bay
+63:14|81:16,C1,A,False,False,False,0.666667,RUS,PIA,Marina Bay
+63:14|81:16,C5,A,False,False,False,0.666667,RUS,PIA,Marina Bay
+63:14|81:16,C7,A,False,False,False,0.666667,RUS,PIA,Marina Bay
+63:14|81:16,C10,A,False,False,False,0.666667,RUS,PIA,Marina Bay
+63:14|81:13,C3,A,False,False,False,1.000000,RUS,PIA,Marina Bay
+63:14|81:13,C4,A,False,False,False,0.666667,RUS,PIA,Marina Bay
+63:14|81:13,C7,A,False,False,False,0.777778,RUS,PIA,Marina Bay
+63:14|81:13,C10,A,False,False,False,0.666667,RUS,PIA,Marina Bay
+63:14|81:13,C11,A,False,False,False,1.000000,RUS,PIA,Marina Bay
+63:14|81:10,C2,A,False,False,False,0.666667,RUS,PIA,Marina Bay
+63:14|81:10,C3,A,False,False,False,1.000000,RUS,PIA,Marina Bay
+63:14|81:10,C5,A,False,False,False,0.666667,RUS,PIA,Marina Bay
+63:14|81:10,C10,A,False,False,False,0.666667,RUS,PIA,Marina Bay
+63:14|81:10,C11,A,False,False,False,1.000000,RUS,PIA,Marina Bay
+63:11|81:16,C1,A,False,False,False,0.666667,RUS,PIA,Marina Bay
+63:11|81:16,C2,B,False,False,False,1.000000,RUS,PIA,Marina Bay
+63:11|81:16,C3,B,False,False,False,1.000000,RUS,PIA,Marina Bay
+63:11|81:16,C5,A,False,False,False,1.000000,RUS,PIA,Marina Bay
+63:11|81:16,C9,A,False,False,False,0.555556,RUS,PIA,Marina Bay
+63:11|81:16,C12,B,False,False,False,0.666667,RUS,PIA,Marina Bay
+63:11|81:13,C9,A,False,False,False,0.666667,RUS,PIA,Marina Bay
+63:11|81:13,C11,A,False,False,False,1.000000,RUS,PIA,Marina Bay
+63:11|81:13,C12,B,False,False,False,0.666667,RUS,PIA,Marina Bay
+63:11|81:10,C5,A,False,False,False,1.000000,RUS,PIA,Marina Bay
+63:11|81:10,C7,B,False,False,False,0.666667,RUS,PIA,Marina Bay
+63:11|81:10,C9,A,False,False,False,0.666667,RUS,PIA,Marina Bay
+63:11|81:10,C11,A,False,False,False,0.666667,RUS,PIA,Marina Bay
+1:11|4:16,C16,A,False,False,False,1.000000,VER,NOR,Austin
+1:8|4:19,C10,A,False,False,False,1.000000,VER,NOR,Austin
+1:8|4:19,C12,B,False,False,False,1.000000,VER,NOR,Austin
+1:8|4:10,C16,A,False,False,False,0.666667,VER,NOR,Austin
+1:8|4:16,C16,A,False,False,False,1.000000,VER,NOR,Austin
+1:5|4:19,C10,A,False,False,False,0.666667,VER,NOR,Austin
+1:5|4:10,C5,B,False,False,False,0.666667,VER,NOR,Austin
+1:5|4:10,C9,B,False,False,False,1.000000,VER,NOR,Austin
+1:5|4:16,C5,B,False,False,False,0.666667,VER,NOR,Austin
+1:5|4:16,C16,A,False,False,False,1.000000,VER,NOR,Austin
+1:11|16:16,C5,A,False,False,False,0.666667,VER,LEC,Austin
+1:11|16:16,C7,A,False,False,False,1.000000,VER,LEC,Austin
+1:11|16:9,C7,A,False,False,False,1.000000,VER,LEC,Austin
+1:11|16:3,C5,A,False,False,False,0.666667,VER,LEC,Austin
+1:11|16:3,C7,A,False,False,False,0.666667,VER,LEC,Austin
+1:11|16:3,C15,A,False,False,False,1.000000,VER,LEC,Austin
+1:8|16:16,C5,A,False,False,False,0.666667,VER,LEC,Austin
+1:8|16:3,C5,A,False,False,False,0.666667,VER,LEC,Austin
+1:8|16:3,C7,A,False,False,False,0.666667,VER,LEC,Austin
+1:8|16:3,C15,A,False,False,False,0.666667,VER,LEC,Austin
+4:20|16:19,C10,A,False,False,False,0.666667,NOR,LEC,Mexico City
+4:20|16:19,C11,A,False,False,False,0.666667,NOR,LEC,Mexico City
+4:20|16:16,C3,A,False,False,False,0.666667,NOR,LEC,Mexico City
+4:20|16:16,C5,A,False,False,False,1.000000,NOR,LEC,Mexico City
+4:20|16:16,C11,A,False,False,False,1.000000,NOR,LEC,Mexico City
+4:20|16:10,C1,A,False,False,False,0.666667,NOR,LEC,Mexico City
+4:20|16:10,C2,A,False,False,False,0.666667,NOR,LEC,Mexico City
+4:20|16:10,C3,A,False,False,False,0.666667,NOR,LEC,Mexico City
+4:20|16:10,C4,A,False,False,False,0.666667,NOR,LEC,Mexico City
+4:20|16:10,C6,A,False,False,False,0.666667,NOR,LEC,Mexico City
+4:20|16:10,C7,B,False,False,False,1.000000,NOR,LEC,Mexico City
+4:20|16:10,C8,A,False,False,False,1.000000,NOR,LEC,Mexico City
+4:20|16:10,C10,A,False,False,False,0.666667,NOR,LEC,Mexico City
+4:20|16:10,C11,A,False,False,False,1.000000,NOR,LEC,Mexico City
+4:17|16:16,C5,A,False,False,False,0.666667,NOR,LEC,Mexico City
+4:17|16:10,C2,A,False,False,False,0.666667,NOR,LEC,Mexico City
+4:17|16:10,C4,A,False,False,False,0.666667,NOR,LEC,Mexico City
+4:17|16:10,C5,A,False,False,False,0.666667,NOR,LEC,Mexico City
+4:17|16:10,C6,A,False,False,False,1.000000,NOR,LEC,Mexico City
+4:17|16:10,C7,B,False,False,False,0.666667,NOR,LEC,Mexico City
+4:17|16:10,C8,A,False,False,False,0.777778,NOR,LEC,Mexico City
+4:11|16:19,C3,B,False,False,False,1.000000,NOR,LEC,Mexico City
+4:11|16:19,C4,B,False,False,False,0.666667,NOR,LEC,Mexico City
+4:11|16:19,C6,B,False,False,False,0.777778,NOR,LEC,Mexico City
+4:11|16:19,C10,A,False,False,False,0.555556,NOR,LEC,Mexico City
+4:11|16:16,C4,B,False,False,False,0.666667,NOR,LEC,Mexico City
+4:11|16:16,C7,B,False,False,False,0.666667,NOR,LEC,Mexico City
+4:11|16:10,C7,B,False,False,False,1.000000,NOR,LEC,Mexico City
+4:20|44:20,C2,A,False,False,False,0.666667,NOR,HAM,Mexico City
+4:20|44:20,C11,A,False,False,False,0.666667,NOR,HAM,Mexico City
+4:20|44:17,C3,A,False,False,False,1.000000,NOR,HAM,Mexico City
+4:20|44:17,C5,A,False,False,False,1.000000,NOR,HAM,Mexico City
+4:20|44:17,C10,A,False,False,False,1.000000,NOR,HAM,Mexico City
+4:20|44:17,C11,A,False,False,False,1.000000,NOR,HAM,Mexico City
+4:20|44:14,C3,A,False,False,False,0.666667,NOR,HAM,Mexico City
+4:20|44:14,C9,A,False,False,False,0.666667,NOR,HAM,Mexico City
+4:20|44:14,C10,A,False,False,False,1.000000,NOR,HAM,Mexico City
+4:20|44:14,C11,A,False,False,False,0.666667,NOR,HAM,Mexico City
+4:17|44:20,C1,B,False,False,False,0.666667,NOR,HAM,Mexico City
+4:17|44:20,C3,B,False,False,False,0.666667,NOR,HAM,Mexico City
+4:17|44:17,C1,B,False,False,False,1.000000,NOR,HAM,Mexico City
+4:17|44:17,C3,A,False,False,False,0.666667,NOR,HAM,Mexico City
+4:17|44:17,C5,A,False,False,False,0.666667,NOR,HAM,Mexico City
+4:17|44:14,C5,A,False,False,False,1.000000,NOR,HAM,Mexico City
+4:17|44:14,C9,A,False,False,False,0.555556,NOR,HAM,Mexico City
+4:17|44:14,C10,A,False,False,False,0.666667,NOR,HAM,Mexico City
+4:11|44:20,C3,B,False,False,False,1.000000,NOR,HAM,Mexico City
+4:11|44:20,C7,B,False,False,False,1.000000,NOR,HAM,Mexico City
+4:11|44:17,C7,B,False,False,False,0.666667,NOR,HAM,Mexico City
+4:11|44:17,C9,A,False,False,False,0.666667,NOR,HAM,Mexico City
+4:11|44:17,C11,A,False,False,False,0.666667,NOR,HAM,Mexico City
+4:11|44:14,C7,B,False,False,False,1.000000,NOR,HAM,Mexico City
+4:11|44:14,C9,A,False,False,False,0.555556,NOR,HAM,Mexico City
+4:11|44:14,C10,A,False,False,False,0.666667,NOR,HAM,Mexico City
+4:20|12:15,C10,A,False,False,False,1.000000,NOR,ANT,São Paulo
+4:20|12:7,C7,B,False,False,False,0.666667,NOR,ANT,São Paulo
+4:20|12:7,C10,A,False,False,False,1.000000,NOR,ANT,São Paulo
+4:20|12:12,C7,A,False,False,False,1.000000,NOR,ANT,São Paulo
+4:20|12:12,C10,A,False,False,False,1.000000,NOR,ANT,São Paulo
+4:14|12:15,C4,A,False,False,False,1.000000,NOR,ANT,São Paulo
+4:14|12:7,C2,A,False,False,False,0.666667,NOR,ANT,São Paulo
+4:14|12:7,C3,A,False,False,False,0.666667,NOR,ANT,São Paulo
+4:14|12:7,C4,A,False,False,False,0.666667,NOR,ANT,São Paulo
+4:14|12:7,C10,A,False,False,False,1.000000,NOR,ANT,São Paulo
+4:14|12:12,C4,A,False,False,False,0.666667,NOR,ANT,São Paulo
+4:14|12:12,C7,A,False,False,False,1.000000,NOR,ANT,São Paulo
+4:14|12:12,C10,A,False,False,False,1.000000,NOR,ANT,São Paulo
+4:8|12:15,C3,B,False,False,False,1.000000,NOR,ANT,São Paulo
+4:8|12:15,C4,A,False,False,False,0.666667,NOR,ANT,São Paulo
+4:8|12:15,C10,A,False,False,False,1.000000,NOR,ANT,São Paulo
+4:8|12:7,C7,B,False,False,False,0.666667,NOR,ANT,São Paulo
+4:8|12:7,C10,A,False,False,False,1.000000,NOR,ANT,São Paulo
+4:8|12:12,C4,A,False,False,False,0.666667,NOR,ANT,São Paulo
+4:8|12:12,C7,A,False,False,False,1.000000,NOR,ANT,São Paulo
+4:8|12:12,C10,A,False,False,False,1.000000,NOR,ANT,São Paulo
+4:20|87:10,C4,A,False,False,False,0.666667,NOR,BEA,São Paulo
+4:20|87:10,C10,A,False,False,False,1.000000,NOR,BEA,São Paulo
+4:20|87:5,C3,A,False,True,True,0.666667,NOR,BEA,São Paulo
+4:20|87:5,C10,A,False,False,False,1.000000,NOR,BEA,São Paulo
+4:20|87:15,C6,A,False,False,False,0.666667,NOR,BEA,São Paulo
+4:20|87:15,C10,A,False,False,False,1.000000,NOR,BEA,São Paulo
+4:14|87:10,C4,A,False,False,False,0.666667,NOR,BEA,São Paulo
+4:14|87:10,C8,B,False,False,False,0.666667,NOR,BEA,São Paulo
+4:14|87:10,C10,A,False,False,False,1.000000,NOR,BEA,São Paulo
+4:14|87:5,C2,A,False,False,False,1.000000,NOR,BEA,São Paulo
+4:14|87:5,C3,A,False,True,True,0.666667,NOR,BEA,São Paulo
+4:14|87:5,C4,A,False,False,False,0.666667,NOR,BEA,São Paulo
+4:14|87:5,C6,B,False,False,False,0.666667,NOR,BEA,São Paulo
+4:14|87:15,C1,A,False,True,True,0.555556,NOR,BEA,São Paulo
+4:14|87:15,C3,A,False,False,False,0.666667,NOR,BEA,São Paulo
+4:14|87:15,C4,A,False,False,False,0.555556,NOR,BEA,São Paulo
+4:14|87:15,C10,A,False,False,False,1.000000,NOR,BEA,São Paulo
+4:8|87:10,C4,A,False,False,False,1.000000,NOR,BEA,São Paulo
+4:8|87:10,C8,B,False,False,False,0.555556,NOR,BEA,São Paulo
+4:8|87:10,C10,A,False,False,False,1.000000,NOR,BEA,São Paulo
+4:8|87:5,C1,A,False,False,False,0.666667,NOR,BEA,São Paulo
+4:8|87:5,C10,A,False,False,False,1.000000,NOR,BEA,São Paulo
+4:8|87:15,C10,A,False,False,False,1.000000,NOR,BEA,São Paulo
+1:23|55:23,C2,A,False,False,False,0.666667,VER,SAI,Las Vegas
+1:23|55:23,C6,A,False,False,False,0.666667,VER,SAI,Las Vegas
+1:23|55:20,C2,A,False,False,False,1.000000,VER,SAI,Las Vegas
+1:23|55:20,C3,A,False,False,False,0.666667,VER,SAI,Las Vegas
+1:23|55:20,C5,A,False,False,False,1.000000,VER,SAI,Las Vegas
+1:23|55:20,C6,A,False,False,False,0.666667,VER,SAI,Las Vegas
+1:23|55:19,C1,A,False,False,False,1.000000,VER,SAI,Las Vegas
+1:23|55:19,C2,A,False,False,False,1.000000,VER,SAI,Las Vegas
+1:23|55:19,C3,A,False,False,False,1.000000,VER,SAI,Las Vegas
+1:23|55:19,C4,A,False,False,False,1.000000,VER,SAI,Las Vegas
+1:23|55:19,C5,A,False,False,False,1.000000,VER,SAI,Las Vegas
+1:23|55:19,C6,A,False,False,False,1.000000,VER,SAI,Las Vegas
+1:23|55:19,C7,A,False,False,False,0.666667,VER,SAI,Las Vegas
+1:21|55:23,C1,B,False,False,False,0.777778,VER,SAI,Las Vegas
+1:21|55:23,C3,B,False,False,False,0.666667,VER,SAI,Las Vegas
+1:21|55:23,C6,B,False,False,False,1.000000,VER,SAI,Las Vegas
+1:21|55:23,C7,B,False,False,False,0.666667,VER,SAI,Las Vegas
+1:21|55:20,C2,A,False,False,False,0.666667,VER,SAI,Las Vegas
+1:21|55:20,C3,A,False,False,False,1.000000,VER,SAI,Las Vegas
+1:21|55:20,C5,A,False,False,False,1.000000,VER,SAI,Las Vegas
+1:21|55:20,C6,B,False,False,False,1.000000,VER,SAI,Las Vegas
+1:21|55:19,C2,A,False,False,False,1.000000,VER,SAI,Las Vegas
+1:21|55:19,C3,A,False,False,False,1.000000,VER,SAI,Las Vegas
+1:21|55:19,C5,A,False,False,False,1.000000,VER,SAI,Las Vegas
+1:21|55:19,C6,A,False,False,False,0.666667,VER,SAI,Las Vegas
+1:19|55:23,C1,B,False,False,False,1.000000,VER,SAI,Las Vegas
+1:19|55:23,C2,B,False,False,False,1.000000,VER,SAI,Las Vegas
+1:19|55:23,C3,B,False,False,False,1.000000,VER,SAI,Las Vegas
+1:19|55:23,C4,B,False,False,False,1.000000,VER,SAI,Las Vegas
+1:19|55:23,C5,B,False,False,False,0.666667,VER,SAI,Las Vegas
+1:19|55:23,C6,B,False,False,False,1.000000,VER,SAI,Las Vegas
+1:19|55:23,C7,B,False,False,False,1.000000,VER,SAI,Las Vegas
+1:19|55:23,C8,B,False,False,False,1.000000,VER,SAI,Las Vegas
+1:19|55:20,C1,B,False,False,False,1.000000,VER,SAI,Las Vegas
+1:19|55:20,C2,B,False,False,False,1.000000,VER,SAI,Las Vegas
+1:19|55:20,C3,B,False,False,False,1.000000,VER,SAI,Las Vegas
+1:19|55:20,C4,B,False,False,False,1.000000,VER,SAI,Las Vegas
+1:19|55:20,C6,B,False,False,False,1.000000,VER,SAI,Las Vegas
+1:19|55:20,C7,B,False,False,False,0.666667,VER,SAI,Las Vegas
+1:19|55:20,C8,B,False,False,False,1.000000,VER,SAI,Las Vegas
+1:19|55:19,C1,B,False,False,False,1.000000,VER,SAI,Las Vegas
+1:19|55:19,C3,B,False,False,False,1.000000,VER,SAI,Las Vegas
+1:19|55:19,C4,B,False,False,False,1.000000,VER,SAI,Las Vegas
+1:19|55:19,C6,B,False,False,False,1.000000,VER,SAI,Las Vegas
+1:19|55:19,C8,B,False,False,False,0.666667,VER,SAI,Las Vegas
+1:23|4:22,C1,B,False,False,False,1.000000,VER,NOR,Las Vegas
+1:23|4:22,C3,A,False,False,False,0.666667,VER,NOR,Las Vegas
+1:23|4:22,C4,B,False,False,False,0.555556,VER,NOR,Las Vegas
+1:23|4:22,C7,A,False,False,False,1.000000,VER,NOR,Las Vegas
+1:23|4:20,C1,A,False,False,False,0.666667,VER,NOR,Las Vegas
+1:23|4:20,C2,A,False,False,False,1.000000,VER,NOR,Las Vegas
+1:23|4:20,C3,A,False,False,False,1.000000,VER,NOR,Las Vegas
+1:23|4:20,C4,B,False,False,False,1.000000,VER,NOR,Las Vegas
+1:23|4:20,C6,A,False,False,False,0.666667,VER,NOR,Las Vegas
+1:23|4:20,C8,A,False,False,False,1.000000,VER,NOR,Las Vegas
+1:23|4:15,C1,A,False,False,False,1.000000,VER,NOR,Las Vegas
+1:23|4:15,C2,A,False,False,False,1.000000,VER,NOR,Las Vegas
+1:23|4:15,C3,A,False,False,False,1.000000,VER,NOR,Las Vegas
+1:23|4:15,C5,A,False,False,False,1.000000,VER,NOR,Las Vegas
+1:23|4:15,C6,A,False,False,False,1.000000,VER,NOR,Las Vegas
+1:23|4:15,C7,A,False,False,False,1.000000,VER,NOR,Las Vegas
+1:23|4:15,C8,A,False,False,False,1.000000,VER,NOR,Las Vegas
+1:21|4:22,C1,B,False,False,False,1.000000,VER,NOR,Las Vegas
+1:21|4:22,C2,B,False,False,False,1.000000,VER,NOR,Las Vegas
+1:21|4:22,C3,A,False,False,False,1.000000,VER,NOR,Las Vegas
+1:21|4:22,C4,B,False,False,False,1.000000,VER,NOR,Las Vegas
+1:21|4:22,C6,B,False,False,False,1.000000,VER,NOR,Las Vegas
+1:21|4:20,C2,A,False,False,False,0.666667,VER,NOR,Las Vegas
+1:21|4:20,C3,A,False,False,False,1.000000,VER,NOR,Las Vegas
+1:21|4:20,C4,B,False,False,False,1.000000,VER,NOR,Las Vegas
+1:21|4:20,C6,B,False,False,False,1.000000,VER,NOR,Las Vegas
+1:21|4:20,C8,A,False,False,False,1.000000,VER,NOR,Las Vegas
+1:21|4:15,C1,A,False,False,False,1.000000,VER,NOR,Las Vegas
+1:21|4:15,C3,A,False,False,False,1.000000,VER,NOR,Las Vegas
+1:21|4:15,C5,A,False,False,False,0.666667,VER,NOR,Las Vegas
+1:21|4:15,C6,A,False,False,False,1.000000,VER,NOR,Las Vegas
+1:21|4:15,C7,A,False,False,False,0.666667,VER,NOR,Las Vegas
+1:21|4:15,C8,A,False,False,False,1.000000,VER,NOR,Las Vegas
+1:19|4:22,C1,B,False,False,False,1.000000,VER,NOR,Las Vegas
+1:19|4:22,C2,B,False,False,False,1.000000,VER,NOR,Las Vegas
+1:19|4:22,C3,B,False,False,False,1.000000,VER,NOR,Las Vegas
+1:19|4:22,C4,B,False,False,False,1.000000,VER,NOR,Las Vegas
+1:19|4:22,C5,B,False,False,False,1.000000,VER,NOR,Las Vegas
+1:19|4:22,C6,B,False,False,False,1.000000,VER,NOR,Las Vegas
+1:19|4:20,C1,B,False,False,False,1.000000,VER,NOR,Las Vegas
+1:19|4:20,C2,B,False,False,False,1.000000,VER,NOR,Las Vegas
+1:19|4:20,C3,B,False,False,False,1.000000,VER,NOR,Las Vegas
+1:19|4:20,C4,B,False,False,False,1.000000,VER,NOR,Las Vegas
+1:19|4:20,C5,B,False,False,False,0.666667,VER,NOR,Las Vegas
+1:19|4:20,C6,B,False,False,False,1.000000,VER,NOR,Las Vegas
+1:19|4:20,C7,B,False,False,False,0.666667,VER,NOR,Las Vegas
+1:19|4:20,C8,A,False,False,False,0.888889,VER,NOR,Las Vegas
+1:19|4:15,C1,B,False,False,False,1.000000,VER,NOR,Las Vegas
+1:19|4:15,C2,B,False,False,False,1.000000,VER,NOR,Las Vegas
+1:19|4:15,C3,B,False,False,False,1.000000,VER,NOR,Las Vegas
+1:19|4:15,C4,B,False,False,False,1.000000,VER,NOR,Las Vegas
+81:17|4:14,C6,A,False,False,False,1.000000,PIA,NOR,Lusail
+81:17|4:14,C9,B,False,False,False,1.000000,PIA,NOR,Lusail
+81:17|4:11,C1,A,False,False,False,1.000000,PIA,NOR,Lusail
+81:17|4:11,C5,A,False,False,False,0.777778,PIA,NOR,Lusail
+81:17|4:11,C6,A,False,False,False,1.000000,PIA,NOR,Lusail
+81:17|4:11,C7,A,False,False,False,1.000000,PIA,NOR,Lusail
+81:17|4:11,C12,A,False,False,False,1.000000,PIA,NOR,Lusail
+81:17|4:11,C14,A,False,False,False,1.000000,PIA,NOR,Lusail
+81:17|4:5,C1,A,False,False,False,0.888889,PIA,NOR,Lusail
+81:17|4:5,C4,A,False,False,False,1.000000,PIA,NOR,Lusail
+81:17|4:5,C5,A,False,False,False,1.000000,PIA,NOR,Lusail
+81:17|4:5,C9,A,False,False,False,0.666667,PIA,NOR,Lusail
+81:17|4:5,C12,A,False,False,False,1.000000,PIA,NOR,Lusail
+81:17|4:5,C13,A,False,False,False,1.000000,PIA,NOR,Lusail
+81:17|4:5,C14,A,False,False,False,1.000000,PIA,NOR,Lusail
+81:14|4:14,C4,B,False,False,False,1.000000,PIA,NOR,Lusail
+81:14|4:14,C7,A,False,False,False,1.000000,PIA,NOR,Lusail
+81:14|4:14,C9,B,False,True,True,0.666667,PIA,NOR,Lusail
+81:14|4:14,C14,A,False,False,False,0.666667,PIA,NOR,Lusail
+81:14|4:11,C1,A,False,False,False,1.000000,PIA,NOR,Lusail
+81:14|4:11,C3,B,False,False,False,0.666667,PIA,NOR,Lusail
+81:14|4:11,C6,A,False,False,False,0.666667,PIA,NOR,Lusail
+81:14|4:11,C7,A,False,False,False,1.000000,PIA,NOR,Lusail
+81:14|4:11,C12,A,False,False,False,0.666667,PIA,NOR,Lusail
+81:14|4:11,C14,A,False,False,False,1.000000,PIA,NOR,Lusail
+81:14|4:5,C1,A,False,False,False,1.000000,PIA,NOR,Lusail
+81:14|4:5,C4,A,False,False,False,1.000000,PIA,NOR,Lusail
+81:14|4:5,C6,B,False,True,True,0.333333,PIA,NOR,Lusail
+81:14|4:5,C7,A,False,False,False,0.666667,PIA,NOR,Lusail
+81:14|4:5,C9,A,False,False,False,1.000000,PIA,NOR,Lusail
+81:14|4:5,C12,A,False,False,False,1.000000,PIA,NOR,Lusail
+81:14|4:5,C13,A,False,False,False,1.000000,PIA,NOR,Lusail
+81:14|4:5,C14,A,False,False,False,1.000000,PIA,NOR,Lusail
+81:8|4:14,C6,B,False,True,True,0.666667,PIA,NOR,Lusail
+81:8|4:14,C9,B,False,False,False,1.000000,PIA,NOR,Lusail
+81:8|4:11,C1,A,False,False,False,1.000000,PIA,NOR,Lusail
+81:8|4:11,C5,A,False,False,False,1.000000,PIA,NOR,Lusail
+81:8|4:11,C9,B,False,False,False,0.888889,PIA,NOR,Lusail
+81:8|4:11,C14,A,False,False,False,1.000000,PIA,NOR,Lusail
+81:8|4:5,C1,A,False,False,False,1.000000,PIA,NOR,Lusail
+81:8|4:5,C4,A,False,False,False,1.000000,PIA,NOR,Lusail
+81:8|4:5,C5,A,False,False,False,1.000000,PIA,NOR,Lusail
+81:8|4:5,C6,B,False,True,True,0.666667,PIA,NOR,Lusail
+81:8|4:5,C9,A,False,False,False,0.666667,PIA,NOR,Lusail
+81:8|4:5,C12,A,False,False,False,1.000000,PIA,NOR,Lusail
+81:8|4:5,C13,A,False,False,False,0.666667,PIA,NOR,Lusail
+81:8|4:5,C14,A,False,False,False,1.000000,PIA,NOR,Lusail
+81:17|1:22,C1,B,False,False,False,0.666667,PIA,VER,Lusail
+81:17|1:22,C4,B,False,False,False,0.666667,PIA,VER,Lusail
+81:17|1:22,C5,A,False,False,False,0.666667,PIA,VER,Lusail
+81:17|1:22,C6,A,False,False,False,1.000000,PIA,VER,Lusail
+81:17|1:22,C7,A,False,False,False,0.666667,PIA,VER,Lusail
+81:17|1:22,C8,A,False,False,False,1.000000,PIA,VER,Lusail
+81:17|1:22,C13,A,False,False,False,0.666667,PIA,VER,Lusail
+81:17|1:22,C14,A,False,False,False,1.000000,PIA,VER,Lusail
+81:17|1:19,C5,A,False,False,False,1.000000,PIA,VER,Lusail
+81:17|1:19,C6,A,False,False,False,1.000000,PIA,VER,Lusail
+81:17|1:19,C8,A,False,False,False,1.000000,PIA,VER,Lusail
+81:17|1:19,C10,A,False,False,False,0.666667,PIA,VER,Lusail
+81:17|1:19,C12,A,False,False,False,1.000000,PIA,VER,Lusail
+81:17|1:19,C14,A,False,False,False,1.000000,PIA,VER,Lusail
+81:17|1:15,C3,A,False,False,False,1.000000,PIA,VER,Lusail
+81:17|1:15,C5,A,False,False,False,0.666667,PIA,VER,Lusail
+81:17|1:15,C6,A,False,False,False,1.000000,PIA,VER,Lusail
+81:17|1:15,C7,A,False,False,False,0.666667,PIA,VER,Lusail
+81:17|1:15,C9,A,False,False,False,0.666667,PIA,VER,Lusail
+81:17|1:15,C10,A,False,False,False,1.000000,PIA,VER,Lusail
+81:17|1:15,C12,A,False,False,False,1.000000,PIA,VER,Lusail
+81:17|1:15,C13,A,False,False,False,1.000000,PIA,VER,Lusail
+81:14|1:22,C1,B,False,False,False,0.666667,PIA,VER,Lusail
+81:14|1:22,C4,B,False,False,False,0.666667,PIA,VER,Lusail
+81:14|1:22,C7,A,False,False,False,1.000000,PIA,VER,Lusail
+81:14|1:22,C14,A,False,False,False,1.000000,PIA,VER,Lusail
+81:14|1:19,C5,A,False,False,False,1.000000,PIA,VER,Lusail
+81:14|1:19,C7,A,False,False,False,0.666667,PIA,VER,Lusail
+81:14|1:19,C8,A,False,False,False,1.000000,PIA,VER,Lusail
+81:14|1:19,C14,A,False,False,False,0.666667,PIA,VER,Lusail
+81:14|1:15,C6,A,False,False,False,1.000000,PIA,VER,Lusail
+81:14|1:15,C7,A,False,False,False,1.000000,PIA,VER,Lusail
+81:14|1:15,C9,A,False,False,False,1.000000,PIA,VER,Lusail
+81:14|1:15,C10,A,False,False,False,0.666667,PIA,VER,Lusail
+81:14|1:15,C12,A,False,False,False,1.000000,PIA,VER,Lusail
+81:14|1:15,C13,A,False,False,False,0.666667,PIA,VER,Lusail
+81:14|1:15,C14,A,False,False,False,1.000000,PIA,VER,Lusail
+81:8|1:22,C1,B,False,False,False,0.666667,PIA,VER,Lusail
+81:8|1:22,C5,A,False,False,False,0.666667,PIA,VER,Lusail
+81:8|1:22,C6,B,False,False,False,0.666667,PIA,VER,Lusail
+81:8|1:22,C8,A,False,True,True,0.333333,PIA,VER,Lusail
+81:8|1:22,C9,B,False,False,False,1.000000,PIA,VER,Lusail
+81:8|1:22,C13,A,False,True,True,0.666667,PIA,VER,Lusail
+81:8|1:22,C14,A,False,False,False,1.000000,PIA,VER,Lusail
+81:8|1:19,C5,A,False,False,False,1.000000,PIA,VER,Lusail
+81:8|1:19,C8,A,False,False,False,1.000000,PIA,VER,Lusail
+81:8|1:19,C14,A,False,False,False,0.666667,PIA,VER,Lusail
+81:8|1:15,C5,A,False,False,False,0.666667,PIA,VER,Lusail
+81:8|1:15,C13,A,False,True,True,0.666667,PIA,VER,Lusail
+1:17|4:16,C5,A,False,False,False,1.000000,VER,NOR,Yas Island
+1:17|4:16,C7,B,False,False,False,0.666667,VER,NOR,Yas Island
+1:17|4:13,C4,A,False,False,False,1.000000,VER,NOR,Yas Island
+1:17|4:13,C5,A,False,False,False,1.000000,VER,NOR,Yas Island
+1:17|4:8,C4,A,False,False,False,1.000000,VER,NOR,Yas Island
+1:17|4:8,C5,A,False,False,False,1.000000,VER,NOR,Yas Island
+1:17|4:8,C10,B,False,False,False,0.666667,VER,NOR,Yas Island
+1:17|4:8,C11,A,False,False,False,0.666667,VER,NOR,Yas Island
+1:14|4:16,C7,B,False,False,False,0.666667,VER,NOR,Yas Island
+1:14|4:16,C10,A,False,False,False,0.666667,VER,NOR,Yas Island
+1:14|4:13,C1,A,False,False,False,0.666667,VER,NOR,Yas Island
+1:14|4:13,C4,A,False,False,False,1.000000,VER,NOR,Yas Island
+1:14|4:13,C6,A,False,False,False,1.000000,VER,NOR,Yas Island
+1:14|4:13,C13,B,False,False,False,0.666667,VER,NOR,Yas Island
+1:14|4:8,C4,A,False,False,False,0.666667,VER,NOR,Yas Island
+1:14|4:8,C5,A,False,False,False,1.000000,VER,NOR,Yas Island
+1:14|4:8,C11,A,False,False,False,0.666667,VER,NOR,Yas Island
+1:11|4:16,C4,B,False,False,False,1.000000,VER,NOR,Yas Island
+1:11|4:16,C7,B,False,False,False,1.000000,VER,NOR,Yas Island
+1:11|4:16,C10,A,False,False,False,0.666667,VER,NOR,Yas Island
+1:11|4:16,C11,B,False,False,False,0.666667,VER,NOR,Yas Island
+1:11|4:13,C6,A,False,False,False,1.000000,VER,NOR,Yas Island
+1:17|81:16,C5,A,False,False,False,1.000000,VER,PIA,Yas Island
+1:17|81:5,C4,A,False,False,False,1.000000,VER,PIA,Yas Island
+1:17|81:5,C5,A,False,False,False,1.000000,VER,PIA,Yas Island
+1:17|81:5,C10,B,False,False,False,0.666667,VER,PIA,Yas Island
+1:17|81:13,C5,A,False,False,False,1.000000,VER,PIA,Yas Island
+1:14|81:16,C5,A,False,False,False,0.666667,VER,PIA,Yas Island
+1:14|81:5,C4,A,False,False,False,1.000000,VER,PIA,Yas Island
+1:14|81:13,C5,A,False,False,False,0.666667,VER,PIA,Yas Island
+1:14|81:13,C11,A,False,False,False,1.000000,VER,PIA,Yas Island
+1:11|81:16,C4,B,False,False,False,0.666667,VER,PIA,Yas Island

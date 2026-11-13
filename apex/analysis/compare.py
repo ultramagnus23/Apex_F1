@@ -71,6 +71,7 @@ def build_track_model(
     n_speed_laps: int = 20,
     grid_step: float = 1.0,
     corner_cfg: CornerConfig | None = None,
+    ref_keys: list[str] | None = None,
 ) -> tuple[TrackModel, dict[str, LapTelemetry]]:
     corner_cfg = corner_cfg or CornerConfig()
     fl = flying_laps(classified)
@@ -84,7 +85,8 @@ def build_track_model(
     keys = list(tels)
     if len(keys) < 5:
         raise ValueError(f"only {len(keys)} usable push laps; cannot build a track model")
-    line = reference_from_laps([tels[k] for k in keys[:n_ref_laps]])
+    chosen = ref_keys if ref_keys is not None else keys[:n_ref_laps]
+    line = reference_from_laps([tels[k] for k in chosen])
     grid = distance_grid(line.length, grid_step)
     speed_laps = [align_lap(tels[k], line) for k in keys[:n_speed_laps]]
     v_ref = np.median(np.array([a.channel("speed", grid) for a in speed_laps]), axis=0)
@@ -170,9 +172,13 @@ def _line_estimate(lap: AlignedLap, s1: float, s2: float) -> tuple[float, float]
     return float(np.interp(s1, tt, grid)), float(np.interp(s1 + s2, tt, grid))
 
 
-def build_context(session: SessionData, classified: pd.DataFrame | None = None) -> SessionContext:
+def build_context(
+    session: SessionData,
+    classified: pd.DataFrame | None = None,
+    ref_keys: list[str] | None = None,
+) -> SessionContext:
     classified = classified if classified is not None else classify_laps(session)
-    track, tels = build_track_model(session, classified)
+    track, tels = build_track_model(session, classified, ref_keys=ref_keys)
     laps = session.laps.copy()
     laps["key"] = laps["driver_number"].astype(str) + ":" + laps["lap_number"].astype(str)
     official = laps.set_index("key")

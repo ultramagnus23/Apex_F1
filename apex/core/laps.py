@@ -84,17 +84,20 @@ def deleted_laps(session: SessionData) -> pd.DataFrame:
     ).drop_duplicates(["driver_number", "lap_number"])
 
 
-def flag_intervals(session: SessionData) -> list[tuple[pd.Timestamp, pd.Timestamp, str]]:
+def flag_intervals(
+    session: SessionData, end_of_data: pd.Timestamp | None = None
+) -> list[tuple[pd.Timestamp, pd.Timestamp, str]]:
     """Intervals during which a yellow/red/SC/VSC condition was active somewhere.
 
     Sector flags end at the matching CLEAR for that marshal sector; track-wide
     conditions end at the next GREEN/CLEAR track message. An unterminated flag
-    runs to the end of the data.
+    runs to the end of the data (``end_of_data``, default: the last car sample).
     """
     rc = session.race_control.copy()
     rc["t"] = parse_utc(rc["date"])
     rc = rc.sort_values("t")
-    end_of_data = session.car["t"].max()
+    if end_of_data is None:
+        end_of_data = session.car["t"].max()
     open_: dict[str, pd.Timestamp] = {}
     out: list[tuple[pd.Timestamp, pd.Timestamp, str]] = []
     for _, r in rc.iterrows():

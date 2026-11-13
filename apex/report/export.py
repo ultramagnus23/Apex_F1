@@ -49,7 +49,12 @@ def write_comparison(cmp: Comparison, drivers: pd.DataFrame, out: Path, title: s
     cmp.corner_segments.to_csv(
         out / "corner_segments.csv", index=False, float_format="%.6f", lineterminator="\n"
     )
-    cmp.corners.to_csv(out / "corners.csv", index=False, float_format="%.4f", lineterminator="\n")
+    corners = cmp.corners.copy()
+    for col in [c for c in corners.columns if c.endswith("_zone")]:
+        corners[col] = [
+            f"({lo:.4f}, {hi:.4f})" if isinstance(lo, float) else "" for lo, hi in corners[col]
+        ]
+    corners.to_csv(out / "corners.csv", index=False, float_format="%.4f", lineterminator="\n")
     gate = gate_dict(cmp)
     (out / "gate.json").write_text(
         json.dumps(gate, indent=2, default=float) + "\n", encoding="utf-8", newline="\n"

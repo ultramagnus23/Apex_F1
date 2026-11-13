@@ -1,0 +1,17 @@
+segment,consensus,stability,n_configs,delta_base,delta_mean_all,sigma_base,boot_lo,boot_hi,kind,why
+C1,none,0.925926,81,0.018560,-0.028285,0.070399,-0.019502,0.058810,INCONCLUSIVE,within 2 sigma noise in most configurations
+C2,none,0.641975,81,-0.074242,-0.011969,0.048367,-0.105943,-0.042482,INCONCLUSIVE,within 2 sigma noise in most configurations
+C3,none,0.617284,81,0.053091,0.065984,0.030682,0.045538,0.060329,INCONCLUSIVE,within 2 sigma noise in most configurations
+C4,none,0.555556,81,0.054679,0.022057,0.028682,0.035397,0.075847,INCONCLUSIVE,within 2 sigma noise in most configurations
+C5,none,0.629630,81,-0.010963,0.014463,0.030179,-0.037176,0.013922,INCONCLUSIVE,within 2 sigma noise in most configurations
+C6,none,0.802469,81,-0.004788,-0.022320,0.036633,-0.030980,0.020760,INCONCLUSIVE,within 2 sigma noise in most configurations
+C7,A,0.641975,81,-0.125043,-0.103390,0.042208,-0.148036,-0.101265,INCONCLUSIVE,verdict flips across configurations (stability 64%)
+C8,none,0.888889,81,-0.038896,-0.030678,0.040876,-0.045974,-0.032036,INCONCLUSIVE,within 2 sigma noise in most configurations
+C9,none,0.555556,81,-0.046549,-0.072392,0.043961,-0.103058,0.010603,INCONCLUSIVE,within 2 sigma noise in most configurations
+C10,none,0.654321,81,-0.079422,-0.093252,0.039336,-0.141368,-0.018652,INCONCLUSIVE,within 2 sigma noise in most configurations
+C11,none,0.888889,81,-0.033410,-0.001285,0.044765,-0.060423,-0.001620,INCONCLUSIVE,within 2 sigma noise in most configurations
+C12,none,0.481481,81,-0.039442,-0.043911,0.042306,-0.107104,0.020886,INCONCLUSIVE,within 2 sigma noise in most configurations
+C13,none,0.888889,81,-0.029062,-0.033123,0.032325,-0.034607,-0.024030,INCONCLUSIVE,within 2 sigma noise in most configurations
+C14,none,0.851852,81,0.031976,0.015762,0.030709,0.022811,0.041176,INCONCLUSIVE,within 2 sigma noise in most configurations
+C15,none,0.814815,81,-0.021209,-0.004551,0.036073,-0.039106,-0.002419,INCONCLUSIVE,within 2 sigma noise in most configurations
+C16,B,0.518519,81,0.067721,0.078403,0.037994,0.031115,0.109520,INCONCLUSIVE,verdict flips across configurations (stability 52%)

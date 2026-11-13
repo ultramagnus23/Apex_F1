@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apex Dashboard</title>
+<style>
+:root {
+  color-scheme: light;
+  --surface: #fcfcfb; --surface-2: #f3f2ef; --border: #dcdad4;
+  --text: #0b0b0b; --text-2: #52514e; --text-3: #7a786f;
+  --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a;
+  --seq-lo: #cde2fb; --seq-hi: #0d366b;
+  --warn-bg: #fdf1dc; --warn-text: #6b4600; --ok-text: #0a5c2e;
+  --grid: #e7e5df;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --surface: #1a1a19; --surface-2: #232321; --border: #3a3a37;
+    --text: #f0efec; --text-2: #c3c2b7; --text-3: #9a998f;
+    --s1: #3987e5; --s2: #d95926; --s3: #199e70;
+    --seq-lo: #184f95; --seq-hi: #cde2fb;
+    --warn-bg: #3a2c10; --warn-text: #f1cf8a; --ok-text: #7fd6a2;
+    --grid: #2d2d2b;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --surface: #1a1a19; --surface-2: #232321; --border: #3a3a37;
+  --text: #f0efec; --text-2: #c3c2b7; --text-3: #9a998f;
+  --s1: #3987e5; --s2: #d95926; --s3: #199e70;
+  --seq-lo: #184f95; --seq-hi: #cde2fb;
+  --warn-bg: #3a2c10; --warn-text: #f1cf8a; --ok-text: #7fd6a2;
+  --grid: #2d2d2b;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--surface); color: var(--text);
+  font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 16px 64px; }
+header { padding: 28px 0 8px; display: flex; gap: 16px; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; }
+h1 { font-size: 24px; margin: 0 0 4px; letter-spacing: -0.01em; }
+h2 { font-size: 18px; margin: 32px 0 4px; }
+h3 { font-size: 14px; margin: 20px 0 6px; color: var(--text-2); font-weight: 600; }
+p.sub { margin: 0; color: var(--text-2); max-width: 70ch; }
+nav { display: flex; gap: 4px; border-bottom: 1px solid var(--border); margin-top: 16px; flex-wrap: wrap; }
+nav button { background: none; border: 0; padding: 10px 14px; font: inherit; color: var(--text-2);
+  cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px; }
+nav button[aria-selected="true"] { color: var(--text); border-bottom-color: var(--s1); font-weight: 600; }
+nav button:focus-visible, select:focus-visible, .toggle:focus-visible { outline: 2px solid var(--s1); outline-offset: 2px; }
+.toggle { background: var(--surface-2); border: 1px solid var(--border); color: var(--text); border-radius: 6px;
+  padding: 6px 10px; font: inherit; cursor: pointer; }
+.filters { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin: 16px 0 8px; }
+label { color: var(--text-2); font-size: 13px; display: flex; gap: 6px; align-items: center; }
+select { background: var(--surface-2); color: var(--text); border: 1px solid var(--border); border-radius: 6px; padding: 6px 8px; font: inherit; }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin: 12px 0; }
+.tile { background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
+.tile .v { font-size: 24px; font-weight: 650; letter-spacing: -0.01em; font-variant-numeric: tabular-nums; }
+.tile .k { color: var(--text-2); font-size: 12.5px; }
+.tile .n { color: var(--text-3); font-size: 12px; margin-top: 2px; }
+.banner { background: var(--warn-bg); color: var(--warn-text); border-radius: 8px; padding: 10px 14px; margin: 12px 0; }
+.chart { width: 100%; min-height: 320px; }
+.note { color: var(--text-2); font-size: 13px; max-width: 80ch; }
+table { border-collapse: collapse; width: 100%; font-size: 13px; font-variant-numeric: tabular-nums; }
+th, td { text-align: right; padding: 5px 8px; border-bottom: 1px solid var(--border); }
+th:first-child, td:first-child { text-align: left; }
+th { color: var(--text-2); font-weight: 600; }
+details { margin: 8px 0; }
+summary { cursor: pointer; color: var(--text-2); }
+.tag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.04em; padding: 1px 6px; border-radius: 4px; border: 1px solid var(--border); color: var(--text-2); }
+section[hidden] { display: none; }
+.tip { position: fixed; display: none; pointer-events: none; z-index: 10; background: var(--surface-2); color: var(--text);
+  border: 1px solid var(--border); border-radius: 6px; padding: 6px 9px; font-size: 12.5px; line-height: 1.4; box-shadow: 0 2px 8px rgba(0,0,0,.18); }
+.legend { display: flex; gap: 16px; flex-wrap: wrap; margin: 4px 0 0 56px; color: var(--text-2); font-size: 12.5px; }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: -1px; }
+svg [tabindex]:focus { outline: none; }
+svg [tabindex]:focus-visible circle:nth-of-type(2), svg [tabindex]:focus-visible rect { stroke: var(--text); stroke-width: 2; }
+ul.plain { margin: 6px 0; padding-left: 20px; color: var(--text-2); }
+a { color: var(--s1); }
+@media (max-width: 600px) { .tile .v { font-size: 20px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div>
+    <h1>Apex dashboard</h1>
+    <p class="sub">Race pace and full-throttle deceleration from public F1 data, each with its uncertainty and how it was checked. Unofficial; not associated with Formula 1 companies.</p>
+  </div>
+  <button class="toggle" id="theme" type="button" aria-label="Toggle light and dark theme">Theme</button>
+</header>
+<nav role="tablist" aria-label="Sections">
+  <button role="tab" aria-selected="true" data-tab="pace">Race pace</button>
+  <button role="tab" aria-selected="false" data-tab="ers">ERS clipping</button>
+  <button role="tab" aria-selected="false" data-tab="check">Validation</button>
+  <button role="tab" aria-selected="false" data-tab="about">About</button>
+</nav>
+
+<section id="tab-pace">
+  <h2>Race pace by driver</h2>
+  <p class="note">Estimated lap time on one reference tyre, fresh, at mid-race, after adjusting for tyre wear, a shared lap-number trend and stint effects. Intervals are 90% credible intervals. Estimates describe unimpeded pace; laps under pit, flag, start or outlier conditions are excluded.</p>
+  <div class="filters">
+    <label>Year <select id="pace-year"></select></label>
+    <label>Race <select id="pace-race"></select></label>
+  </div>
+  <div id="pace-banner"></div>
+  <div class="tiles" id="pace-tiles"></div>
+  <h3>Gap to the fastest driver, with 90% interval</h3>
+  <div id="pace-chart" class="chart"></div>
+  <h3>Probability that the row driver's pace is faster than the column driver's</h3>
+  <div id="pace-heat" class="chart" style="min-height:520px"></div>
+  <h3>Model parameters</h3>
+  <table id="pace-params"></table>
+  <details><summary>Driver table</summary><table id="pace-table"></table></details>
+</section>
+
+<section id="tab-ers" hidden>
+  <h2>Full-throttle deceleration events</h2>
+  <p class="note"><span class="tag">OBSERVED</span> the car decelerates significantly while the throttle is fully open and the brake is off. <span class="tag">HYPOTHESIS</span> that this is electrical deployment ending (clipping). The data do not show energy state. Confounders: <span id="confounders"></span>.</p>
+  <div class="tiles" id="ers-era"></div>
+  <h3>Events per lap, by circuit (best three laps per driver)</h3>
+  <div id="ers-compare" class="chart" style="min-height:420px"></div>
+  <p class="note">Hollow markers are wet sessions, excluded from the era comparison because low grip also slows cars at full throttle.</p>
+  <div class="filters">
+    <label>Year <select id="ers-year"></select></label>
+    <label>Session <select id="ers-session"></select></label>
+  </div>
+  <div class="tiles" id="ers-tiles"></div>
+  <h3>Where on the lap the events occur</h3>
+  <div id="ers-hist" class="chart"></div>
+  <p class="note">If the events are a real feature of the track and car, they repeat at the same places lap after lap. The repeat lift compares the observed repeat rate with the rate expected if positions were random.</p>
+  <details><summary>Session table</summary><table id="ers-table"></table></details>
+</section>
+
+<section id="tab-check" hidden>
+  <h2>How the pace model was checked</h2>
+  <p class="note">Each dot is the share of held-out laps that fell inside the model's 90% predictive interval. A calibrated model sits on the dashed 90% line. Whole-stint holdout is the test that matters for driver comparisons, because it includes stint-to-stint variation. Forward prediction (fit early laps, predict the end of the race) undercovers, so the model is not a forecast tool.</p>
+  <div class="filters"><label>Year <select id="check-year"></select></label></div>
+  <div class="tiles" id="check-tiles"></div>
+  <div id="check-chart" class="chart" style="min-height:380px"></div>
+  <details><summary>Race table</summary><table id="check-table"></table></details>
+</section>
+
+<section id="tab-about" hidden>
+  <h2>About</h2>
+  <p class="note">Apex turns public Formula 1 timing and telemetry into analysis that states what it can and cannot conclude. Every statement is tagged.</p>
+  <ul class="plain">
+    <li><span class="tag">OBSERVED</span> the data show it beyond measurement noise and it is stable across analysis choices.</li>
+    <li><span class="tag">HYPOTHESIS</span> consistent with the data; the cause is not established.</li>
+    <li><span class="tag">INCONCLUSIVE</span> within noise or unstable.</li>
+    <li><span class="tag">UNKNOWN</span> public data cannot establish it.</li>
+  </ul>
+  <p class="note">Limits: qualifying and race sessions from 2025 and 2026 only. Public telemetry has no tyre temperature, fuel mass, ERS state or setup. Race pace is not modelled for wet or very noisy races. See the repository documentation for methods and validation.</p>
+  <p class="note" id="built"></p>
+</section>
+</div>
+
+<script id="data" type="application/json">%%DATA%%</script>
+<script>
+%%APP%%
+</script>
+</body>
+</html>

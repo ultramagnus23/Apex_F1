@@ -31,20 +31,11 @@ jobs:
       - name: Tests
         run: uv run pytest -m "not network" --cov=apex --cov-report=term-missing
 
-      - name: Case study 01 is reproducible (tables, gate and summary; PNGs excluded)
-        run: |
-          uv run python examples/case_study_01.py
-          git diff --exit-code -- docs/case_study_01 ':!docs/case_study_01/*.png'
+      - name: Case study 01 reproduces from the committed fixture
+        run: uv run python scripts/check_case_study.py
 
-      - name: Restore data cache
-        uses: actions/cache@v4
-        with:
-          path: cache
-          key: apex-data-${{ hashFiles('scripts/inspect_openf1_session.py') }}-11392
-          restore-keys: apex-data-
+      - name: Docs links and anchors resolve
+        run: uv run python scripts/check_docs.py
 
-      - name: Reproducible example (data contract evidence is regenerated identically)
-        run: |
-          uv run python scripts/inspect_openf1_session.py --session-key 11392 \
-            --season 2026 --round 18 --out /tmp/inspection_11392.json
-          diff /tmp/inspection_11392.json docs/data/inspection_11392.json
+      - name: Committed dashboard matches the study outputs
+        run: uv run python scripts/build_dashboard.py --check

@@ -1,0 +1,18 @@
+{
+  "circuits": 23,
+  "spearman_stability_vs_length": {
+    "rho": 0.21541501976284588,
+    "p": 0.32357621730698893
+  },
+  "spearman_flip_rate_vs_length": {
+    "rho": -0.21829885854983638,
+    "p": 0.3169826880341773
+  },
+  "spa_mean_stability": 0.7011494741379312,
+  "all_mean_stability": 0.8308040166574128,
+  "spa_reference_flips_by_rival_lap": {
+    "81:20": 7,
+    "16:9": 3
+  },
+  "conclusion": "Circuit length does not explain Spa: the correlation is weak and not significant."
+}

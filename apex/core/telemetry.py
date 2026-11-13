@@ -76,13 +76,23 @@ def extract_lap(session: SessionData, lap: LapRef, pad_s: float = 3.0) -> LapTel
             "t": _rel_seconds(c["t"], lap.t0),
             "speed": c["speed"].astype(float).to_numpy(),
             "rpm": c["rpm"].astype(float).to_numpy(),
-            "gear": c["n_gear"].astype(float).to_numpy(),
+            "gear": c["n_gear"].where(c["n_gear"].between(0, 8)).astype(float).to_numpy(),
             "throttle": thr.where(c["throttle"] != OPENF1_SENTINEL).to_numpy(),
             "brake": (brk.where(c["brake"] != OPENF1_SENTINEL) / 100.0).to_numpy(),
             "raw_index": c.index.to_numpy(),
         }
     )
     loc = session.location
+    if loc.empty:  # car-only sessions: no position stream was loaded
+        loc = pd.DataFrame(
+            {
+                "driver_number": pd.Series(dtype="int64"),
+                "x": pd.Series(dtype="float64"),
+                "y": pd.Series(dtype="float64"),
+                "z": pd.Series(dtype="float64"),
+                "t": pd.Series(dtype="datetime64[ns, UTC]"),
+            }
+        )
     p = loc[(loc["driver_number"] == lap.driver_number) & (loc["t"] >= lo) & (loc["t"] <= hi)]
     zero = (p["x"] == 0) & (p["y"] == 0) & (p["z"] == 0)
     pg = p[~zero]

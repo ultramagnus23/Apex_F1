@@ -131,7 +131,13 @@ class OpenF1Client:
             if wait > 0:
                 time.sleep(wait)
             self._last_request = time.monotonic()
-            resp = self._http.get(url, timeout=self.timeout_s)
+            try:
+                resp = self._http.get(url, timeout=self.timeout_s)
+            except requests.RequestException:
+                # timeouts and dropped connections are transient: back off and retry
+                time.sleep(delay)
+                delay *= 2
+                continue
             if resp.status_code == 200:
                 return resp.content
             if resp.status_code == 404:

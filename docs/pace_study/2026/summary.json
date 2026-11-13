@@ -1,0 +1,30 @@
+{
+  "year": 2026,
+  "races_fitted": 18,
+  "races_ok": 17,
+  "races_not_modelled": [
+    {
+      "location": "S\u00e3o Paulo",
+      "status_reasons": "28% of clean laps on wet-weather tyres; the tyre model assumes dry running"
+    }
+  ],
+  "failures": [],
+  "ci": 0.9,
+  "coverage_mean": {
+    "random": 0.8979860905671214,
+    "stint": 0.9195935207674895,
+    "forward": 0.8090923280283822
+  },
+  "coverage_min": {
+    "random": 0.837037037037037,
+    "stint": 0.8612934545798996,
+    "forward": 0.6666666666666666
+  },
+  "mae_s": {
+    "random": 0.40574631487013013,
+    "forward": 0.6419196765468304
+  },
+  "median_noise_sigma_s": 0.49610385884282143,
+  "median_pace_spread_s": 3.994586783209769,
+  "share_of_pairs_decided_90": 0.7588502269288956
+}

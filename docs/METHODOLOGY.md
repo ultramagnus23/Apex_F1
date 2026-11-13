@@ -191,3 +191,79 @@ Because residuals are positively correlated over hundreds of metres, both ends o
 segment tend to shift together. **This σ is therefore an upper bound.** A segment is
 flagged "within noise" if |Δ| < 2σ. Phase 3 measures stability empirically
 (reference-lap, method and bootstrap sensitivity).
+
+---
+
+## 9. Phase 3: calibrated uncertainty, sensitivity and claims
+
+Phase 3 replaces the provisional σ of §8 with a calibrated model and adds the stability
+analysis that decides which claims may be stated as observations.
+
+### 9.1 Calibrated noise model (`apex/core/uncertainty.py`)
+
+Distance error between official pins (lap ends, and the sector lines when anchored) is
+modelled as a **Brownian bridge**. Its variance is zero at each pin and grows with
+distance between pins:
+
+    Var[δs(s)] = σ_rw² · (s − k₀)(k₁ − s) / (k₁ − k₀)
+
+A distance error becomes a time error δs / w(s). σ_rw is calibrated from the sector-line
+errors of 85 unanchored laps, using E[δs²] = σ_rw² · s(L−s)/L. For Austin, **σ_rw = 0.114
+m/√m**. The model also includes official timing rounding (1 ms/√12), and the error from
+linear speed interpolation between samples (Δt·|Δw|/(8√3)). Segment-time σ includes the
+covariance between the two ends, so a segment with both ends pinned has no distance error.
+
+### 9.2 Sensitivity (`apex/analysis/sensitivity.py`)
+
+A conclusion is only stated as OBSERVED if it survives three choices:
+
+- **Pairing:** the top 3 valid laps of each driver, giving 9 pairings.
+- **Reference set:** baseline, plus two other sets of 10 push laps for the reference line.
+- **Method:** hybrid (anchored), speed (anchored), and xy (unanchored).
+
+That is 81 configurations per segment. Each gives a verdict, A or B beyond 2σ, or none.
+**Stability** is the share agreeing with the majority verdict. OBSERVED requires stability
+≥ 80%. A bootstrap over the pairings (2,000 resamples) gives an interval for the mean delta.
+
+### 9.3 Claims (`apex/core/claims.py`, `apex/analysis/claims_build.py`)
+
+Every output is one of four kinds:
+
+| Kind | Meaning | Rule |
+|---|---|---|
+| OBSERVED | recorded data shows it, beyond resolution, and it is stable | stability ≥ 80% |
+| HYPOTHESIS | consistent with the data; cause not established | always lists its confounders |
+| INCONCLUSIVE | within noise, or not stable across configurations | replaces any unstable OBSERVED claim |
+| UNKNOWN | public data cannot establish it | names what is missing |
+
+Hypotheses are generated only from OBSERVED events. An event that fails the stability test
+produces no hypothesis. The rules are: earlier braking, earlier throttle pickup, lower
+minimum speed, a speed-trap difference, and track evolution. Each carries its confounders.
+
+### 9.4 Season study (`scripts/season_study.py`)
+
+For every qualifying session of a season, the pole driver's fastest laps are compared with
+P2 and P3. For each segment with a non-"none" majority verdict, the study records whether
+the verdict **flips in sign** (A faster in one configuration, B faster in another) when
+either the reference set or the method changes. Results are in
+[`docs/season_2025/`](season_2025/) and [VALIDATION.md §5](VALIDATION.md#5-season-wide-sensitivity-2025).
+
+---
+
+## 10. Race pace inference (`apex/analysis/pace.py`)
+
+A Bayesian linear model of lap time with a per-driver pace term, shrunk per-stint effects, compound offsets, a shared
+lap-number trend and per-compound tyre degradation. Exact conjugate posterior; outputs are credible intervals and pairwise
+probabilities. Checked by held-out laps, held-out stints and forward prediction. Full description, validation and limits:
+[RACE_PACE.md](RACE_PACE.md).
+
+The lap-number trend combines fuel burn and track evolution. They are not separable in public data, so Apex never reports a
+"fuel effect".
+
+## 11. Full-throttle deceleration (`apex/analysis/ers.py`)
+
+A detector for statistically significant deceleration with the throttle fully open and the brake off, using local least-squares
+slopes with standard errors derived from the 1 km/h speed quantisation and irregular sampling. Events that end exactly where
+full throttle ends are flagged and dropped by default, because they are most likely braking onsets seen through slightly
+misaligned channels. Attribution to electrical deployment is a HYPOTHESIS, with confounders listed with every claim.
+Full description, validation and limits: [ERS_CLIPPING.md](ERS_CLIPPING.md).
